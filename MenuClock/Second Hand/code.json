@@ -1,27 +1,27 @@
 {
-    "eN": {
+    "ef": {
         "opcode": "event_whenflagclicked",
-        "next": "eO",
+        "next": "eg",
         "parent": null,
         "inputs": {},
         "fields": {},
         "shadow": false,
         "topLevel": true,
-        "x": 0,
-        "y": 152
+        "x": 48,
+        "y": 240
     },
-    "eO": {
+    "eg": {
         "opcode": "looks_hide",
         "next": null,
-        "parent": "eN",
+        "parent": "ef",
         "inputs": {},
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "eP": {
+    "eh": {
         "opcode": "event_whenbroadcastreceived",
-        "next": "a^",
+        "next": "a-",
         "parent": null,
         "inputs": {},
         "fields": {
@@ -32,13 +32,13 @@
         },
         "shadow": false,
         "topLevel": true,
-        "x": 64,
-        "y": 1144
+        "x": 48,
+        "y": 856
     },
-    "a^": {
+    "a-": {
         "opcode": "looks_gotofrontback",
-        "next": "a_",
-        "parent": "eP",
+        "next": "a.",
+        "parent": "eh",
         "inputs": {},
         "fields": {
             "FRONT_BACK": [
@@ -49,37 +49,37 @@
         "shadow": false,
         "topLevel": false
     },
-    "a_": {
+    "a.": {
         "opcode": "looks_show",
-        "next": "a`",
-        "parent": "a^",
+        "next": "a/",
+        "parent": "a-",
         "inputs": {},
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "a`": {
+    "a/": {
         "opcode": "control_forever",
         "next": null,
-        "parent": "a_",
+        "parent": "a.",
         "inputs": {
             "SUBSTACK": [
                 2,
-                "a{"
+                "a:"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "a{": {
+    "a:": {
         "opcode": "motion_pointindirection",
         "next": null,
-        "parent": "a`",
+        "parent": "a/",
         "inputs": {
             "DIRECTION": [
                 3,
-                "a|",
+                "a;",
                 [
                     8,
                     "90"
@@ -90,14 +90,14 @@
         "shadow": false,
         "topLevel": false
     },
-    "a|": {
+    "a;": {
         "opcode": "operator_add",
         "next": null,
-        "parent": "a{",
+        "parent": "a:",
         "inputs": {
             "NUM1": [
                 3,
-                "a}",
+                "a=",
                 [
                     4,
                     ""
@@ -115,14 +115,14 @@
         "shadow": false,
         "topLevel": false
     },
-    "a}": {
+    "a=": {
         "opcode": "operator_multiply",
         "next": null,
-        "parent": "a|",
+        "parent": "a;",
         "inputs": {
             "NUM1": [
                 3,
-                "a~",
+                "a?",
                 [
                     4,
                     ""
@@ -140,14 +140,14 @@
         "shadow": false,
         "topLevel": false
     },
-    "a~": {
+    "a?": {
         "opcode": "operator_divide",
         "next": null,
-        "parent": "a}",
+        "parent": "a=",
         "inputs": {
             "NUM1": [
                 3,
-                "eQ",
+                "ei",
                 [
                     4,
                     ""
@@ -165,10 +165,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "eQ": {
+    "ei": {
         "opcode": "sensing_current",
         "next": null,
-        "parent": "a~",
+        "parent": "a?",
         "inputs": {},
         "fields": {
             "CURRENTMENU": [
@@ -179,9 +179,9 @@
         "shadow": false,
         "topLevel": false
     },
-    "eR": {
+    "ej": {
         "opcode": "event_whenbroadcastreceived",
-        "next": "eS",
+        "next": "ek",
         "parent": null,
         "inputs": {},
         "fields": {
@@ -192,137 +192,22 @@
         },
         "shadow": false,
         "topLevel": true,
-        "x": 0,
-        "y": 0
+        "x": 48,
+        "y": 64
     },
-    "eS": {
+    "ek": {
         "opcode": "looks_hide",
         "next": null,
-        "parent": "eR",
+        "parent": "ej",
         "inputs": {},
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "eT": {
-        "opcode": "event_whenbroadcastreceived",
-        "next": "ba",
-        "parent": null,
-        "inputs": {},
-        "fields": {
-            "BROADCAST_OPTION": [
-                "System menu start",
-                "_C0]2Mci,D%5E4#-]|ZH"
-            ]
-        },
-        "shadow": false,
-        "topLevel": true,
-        "x": -137,
-        "y": 754
-    },
-    "ba": {
-        "opcode": "looks_gotofrontback",
-        "next": "bb",
-        "parent": "eT",
-        "inputs": {},
-        "fields": {
-            "FRONT_BACK": [
-                "front",
-                null
-            ]
-        },
-        "shadow": false,
-        "topLevel": false
-    },
-    "bb": {
-        "opcode": "looks_show",
-        "next": "bc",
-        "parent": "ba",
-        "inputs": {},
-        "fields": {},
-        "shadow": false,
-        "topLevel": false
-    },
-    "bc": {
-        "opcode": "control_forever",
-        "next": null,
-        "parent": "bb",
-        "inputs": {
-            "SUBSTACK": [
-                2,
-                "Q"
-            ]
-        },
-        "fields": {},
-        "shadow": false,
-        "topLevel": false
-    },
-    "Q": {
-        "opcode": "control_repeat_until",
-        "next": null,
-        "parent": "bc",
-        "inputs": {
-            "CONDITION": [
-                2,
-                "bd"
-            ],
-            "SUBSTACK": [
-                2,
-                "R"
-            ]
-        },
-        "fields": {},
-        "shadow": false,
-        "topLevel": false
-    },
-    "bd": {
-        "opcode": "operator_not",
-        "next": null,
-        "parent": "Q",
-        "inputs": {
-            "OPERAND": [
-                2,
-                "be"
-            ]
-        },
-        "fields": {},
-        "shadow": false,
-        "topLevel": false
-    },
-    "be": {
-        "opcode": "operator_equals",
-        "next": null,
-        "parent": "bd",
-        "inputs": {
-            "OPERAND1": [
-                3,
-                "eU",
-                [
-                    10,
-                    ""
-                ]
-            ],
-            "OPERAND2": [
-                3,
-                [
-                    12,
-                    "sec",
-                    "_/lyc=]kdwW$eOfPLkF5"
-                ],
-                [
-                    10,
-                    "50"
-                ]
-            ]
-        },
-        "fields": {},
-        "shadow": false,
-        "topLevel": false
-    },
-    "eU": {
+    "el": {
         "opcode": "sensing_current",
         "next": null,
-        "parent": "be",
+        "parent": "a@",
         "inputs": {},
         "fields": {
             "CURRENTMENU": [
@@ -333,109 +218,37 @@
         "shadow": false,
         "topLevel": false
     },
-    "R": {
-        "opcode": "control_wait_until",
-        "next": "bf",
-        "parent": "Q",
-        "inputs": {
-            "CONDITION": [
-                2,
-                "bg"
-            ]
-        },
-        "fields": {},
-        "shadow": false,
-        "topLevel": false
-    },
-    "bg": {
-        "opcode": "operator_not",
-        "next": null,
-        "parent": "R",
-        "inputs": {
-            "OPERAND": [
-                2,
-                "bh"
-            ]
-        },
-        "fields": {},
-        "shadow": false,
-        "topLevel": false
-    },
-    "bh": {
-        "opcode": "operator_equals",
-        "next": null,
-        "parent": "bg",
-        "inputs": {
-            "OPERAND1": [
-                3,
-                "eV",
-                [
-                    10,
-                    ""
-                ]
-            ],
-            "OPERAND2": [
-                3,
-                [
-                    12,
-                    "sec",
-                    "_/lyc=]kdwW$eOfPLkF5"
-                ],
-                [
-                    10,
-                    "50"
-                ]
-            ]
-        },
-        "fields": {},
-        "shadow": false,
-        "topLevel": false
-    },
-    "eV": {
-        "opcode": "sensing_current",
-        "next": null,
-        "parent": "bh",
-        "inputs": {},
-        "fields": {
-            "CURRENTMENU": [
-                "SECOND",
-                null
-            ]
-        },
-        "shadow": false,
-        "topLevel": false
-    },
-    "bf": {
+    "a[": {
         "opcode": "sound_play",
         "next": null,
-        "parent": "R",
+        "parent": "I",
         "inputs": {
             "SOUND_MENU": [
                 1,
-                "eW"
+                "em"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "eW": {
+    "em": {
         "opcode": "sound_sounds_menu",
         "next": null,
-        "parent": "bf",
+        "parent": "a[",
         "inputs": {},
         "fields": {
             "SOUND_MENU": [
-                "clock tik2",
+                "tick",
                 null
             ]
         },
         "shadow": true,
         "topLevel": false
     },
-    "eX": {
+    "en": {
         "opcode": "event_whenbroadcastreceived",
-        "next": "eY",
+        "next": "eo",
         "parent": null,
         "inputs": {},
         "fields": {
@@ -446,13 +259,13 @@
         },
         "shadow": false,
         "topLevel": true,
-        "x": 0,
-        "y": 304
+        "x": 48,
+        "y": 416
     },
-    "eY": {
+    "eo": {
         "opcode": "control_stop",
         "next": null,
-        "parent": "eX",
+        "parent": "en",
         "inputs": {},
         "fields": {
             "STOP_OPTION": [
@@ -468,82 +281,61 @@
             "hasnext": "true"
         }
     },
-    "eZ": {
-        "opcode": "event_whenbroadcastreceived",
-        "next": "bi",
+    "a@": {
+        "opcode": "lmsMoreEvents_whenValueChanged",
+        "next": "I",
         "parent": null,
-        "inputs": {},
-        "fields": {
-            "BROADCAST_OPTION": [
-                "System menu start",
-                "_C0]2Mci,D%5E4#-]|ZH"
+        "inputs": {
+            "INPUT": [
+                2,
+                "el"
             ]
         },
+        "fields": {},
         "shadow": false,
         "topLevel": true,
-        "x": 0,
-        "y": 456
+        "x": 48,
+        "y": 592
     },
-    "bi": {
-        "opcode": "control_forever",
+    "I": {
+        "opcode": "control_if",
         "next": null,
-        "parent": "eZ",
+        "parent": "a@",
         "inputs": {
             "SUBSTACK": [
                 2,
-                "S"
+                "a["
+            ],
+            "CONDITION": [
+                2,
+                "ep"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "S": {
-        "opcode": "data_setvariableto",
-        "next": "e!",
-        "parent": "bi",
+    "ep": {
+        "opcode": "operator_equals",
+        "next": null,
+        "parent": "I",
         "inputs": {
-            "VALUE": [
+            "OPERAND1": [
                 3,
-                "e#",
+                [
+                    12,
+                    "On Menu?",
+                    "46Mf?jZ]ZM[nUm7PW/*0"
+                ],
                 [
                     10,
-                    "0"
+                    ""
                 ]
-            ]
-        },
-        "fields": {
-            "VARIABLE": [
-                "sec",
-                "_/lyc=]kdwW$eOfPLkF5"
-            ]
-        },
-        "shadow": false,
-        "topLevel": false
-    },
-    "e#": {
-        "opcode": "sensing_current",
-        "next": null,
-        "parent": "S",
-        "inputs": {},
-        "fields": {
-            "CURRENTMENU": [
-                "SECOND",
-                null
-            ]
-        },
-        "shadow": false,
-        "topLevel": false
-    },
-    "e!": {
-        "opcode": "control_wait",
-        "next": null,
-        "parent": "S",
-        "inputs": {
-            "DURATION": [
+            ],
+            "OPERAND2": [
                 1,
                 [
-                    5,
+                    10,
                     "1"
                 ]
             ]

@@ -1,7 +1,7 @@
 {
-    "de": {
+    "gA": {
         "opcode": "event_whenbroadcastreceived",
-        "next": "i",
+        "next": "ai",
         "parent": null,
         "inputs": {},
         "fields": {
@@ -15,52 +15,52 @@
         "x": 241,
         "y": 380
     },
-    "i": {
+    "ai": {
         "opcode": "sound_play",
-        "next": "j",
-        "parent": "de",
+        "next": "aj",
+        "parent": "gA",
         "inputs": {
             "SOUND_MENU": [
                 1,
-                "df"
+                "gB"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "df": {
+    "gB": {
         "opcode": "sound_sounds_menu",
         "next": null,
-        "parent": "i",
+        "parent": "ai",
         "inputs": {},
         "fields": {
             "SOUND_MENU": [
-                "Nintendo DS Start-Up Screen \u2714",
+                "startup",
                 null
             ]
         },
         "shadow": true,
         "topLevel": false
     },
-    "j": {
+    "aj": {
         "opcode": "looks_switchcostumeto",
-        "next": "k",
-        "parent": "i",
+        "next": "ak",
+        "parent": "ai",
         "inputs": {
             "COSTUME": [
                 1,
-                "dg"
+                "gC"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "dg": {
+    "gC": {
         "opcode": "looks_costume",
         "next": null,
-        "parent": "j",
+        "parent": "aj",
         "inputs": {},
         "fields": {
             "COSTUME": [
@@ -71,10 +71,10 @@
         "shadow": true,
         "topLevel": false
     },
-    "k": {
+    "ak": {
         "opcode": "control_repeat",
-        "next": "dh",
-        "parent": "j",
+        "next": "gD",
+        "parent": "aj",
         "inputs": {
             "TIMES": [
                 1,
@@ -85,26 +85,26 @@
             ],
             "SUBSTACK": [
                 2,
-                "di"
+                "gE"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "di": {
+    "gE": {
         "opcode": "looks_nextcostume",
         "next": null,
-        "parent": "k",
+        "parent": "ak",
         "inputs": {},
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "dh": {
+    "gD": {
         "opcode": "event_broadcast",
         "next": null,
-        "parent": "k",
+        "parent": "ak",
         "inputs": {
             "BROADCAST_INPUT": [
                 1,

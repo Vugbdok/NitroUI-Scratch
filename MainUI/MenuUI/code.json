@@ -1,19 +1,19 @@
 {
-    "dj": {
+    "c;": {
         "opcode": "event_whenflagclicked",
-        "next": "at",
+        "next": "am",
         "parent": null,
         "inputs": {},
         "fields": {},
         "shadow": false,
         "topLevel": true,
-        "x": 448,
+        "x": 447,
         "y": 64
     },
-    "at": {
+    "am": {
         "opcode": "looks_gotofrontback",
-        "next": "l",
-        "parent": "dj",
+        "next": "j",
+        "parent": "c;",
         "inputs": {},
         "fields": {
             "FRONT_BACK": [
@@ -24,24 +24,24 @@
         "shadow": false,
         "topLevel": false
     },
-    "l": {
+    "j": {
         "opcode": "looks_switchcostumeto",
-        "next": "m",
-        "parent": "at",
+        "next": "an",
+        "parent": "am",
         "inputs": {
             "COSTUME": [
                 1,
-                "dk"
+                "c="
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "dk": {
+    "c=": {
         "opcode": "looks_costume",
         "next": null,
-        "parent": "l",
+        "parent": "j",
         "inputs": {},
         "fields": {
             "COSTUME": [
@@ -52,38 +52,10 @@
         "shadow": true,
         "topLevel": false
     },
-    "m": {
-        "opcode": "control_create_clone_of",
-        "next": "dl",
-        "parent": "l",
-        "inputs": {
-            "CLONE_OPTION": [
-                1,
-                "dm"
-            ]
-        },
-        "fields": {},
-        "shadow": false,
-        "topLevel": false
-    },
-    "dm": {
-        "opcode": "control_create_clone_of_menu",
-        "next": null,
-        "parent": "m",
-        "inputs": {},
-        "fields": {
-            "CLONE_OPTION": [
-                "_myself_",
-                null
-            ]
-        },
-        "shadow": true,
-        "topLevel": false
-    },
-    "dl": {
+    "an": {
         "opcode": "data_setvariableto",
-        "next": null,
-        "parent": "m",
+        "next": "k",
+        "parent": "j",
         "inputs": {
             "VALUE": [
                 1,
@@ -102,39 +74,346 @@
         "shadow": false,
         "topLevel": false
     },
-    "dn": {
-        "opcode": "control_start_as_clone",
-        "next": "n",
-        "parent": null,
-        "inputs": {},
-        "fields": {},
-        "shadow": false,
-        "topLevel": true,
-        "x": 448,
-        "y": 384
-    },
-    "n": {
-        "opcode": "control_if",
-        "next": null,
-        "parent": "dn",
+    "k": {
+        "opcode": "control_create_clone_of",
+        "next": "c?",
+        "parent": "an",
         "inputs": {
-            "CONDITION": [
-                2,
-                "do"
-            ],
-            "SUBSTACK": [
-                2,
-                "o"
+            "CLONE_OPTION": [
+                1,
+                "c@"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "do": {
+    "c@": {
+        "opcode": "control_create_clone_of_menu",
+        "next": null,
+        "parent": "k",
+        "inputs": {},
+        "fields": {
+            "CLONE_OPTION": [
+                "_myself_",
+                null
+            ]
+        },
+        "shadow": true,
+        "topLevel": false
+    },
+    "c?": {
+        "opcode": "data_setvariableto",
+        "next": null,
+        "parent": "k",
+        "inputs": {
+            "VALUE": [
+                1,
+                [
+                    10,
+                    "0"
+                ]
+            ]
+        },
+        "fields": {
+            "VARIABLE": [
+                "On Menu?",
+                "46Mf?jZ]ZM[nUm7PW/*0"
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "c[": {
+        "opcode": "event_whenbroadcastreceived",
+        "next": "l",
+        "parent": null,
+        "inputs": {},
+        "fields": {
+            "BROADCAST_OPTION": [
+                "Startup done",
+                "B8q_o|E,18BS%i3!+1Fu"
+            ]
+        },
+        "shadow": false,
+        "topLevel": true,
+        "x": 843,
+        "y": 384
+    },
+    "l": {
+        "opcode": "control_create_clone_of",
+        "next": "ao",
+        "parent": "c[",
+        "inputs": {
+            "CLONE_OPTION": [
+                1,
+                "c]"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "c]": {
+        "opcode": "control_create_clone_of_menu",
+        "next": null,
+        "parent": "l",
+        "inputs": {},
+        "fields": {
+            "CLONE_OPTION": [
+                "_myself_",
+                null
+            ]
+        },
+        "shadow": true,
+        "topLevel": false
+    },
+    "ao": {
+        "opcode": "data_setvariableto",
+        "next": "ap",
+        "parent": "l",
+        "inputs": {
+            "VALUE": [
+                1,
+                [
+                    10,
+                    "startup done"
+                ]
+            ]
+        },
+        "fields": {
+            "VARIABLE": [
+                "Clone",
+                "?sW^5sK-QRNX~6MV$u30"
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "ap": {
+        "opcode": "looks_switchcostumeto",
+        "next": null,
+        "parent": "ao",
+        "inputs": {
+            "COSTUME": [
+                1,
+                "c^"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "c^": {
+        "opcode": "looks_costume",
+        "next": null,
+        "parent": "ap",
+        "inputs": {},
+        "fields": {
+            "COSTUME": [
+                "nintendo-ds",
+                null
+            ]
+        },
+        "shadow": true,
+        "topLevel": false
+    },
+    "c_": {
+        "opcode": "control_start_as_clone",
+        "next": "e",
+        "parent": null,
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": true,
+        "x": 843,
+        "y": 656
+    },
+    "e": {
+        "opcode": "control_if",
+        "next": "m",
+        "parent": "c_",
+        "inputs": {
+            "CONDITION": [
+                2,
+                "c`"
+            ],
+            "SUBSTACK": [
+                2,
+                "aq"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "c`": {
         "opcode": "operator_equals",
         "next": null,
+        "parent": "e",
+        "inputs": {
+            "OPERAND1": [
+                3,
+                [
+                    12,
+                    "Clone",
+                    "?sW^5sK-QRNX~6MV$u30"
+                ],
+                [
+                    10,
+                    ""
+                ]
+            ],
+            "OPERAND2": [
+                1,
+                [
+                    10,
+                    "startup done"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "aq": {
+        "opcode": "looks_gotofrontback",
+        "next": "n",
+        "parent": "e",
+        "inputs": {},
+        "fields": {
+            "FRONT_BACK": [
+                "front",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "n": {
+        "opcode": "looks_switchcostumeto",
+        "next": "ar",
+        "parent": "aq",
+        "inputs": {
+            "COSTUME": [
+                1,
+                "c{"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "c{": {
+        "opcode": "looks_costume",
+        "next": null,
         "parent": "n",
+        "inputs": {},
+        "fields": {
+            "COSTUME": [
+                "nintendo-ds2",
+                null
+            ]
+        },
+        "shadow": true,
+        "topLevel": false
+    },
+    "ar": {
+        "opcode": "looks_seteffectto",
+        "next": "o",
+        "parent": "n",
+        "inputs": {
+            "VALUE": [
+                1,
+                [
+                    4,
+                    "0"
+                ]
+            ]
+        },
+        "fields": {
+            "EFFECT": [
+                "GHOST",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "o": {
+        "opcode": "control_repeat",
+        "next": "c|",
+        "parent": "ar",
+        "inputs": {
+            "TIMES": [
+                1,
+                [
+                    6,
+                    "10"
+                ]
+            ],
+            "SUBSTACK": [
+                2,
+                "c}"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "c}": {
+        "opcode": "looks_changeeffectby",
+        "next": null,
+        "parent": "o",
+        "inputs": {
+            "CHANGE": [
+                1,
+                [
+                    4,
+                    "25"
+                ]
+            ]
+        },
+        "fields": {
+            "EFFECT": [
+                "GHOST",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "c|": {
+        "opcode": "control_delete_this_clone",
+        "next": null,
+        "parent": "o",
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "m": {
+        "opcode": "control_if",
+        "next": null,
+        "parent": "e",
+        "inputs": {
+            "CONDITION": [
+                2,
+                "c~"
+            ],
+            "SUBSTACK": [
+                2,
+                "p"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "c~": {
+        "opcode": "operator_equals",
+        "next": null,
+        "parent": "m",
         "inputs": {
             "OPERAND1": [
                 3,
@@ -160,24 +439,24 @@
         "shadow": false,
         "topLevel": false
     },
-    "o": {
+    "p": {
         "opcode": "sound_play",
-        "next": "p",
-        "parent": "n",
+        "next": "q",
+        "parent": "m",
         "inputs": {
             "SOUND_MENU": [
                 1,
-                "dp"
+                "da"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "dp": {
+    "da": {
         "opcode": "sound_sounds_menu",
         "next": null,
-        "parent": "o",
+        "parent": "p",
         "inputs": {},
         "fields": {
             "SOUND_MENU": [
@@ -188,24 +467,24 @@
         "shadow": true,
         "topLevel": false
     },
-    "p": {
+    "q": {
         "opcode": "looks_switchcostumeto",
-        "next": "au",
-        "parent": "o",
+        "next": "as",
+        "parent": "p",
         "inputs": {
             "COSTUME": [
                 1,
-                "dq"
+                "db"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "dq": {
+    "db": {
         "opcode": "looks_costume",
         "next": null,
-        "parent": "p",
+        "parent": "q",
         "inputs": {},
         "fields": {
             "COSTUME": [
@@ -216,10 +495,10 @@
         "shadow": true,
         "topLevel": false
     },
-    "au": {
+    "as": {
         "opcode": "looks_seteffectto",
-        "next": "av",
-        "parent": "p",
+        "next": "at",
+        "parent": "q",
         "inputs": {
             "VALUE": [
                 1,
@@ -238,10 +517,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "av": {
+    "at": {
         "opcode": "motion_gotoxy",
-        "next": "aw",
-        "parent": "au",
+        "next": "au",
+        "parent": "as",
         "inputs": {
             "X": [
                 1,
@@ -262,10 +541,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "aw": {
+    "au": {
         "opcode": "control_wait",
-        "next": "q",
-        "parent": "av",
+        "next": "r",
+        "parent": "at",
         "inputs": {
             "DURATION": [
                 1,
@@ -279,10 +558,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "q": {
+    "r": {
         "opcode": "control_repeat",
-        "next": "ax",
-        "parent": "aw",
+        "next": "av",
+        "parent": "au",
         "inputs": {
             "TIMES": [
                 1,
@@ -293,17 +572,17 @@
             ],
             "SUBSTACK": [
                 2,
-                "dr"
+                "dc"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "dr": {
+    "dc": {
         "opcode": "looks_changeeffectby",
         "next": null,
-        "parent": "q",
+        "parent": "r",
         "inputs": {
             "CHANGE": [
                 1,
@@ -322,10 +601,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "ax": {
+    "av": {
         "opcode": "event_broadcast",
-        "next": "ds",
-        "parent": "q",
+        "next": "dd",
+        "parent": "r",
         "inputs": {
             "BROADCAST_INPUT": [
                 1,
@@ -340,340 +619,72 @@
         "shadow": false,
         "topLevel": false
     },
-    "ds": {
+    "dd": {
         "opcode": "control_delete_this_clone",
         "next": null,
-        "parent": "ax",
+        "parent": "av",
         "inputs": {},
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "dt": {
-        "opcode": "event_whenbroadcastreceived",
-        "next": "r",
-        "parent": null,
-        "inputs": {},
-        "fields": {
-            "BROADCAST_OPTION": [
-                "Startup done",
-                "B8q_o|E,18BS%i3!+1Fu"
-            ]
-        },
-        "shadow": false,
-        "topLevel": true,
-        "x": 945,
-        "y": 384
-    },
-    "r": {
-        "opcode": "control_create_clone_of",
-        "next": "ay",
-        "parent": "dt",
-        "inputs": {
-            "CLONE_OPTION": [
-                1,
-                "du"
-            ]
-        },
-        "fields": {},
-        "shadow": false,
-        "topLevel": false
-    },
-    "du": {
-        "opcode": "control_create_clone_of_menu",
-        "next": null,
-        "parent": "r",
-        "inputs": {},
-        "fields": {
-            "CLONE_OPTION": [
-                "_myself_",
-                null
-            ]
-        },
-        "shadow": true,
-        "topLevel": false
-    },
-    "ay": {
-        "opcode": "data_setvariableto",
-        "next": "az",
-        "parent": "r",
-        "inputs": {
-            "VALUE": [
-                1,
-                [
-                    10,
-                    "startup done"
-                ]
-            ]
-        },
-        "fields": {
-            "VARIABLE": [
-                "Clone",
-                "?sW^5sK-QRNX~6MV$u30"
-            ]
-        },
-        "shadow": false,
-        "topLevel": false
-    },
-    "az": {
-        "opcode": "looks_switchcostumeto",
-        "next": null,
-        "parent": "ay",
-        "inputs": {
-            "COSTUME": [
-                1,
-                "dv"
-            ]
-        },
-        "fields": {},
-        "shadow": false,
-        "topLevel": false
-    },
-    "dv": {
-        "opcode": "looks_costume",
-        "next": null,
-        "parent": "az",
-        "inputs": {},
-        "fields": {
-            "COSTUME": [
-                "nintendo-ds",
-                null
-            ]
-        },
-        "shadow": true,
-        "topLevel": false
-    },
-    "dw": {
-        "opcode": "control_start_as_clone",
+    "de": {
+        "opcode": "event_whenthisspriteclicked",
         "next": "s",
         "parent": null,
         "inputs": {},
         "fields": {},
         "shadow": false,
         "topLevel": true,
-        "x": 945,
-        "y": 656
+        "x": 1340,
+        "y": 64
     },
     "s": {
-        "opcode": "control_if",
-        "next": null,
-        "parent": "dw",
-        "inputs": {
-            "CONDITION": [
-                2,
-                "dx"
-            ],
-            "SUBSTACK": [
-                2,
-                "aA"
-            ]
-        },
-        "fields": {},
-        "shadow": false,
-        "topLevel": false
-    },
-    "dx": {
-        "opcode": "operator_equals",
-        "next": null,
-        "parent": "s",
-        "inputs": {
-            "OPERAND1": [
-                3,
-                [
-                    12,
-                    "Clone",
-                    "?sW^5sK-QRNX~6MV$u30"
-                ],
-                [
-                    10,
-                    ""
-                ]
-            ],
-            "OPERAND2": [
-                1,
-                [
-                    10,
-                    "startup done"
-                ]
-            ]
-        },
-        "fields": {},
-        "shadow": false,
-        "topLevel": false
-    },
-    "aA": {
-        "opcode": "looks_gotofrontback",
+        "opcode": "sound_play",
         "next": "t",
+        "parent": "de",
+        "inputs": {
+            "SOUND_MENU": [
+                1,
+                "df"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "df": {
+        "opcode": "sound_sounds_menu",
+        "next": null,
         "parent": "s",
         "inputs": {},
         "fields": {
-            "FRONT_BACK": [
-                "front",
+            "SOUND_MENU": [
+                "hover",
                 null
             ]
         },
-        "shadow": false,
+        "shadow": true,
         "topLevel": false
     },
     "t": {
-        "opcode": "looks_switchcostumeto",
-        "next": "aB",
-        "parent": "aA",
-        "inputs": {
-            "COSTUME": [
-                1,
-                "dy"
-            ]
-        },
-        "fields": {},
-        "shadow": false,
-        "topLevel": false
-    },
-    "dy": {
-        "opcode": "looks_costume",
-        "next": null,
-        "parent": "t",
-        "inputs": {},
-        "fields": {
-            "COSTUME": [
-                "nintendo-ds2",
-                null
-            ]
-        },
-        "shadow": true,
-        "topLevel": false
-    },
-    "aB": {
-        "opcode": "looks_seteffectto",
-        "next": "u",
-        "parent": "t",
-        "inputs": {
-            "VALUE": [
-                1,
-                [
-                    4,
-                    "0"
-                ]
-            ]
-        },
-        "fields": {
-            "EFFECT": [
-                "GHOST",
-                null
-            ]
-        },
-        "shadow": false,
-        "topLevel": false
-    },
-    "u": {
-        "opcode": "control_repeat",
-        "next": "dz",
-        "parent": "aB",
-        "inputs": {
-            "TIMES": [
-                1,
-                [
-                    6,
-                    "10"
-                ]
-            ],
-            "SUBSTACK": [
-                2,
-                "dA"
-            ]
-        },
-        "fields": {},
-        "shadow": false,
-        "topLevel": false
-    },
-    "dA": {
-        "opcode": "looks_changeeffectby",
-        "next": null,
-        "parent": "u",
-        "inputs": {
-            "CHANGE": [
-                1,
-                [
-                    4,
-                    "25"
-                ]
-            ]
-        },
-        "fields": {
-            "EFFECT": [
-                "GHOST",
-                null
-            ]
-        },
-        "shadow": false,
-        "topLevel": false
-    },
-    "dz": {
-        "opcode": "control_delete_this_clone",
-        "next": null,
-        "parent": "u",
-        "inputs": {},
-        "fields": {},
-        "shadow": false,
-        "topLevel": false
-    },
-    "dB": {
-        "opcode": "event_whenthisspriteclicked",
-        "next": "v",
-        "parent": null,
-        "inputs": {},
-        "fields": {},
-        "shadow": false,
-        "topLevel": true,
-        "x": 1390,
-        "y": 64
-    },
-    "v": {
-        "opcode": "sound_play",
-        "next": "w",
-        "parent": "dB",
-        "inputs": {
-            "SOUND_MENU": [
-                1,
-                "dC"
-            ]
-        },
-        "fields": {},
-        "shadow": false,
-        "topLevel": false
-    },
-    "dC": {
-        "opcode": "sound_sounds_menu",
-        "next": null,
-        "parent": "v",
-        "inputs": {},
-        "fields": {
-            "SOUND_MENU": [
-                "Click/Open",
-                null
-            ]
-        },
-        "shadow": true,
-        "topLevel": false
-    },
-    "w": {
         "opcode": "control_create_clone_of",
-        "next": "aC",
-        "parent": "v",
+        "next": "aw",
+        "parent": "s",
         "inputs": {
             "CLONE_OPTION": [
                 1,
-                "dD"
+                "dg"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "dD": {
+    "dg": {
         "opcode": "control_create_clone_of_menu",
         "next": null,
-        "parent": "w",
+        "parent": "t",
         "inputs": {},
         "fields": {
             "CLONE_OPTION": [
@@ -684,10 +695,10 @@
         "shadow": true,
         "topLevel": false
     },
-    "aC": {
+    "aw": {
         "opcode": "data_setvariableto",
-        "next": "x",
-        "parent": "w",
+        "next": "u",
+        "parent": "t",
         "inputs": {
             "VALUE": [
                 1,
@@ -706,24 +717,24 @@
         "shadow": false,
         "topLevel": false
     },
-    "x": {
+    "u": {
         "opcode": "looks_switchcostumeto",
-        "next": "dE",
-        "parent": "aC",
+        "next": "dh",
+        "parent": "aw",
         "inputs": {
             "COSTUME": [
                 1,
-                "dF"
+                "di"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "dF": {
+    "di": {
         "opcode": "looks_costume",
         "next": null,
-        "parent": "x",
+        "parent": "u",
         "inputs": {},
         "fields": {
             "COSTUME": [
@@ -734,10 +745,10 @@
         "shadow": true,
         "topLevel": false
     },
-    "dE": {
+    "dh": {
         "opcode": "event_broadcast",
         "next": null,
-        "parent": "x",
+        "parent": "u",
         "inputs": {
             "BROADCAST_INPUT": [
                 1,
@@ -752,39 +763,39 @@
         "shadow": false,
         "topLevel": false
     },
-    "dG": {
+    "dj": {
         "opcode": "control_start_as_clone",
-        "next": "y",
+        "next": "v",
         "parent": null,
         "inputs": {},
         "fields": {},
         "shadow": false,
         "topLevel": true,
-        "x": 1390,
+        "x": 1340,
         "y": 432
     },
-    "y": {
+    "v": {
         "opcode": "control_if",
         "next": null,
-        "parent": "dG",
+        "parent": "dj",
         "inputs": {
             "CONDITION": [
                 2,
-                "dH"
+                "dk"
             ],
             "SUBSTACK": [
                 2,
-                "aD"
+                "ax"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "dH": {
+    "dk": {
         "opcode": "operator_equals",
         "next": null,
-        "parent": "y",
+        "parent": "v",
         "inputs": {
             "OPERAND1": [
                 3,
@@ -810,10 +821,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "aD": {
+    "ax": {
         "opcode": "looks_gotofrontback",
-        "next": "z",
-        "parent": "y",
+        "next": "w",
+        "parent": "v",
         "inputs": {},
         "fields": {
             "FRONT_BACK": [
@@ -824,24 +835,24 @@
         "shadow": false,
         "topLevel": false
     },
-    "z": {
+    "w": {
         "opcode": "looks_switchcostumeto",
-        "next": "aE",
-        "parent": "aD",
+        "next": "ay",
+        "parent": "ax",
         "inputs": {
             "COSTUME": [
                 1,
-                "dI"
+                "dl"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "dI": {
+    "dl": {
         "opcode": "looks_costume",
         "next": null,
-        "parent": "z",
+        "parent": "w",
         "inputs": {},
         "fields": {
             "COSTUME": [
@@ -852,10 +863,10 @@
         "shadow": true,
         "topLevel": false
     },
-    "aE": {
+    "ay": {
         "opcode": "looks_seteffectto",
-        "next": "A",
-        "parent": "z",
+        "next": "x",
+        "parent": "w",
         "inputs": {
             "VALUE": [
                 1,
@@ -874,10 +885,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "A": {
+    "x": {
         "opcode": "control_repeat",
-        "next": "dJ",
-        "parent": "aE",
+        "next": "dm",
+        "parent": "ay",
         "inputs": {
             "TIMES": [
                 1,
@@ -888,17 +899,17 @@
             ],
             "SUBSTACK": [
                 2,
-                "dK"
+                "dn"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "dK": {
+    "dn": {
         "opcode": "looks_changeeffectby",
         "next": null,
-        "parent": "A",
+        "parent": "x",
         "inputs": {
             "CHANGE": [
                 1,
@@ -917,308 +928,18 @@
         "shadow": false,
         "topLevel": false
     },
-    "dJ": {
+    "dm": {
         "opcode": "control_delete_this_clone",
         "next": null,
-        "parent": "A",
+        "parent": "x",
         "inputs": {},
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "dL": {
-        "opcode": "control_start_as_clone",
-        "next": "aF",
-        "parent": null,
-        "inputs": {},
-        "fields": {},
-        "shadow": false,
-        "topLevel": true,
-        "x": 945,
-        "y": 1192
-    },
-    "aF": {
-        "opcode": "control_if",
-        "next": null,
-        "parent": "dL",
-        "inputs": {
-            "CONDITION": [
-                2,
-                "dM"
-            ]
-        },
-        "fields": {},
-        "shadow": false,
-        "topLevel": false
-    },
-    "dM": {
-        "opcode": "operator_equals",
-        "next": null,
-        "parent": "aF",
-        "inputs": {
-            "OPERAND1": [
-                3,
-                [
-                    12,
-                    "Clone",
-                    "?sW^5sK-QRNX~6MV$u30"
-                ],
-                [
-                    10,
-                    ""
-                ]
-            ],
-            "OPERAND2": [
-                1,
-                [
-                    10,
-                    "crash"
-                ]
-            ]
-        },
-        "fields": {},
-        "shadow": false,
-        "topLevel": false
-    },
-    "dN": {
-        "opcode": "looks_gotofrontback",
-        "next": "B",
-        "parent": null,
-        "inputs": {},
-        "fields": {
-            "FRONT_BACK": [
-                "front",
-                null
-            ]
-        },
-        "shadow": false,
-        "topLevel": true,
-        "x": 448,
-        "y": 1064
-    },
-    "B": {
-        "opcode": "looks_switchcostumeto",
-        "next": "aG",
-        "parent": "dN",
-        "inputs": {
-            "COSTUME": [
-                1,
-                "dO"
-            ]
-        },
-        "fields": {},
-        "shadow": false,
-        "topLevel": false
-    },
-    "dO": {
-        "opcode": "looks_costume",
-        "next": null,
-        "parent": "B",
-        "inputs": {},
-        "fields": {
-            "COSTUME": [
-                "nintendo-ds2",
-                null
-            ]
-        },
-        "shadow": true,
-        "topLevel": false
-    },
-    "aG": {
-        "opcode": "looks_seteffectto",
-        "next": "C",
-        "parent": "B",
-        "inputs": {
-            "VALUE": [
-                1,
-                [
-                    4,
-                    "100"
-                ]
-            ]
-        },
-        "fields": {
-            "EFFECT": [
-                "GHOST",
-                null
-            ]
-        },
-        "shadow": false,
-        "topLevel": false
-    },
-    "C": {
-        "opcode": "control_repeat",
-        "next": "aH",
-        "parent": "aG",
-        "inputs": {
-            "TIMES": [
-                1,
-                [
-                    6,
-                    "10"
-                ]
-            ],
-            "SUBSTACK": [
-                2,
-                "dP"
-            ]
-        },
-        "fields": {},
-        "shadow": false,
-        "topLevel": false
-    },
-    "dP": {
-        "opcode": "looks_changeeffectby",
-        "next": null,
-        "parent": "C",
-        "inputs": {
-            "CHANGE": [
-                1,
-                [
-                    4,
-                    "-25"
-                ]
-            ]
-        },
-        "fields": {
-            "EFFECT": [
-                "GHOST",
-                null
-            ]
-        },
-        "shadow": false,
-        "topLevel": false
-    },
-    "aH": {
-        "opcode": "looks_gotofrontback",
-        "next": "D",
-        "parent": "C",
-        "inputs": {},
-        "fields": {
-            "FRONT_BACK": [
-                "front",
-                null
-            ]
-        },
-        "shadow": false,
-        "topLevel": false
-    },
-    "D": {
-        "opcode": "looks_switchcostumeto",
-        "next": "aI",
-        "parent": "aH",
-        "inputs": {
-            "COSTUME": [
-                1,
-                "dQ"
-            ]
-        },
-        "fields": {},
-        "shadow": false,
-        "topLevel": false
-    },
-    "dQ": {
-        "opcode": "looks_costume",
-        "next": null,
-        "parent": "D",
-        "inputs": {},
-        "fields": {
-            "COSTUME": [
-                "nintendo-ds2",
-                null
-            ]
-        },
-        "shadow": true,
-        "topLevel": false
-    },
-    "aI": {
-        "opcode": "looks_seteffectto",
-        "next": "E",
-        "parent": "D",
-        "inputs": {
-            "VALUE": [
-                1,
-                [
-                    4,
-                    "0"
-                ]
-            ]
-        },
-        "fields": {
-            "EFFECT": [
-                "GHOST",
-                null
-            ]
-        },
-        "shadow": false,
-        "topLevel": false
-    },
-    "E": {
-        "opcode": "control_repeat",
-        "next": "dR",
-        "parent": "aI",
-        "inputs": {
-            "TIMES": [
-                1,
-                [
-                    6,
-                    "10"
-                ]
-            ],
-            "SUBSTACK": [
-                2,
-                "dS"
-            ]
-        },
-        "fields": {},
-        "shadow": false,
-        "topLevel": false
-    },
-    "dS": {
-        "opcode": "looks_changeeffectby",
-        "next": null,
-        "parent": "E",
-        "inputs": {
-            "CHANGE": [
-                1,
-                [
-                    4,
-                    "25"
-                ]
-            ]
-        },
-        "fields": {
-            "EFFECT": [
-                "GHOST",
-                null
-            ]
-        },
-        "shadow": false,
-        "topLevel": false
-    },
-    "dR": {
-        "opcode": "control_delete_this_clone",
-        "next": null,
-        "parent": "E",
-        "inputs": {},
-        "fields": {},
-        "shadow": false,
-        "topLevel": false
-    },
-    "g?": {
-        "opcode": "control_delete_this_clone",
-        "next": null,
-        "parent": null,
-        "inputs": {},
-        "fields": {},
-        "shadow": false,
-        "topLevel": true,
-        "x": 945,
-        "y": 1432
-    },
-    "dT": {
+    "do": {
         "opcode": "event_whenbroadcastreceived",
-        "next": "aJ",
+        "next": "az",
         "parent": null,
         "inputs": {},
         "fields": {
@@ -1229,13 +950,13 @@
         },
         "shadow": false,
         "topLevel": true,
-        "x": 945,
-        "y": 1552
+        "x": 843,
+        "y": 1744
     },
-    "aJ": {
+    "az": {
         "opcode": "looks_seteffectto",
-        "next": "aK",
-        "parent": "dT",
+        "next": "aA",
+        "parent": "do",
         "inputs": {
             "VALUE": [
                 1,
@@ -1254,33 +975,33 @@
         "shadow": false,
         "topLevel": false
     },
-    "aK": {
+    "aA": {
         "opcode": "looks_show",
-        "next": "aL",
-        "parent": "aJ",
+        "next": "aB",
+        "parent": "az",
         "inputs": {},
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "aL": {
+    "aB": {
         "opcode": "looks_switchcostumeto",
         "next": null,
-        "parent": "aK",
+        "parent": "aA",
         "inputs": {
             "COSTUME": [
                 1,
-                "dU"
+                "dp"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "dU": {
+    "dp": {
         "opcode": "looks_costume",
         "next": null,
-        "parent": "aL",
+        "parent": "aB",
         "inputs": {},
         "fields": {
             "COSTUME": [
@@ -1291,9 +1012,9 @@
         "shadow": true,
         "topLevel": false
     },
-    "dV": {
+    "dq": {
         "opcode": "event_whenbroadcastreceived",
-        "next": "aM",
+        "next": "aC",
         "parent": null,
         "inputs": {},
         "fields": {
@@ -1307,24 +1028,46 @@
         "x": 48,
         "y": 64
     },
-    "aM": {
+    "aC": {
+        "opcode": "data_setvariableto",
+        "next": "aD",
+        "parent": "dq",
+        "inputs": {
+            "VALUE": [
+                1,
+                [
+                    10,
+                    "0"
+                ]
+            ]
+        },
+        "fields": {
+            "VARIABLE": [
+                "On Menu?",
+                "46Mf?jZ]ZM[nUm7PW/*0"
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "aD": {
         "opcode": "looks_switchcostumeto",
         "next": null,
-        "parent": "dV",
+        "parent": "aC",
         "inputs": {
             "COSTUME": [
                 1,
-                "dW"
+                "dr"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "dW": {
+    "dr": {
         "opcode": "looks_costume",
         "next": null,
-        "parent": "aM",
+        "parent": "aD",
         "inputs": {},
         "fields": {
             "COSTUME": [
@@ -1335,9 +1078,9 @@
         "shadow": true,
         "topLevel": false
     },
-    "dX": {
+    "ds": {
         "opcode": "event_whenbroadcastreceived",
-        "next": "aN",
+        "next": "aE",
         "parent": null,
         "inputs": {},
         "fields": {
@@ -1348,13 +1091,13 @@
         },
         "shadow": false,
         "topLevel": true,
-        "x": 945,
+        "x": 843,
         "y": 64
     },
-    "aN": {
+    "aE": {
         "opcode": "looks_gotofrontback",
-        "next": "F",
-        "parent": "dX",
+        "next": "y",
+        "parent": "ds",
         "inputs": {},
         "fields": {
             "FRONT_BACK": [
@@ -1365,24 +1108,24 @@
         "shadow": false,
         "topLevel": false
     },
-    "F": {
+    "y": {
         "opcode": "looks_switchcostumeto",
-        "next": "G",
-        "parent": "aN",
+        "next": "z",
+        "parent": "aE",
         "inputs": {
             "COSTUME": [
                 1,
-                "dY"
+                "dt"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "dY": {
+    "dt": {
         "opcode": "looks_costume",
         "next": null,
-        "parent": "F",
+        "parent": "y",
         "inputs": {},
         "fields": {
             "COSTUME": [
@@ -1393,24 +1136,24 @@
         "shadow": true,
         "topLevel": false
     },
-    "G": {
+    "z": {
         "opcode": "control_create_clone_of",
-        "next": "dZ",
-        "parent": "F",
+        "next": "du",
+        "parent": "y",
         "inputs": {
             "CLONE_OPTION": [
                 1,
-                "d!"
+                "dv"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "d!": {
+    "dv": {
         "opcode": "control_create_clone_of_menu",
         "next": null,
-        "parent": "G",
+        "parent": "z",
         "inputs": {},
         "fields": {
             "CLONE_OPTION": [
@@ -1421,10 +1164,10 @@
         "shadow": true,
         "topLevel": false
     },
-    "dZ": {
+    "du": {
         "opcode": "data_setvariableto",
         "next": null,
-        "parent": "G",
+        "parent": "z",
         "inputs": {
             "VALUE": [
                 1,
@@ -1438,6 +1181,44 @@
             "VARIABLE": [
                 "Clone",
                 "?sW^5sK-QRNX~6MV$u30"
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "dw": {
+        "opcode": "event_whenbroadcastreceived",
+        "next": "dx",
+        "parent": null,
+        "inputs": {},
+        "fields": {
+            "BROADCAST_OPTION": [
+                "System menu start",
+                "_C0]2Mci,D%5E4#-]|ZH"
+            ]
+        },
+        "shadow": false,
+        "topLevel": true,
+        "x": 1340,
+        "y": 968
+    },
+    "dx": {
+        "opcode": "data_setvariableto",
+        "next": null,
+        "parent": "dw",
+        "inputs": {
+            "VALUE": [
+                1,
+                [
+                    10,
+                    "1"
+                ]
+            ]
+        },
+        "fields": {
+            "VARIABLE": [
+                "On Menu?",
+                "46Mf?jZ]ZM[nUm7PW/*0"
             ]
         },
         "shadow": false,

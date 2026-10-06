@@ -1,5 +1,5 @@
 {
-    "hn": {
+    "g(": {
         "opcode": "argument_reporter_string_number",
         "next": null,
         "parent": "c",
@@ -13,7 +13,7 @@
         "shadow": true,
         "topLevel": false
     },
-    "ho": {
+    "g)": {
         "opcode": "argument_reporter_string_number",
         "next": null,
         "parent": "c",
@@ -27,7 +27,7 @@
         "shadow": true,
         "topLevel": false
     },
-    "hp": {
+    "g*": {
         "opcode": "argument_reporter_string_number",
         "next": null,
         "parent": "c",
@@ -41,7 +41,7 @@
         "shadow": true,
         "topLevel": false
     },
-    "hq": {
+    "g+": {
         "opcode": "argument_reporter_string_number",
         "next": null,
         "parent": "c",
@@ -55,7 +55,7 @@
         "shadow": true,
         "topLevel": false
     },
-    "hr": {
+    "g,": {
         "opcode": "event_whenthisspriteclicked",
         "next": null,
         "parent": null,
@@ -66,9 +66,9 @@
         "x": 409,
         "y": 434
     },
-    "ge": {
+    "fR": {
         "opcode": "event_whenbroadcastreceived",
-        "next": "cy",
+        "next": "ch",
         "parent": null,
         "inputs": {},
         "fields": {
@@ -82,10 +82,10 @@
         "x": 251,
         "y": 181
     },
-    "cy": {
+    "ch": {
         "opcode": "looks_gotofrontback",
-        "next": "gf",
-        "parent": "ge",
+        "next": "fS",
+        "parent": "fR",
         "inputs": {},
         "fields": {
             "FRONT_BACK": [
@@ -96,18 +96,18 @@
         "shadow": false,
         "topLevel": false
     },
-    "gf": {
+    "fS": {
         "opcode": "looks_hide",
         "next": null,
-        "parent": "cy",
+        "parent": "ch",
         "inputs": {},
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "gg": {
+    "fT": {
         "opcode": "event_whenflagclicked",
-        "next": "cz",
+        "next": "ci",
         "parent": null,
         "inputs": {},
         "fields": {},
@@ -116,10 +116,10 @@
         "x": 617,
         "y": 73
     },
-    "cz": {
+    "ci": {
         "opcode": "looks_seteffectto",
-        "next": "cA",
-        "parent": "gg",
+        "next": "cj",
+        "parent": "fT",
         "inputs": {
             "VALUE": [
                 1,
@@ -138,10 +138,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "cA": {
+    "cj": {
         "opcode": "motion_gotoxy",
-        "next": "gh",
-        "parent": "cz",
+        "next": "fU",
+        "parent": "ci",
         "inputs": {
             "X": [
                 1,
@@ -162,18 +162,18 @@
         "shadow": false,
         "topLevel": false
     },
-    "gh": {
+    "fU": {
         "opcode": "looks_hide",
         "next": null,
-        "parent": "cA",
+        "parent": "cj",
         "inputs": {},
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "gi": {
+    "fV": {
         "opcode": "event_whenbroadcastreceived",
-        "next": "cB",
+        "next": "ck",
         "parent": null,
         "inputs": {},
         "fields": {
@@ -187,10 +187,10 @@
         "x": 44,
         "y": 378
     },
-    "cB": {
+    "ck": {
         "opcode": "looks_gotofrontback",
-        "next": "gj",
-        "parent": "gi",
+        "next": "fW",
+        "parent": "fV",
         "inputs": {},
         "fields": {
             "FRONT_BACK": [
@@ -201,16 +201,16 @@
         "shadow": false,
         "topLevel": false
     },
-    "gj": {
+    "fW": {
         "opcode": "looks_hide",
         "next": null,
-        "parent": "cB",
+        "parent": "ck",
         "inputs": {},
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "hs": {
+    "g-": {
         "opcode": "event_whenbroadcastreceived",
         "next": null,
         "parent": null,
@@ -226,9 +226,9 @@
         "x": 495,
         "y": 651
     },
-    "gk": {
+    "fX": {
         "opcode": "looks_show",
-        "next": "cC",
+        "next": "cl",
         "parent": null,
         "inputs": {},
         "fields": {},
@@ -237,10 +237,10 @@
         "x": 480,
         "y": 944
     },
-    "cC": {
+    "cl": {
         "opcode": "motion_gotoxy",
-        "next": "cD",
-        "parent": "gk",
+        "next": "cm",
+        "parent": "fX",
         "inputs": {
             "X": [
                 1,
@@ -261,10 +261,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "cD": {
+    "cm": {
         "opcode": "control_wait",
-        "next": "cE",
-        "parent": "cC",
+        "next": "cn",
+        "parent": "cl",
         "inputs": {
             "DURATION": [
                 1,
@@ -278,10 +278,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "cE": {
+    "cn": {
         "opcode": "motion_gotoxy",
-        "next": "cF",
-        "parent": "cD",
+        "next": "co",
+        "parent": "cm",
         "inputs": {
             "X": [
                 1,
@@ -302,10 +302,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "cF": {
+    "co": {
         "opcode": "control_wait",
-        "next": "cG",
-        "parent": "cE",
+        "next": "cp",
+        "parent": "cn",
         "inputs": {
             "DURATION": [
                 1,
@@ -319,10 +319,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "cG": {
+    "cp": {
         "opcode": "motion_gotoxy",
-        "next": "gl",
-        "parent": "cF",
+        "next": "fY",
+        "parent": "co",
         "inputs": {
             "X": [
                 1,
@@ -343,10 +343,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "gl": {
+    "fY": {
         "opcode": "control_wait",
         "next": null,
-        "parent": "cG",
+        "parent": "cp",
         "inputs": {
             "DURATION": [
                 1,
@@ -360,9 +360,9 @@
         "shadow": false,
         "topLevel": false
     },
-    "gm": {
+    "fZ": {
         "opcode": "event_whenbroadcastreceived",
-        "next": "cH",
+        "next": "cq",
         "parent": null,
         "inputs": {},
         "fields": {
@@ -376,19 +376,19 @@
         "x": 75,
         "y": 769
     },
-    "cH": {
+    "cq": {
         "opcode": "looks_show",
-        "next": "cI",
-        "parent": "gm",
+        "next": "cr",
+        "parent": "fZ",
         "inputs": {},
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "cI": {
+    "cr": {
         "opcode": "motion_gotoxy",
-        "next": "cJ",
-        "parent": "cH",
+        "next": "cs",
+        "parent": "cq",
         "inputs": {
             "X": [
                 1,
@@ -409,10 +409,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "cJ": {
+    "cs": {
         "opcode": "control_wait",
-        "next": "cK",
-        "parent": "cI",
+        "next": "ct",
+        "parent": "cr",
         "inputs": {
             "DURATION": [
                 1,
@@ -426,10 +426,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "cK": {
+    "ct": {
         "opcode": "procedures_call",
-        "next": "cL",
-        "parent": "cJ",
+        "next": "cu",
+        "parent": "cs",
         "inputs": {
             "input0": [
                 1,
@@ -471,10 +471,10 @@
             "warp": "false"
         }
     },
-    "cL": {
+    "cu": {
         "opcode": "motion_gotoxy",
-        "next": "cM",
-        "parent": "cK",
+        "next": "cv",
+        "parent": "ct",
         "inputs": {
             "X": [
                 1,
@@ -495,10 +495,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "cM": {
+    "cv": {
         "opcode": "control_wait",
-        "next": "cN",
-        "parent": "cL",
+        "next": "cw",
+        "parent": "cu",
         "inputs": {
             "DURATION": [
                 1,
@@ -512,10 +512,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "cN": {
+    "cw": {
         "opcode": "procedures_call",
-        "next": "cO",
-        "parent": "cM",
+        "next": "cx",
+        "parent": "cv",
         "inputs": {
             "input0": [
                 1,
@@ -557,10 +557,10 @@
             "warp": "false"
         }
     },
-    "cO": {
+    "cx": {
         "opcode": "motion_gotoxy",
-        "next": "cP",
-        "parent": "cN",
+        "next": "cy",
+        "parent": "cw",
         "inputs": {
             "X": [
                 1,
@@ -581,10 +581,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "cP": {
+    "cy": {
         "opcode": "control_wait",
-        "next": "cQ",
-        "parent": "cO",
+        "next": "cz",
+        "parent": "cx",
         "inputs": {
             "DURATION": [
                 1,
@@ -598,10 +598,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "cQ": {
+    "cz": {
         "opcode": "procedures_call",
-        "next": "gn",
-        "parent": "cP",
+        "next": "f!",
+        "parent": "cy",
         "inputs": {
             "input0": [
                 1,
@@ -643,10 +643,10 @@
             "warp": "false"
         }
     },
-    "gn": {
+    "f!": {
         "opcode": "motion_gotoxy",
         "next": null,
-        "parent": "cQ",
+        "parent": "cz",
         "inputs": {
             "X": [
                 1,
@@ -667,9 +667,9 @@
         "shadow": false,
         "topLevel": false
     },
-    "cR": {
+    "cA": {
         "opcode": "procedures_definition",
-        "next": "g",
+        "next": "h",
         "parent": null,
         "inputs": {
             "custom_block": [
@@ -686,23 +686,23 @@
     "c": {
         "opcode": "procedures_prototype",
         "next": null,
-        "parent": "cR",
+        "parent": "cA",
         "inputs": {
             "input0": [
                 1,
-                "go"
+                "f#"
             ],
             "input1": [
                 1,
-                "gp"
+                "f%"
             ],
             "input2": [
                 1,
-                "gq"
+                "f("
             ],
             "VN|Cb9wMI`.sL}d/8W/s": [
                 1,
-                "gr"
+                "f)"
             ]
         },
         "fields": {},
@@ -718,7 +718,7 @@
             "warp": "false"
         }
     },
-    "go": {
+    "f#": {
         "opcode": "argument_reporter_string_number",
         "next": null,
         "parent": "c",
@@ -732,7 +732,7 @@
         "shadow": true,
         "topLevel": false
     },
-    "gp": {
+    "f%": {
         "opcode": "argument_reporter_string_number",
         "next": null,
         "parent": "c",
@@ -746,7 +746,7 @@
         "shadow": true,
         "topLevel": false
     },
-    "gq": {
+    "f(": {
         "opcode": "argument_reporter_string_number",
         "next": null,
         "parent": "c",
@@ -760,7 +760,7 @@
         "shadow": true,
         "topLevel": false
     },
-    "gr": {
+    "f)": {
         "opcode": "argument_reporter_string_number",
         "next": null,
         "parent": "c",
@@ -774,50 +774,50 @@
         "shadow": true,
         "topLevel": false
     },
-    "g": {
+    "h": {
         "opcode": "control_repeat_until",
-        "next": "_",
-        "parent": "cR",
+        "next": ".",
+        "parent": "cA",
         "inputs": {
             "CONDITION": [
                 2,
-                "`"
+                "/"
             ],
             "SUBSTACK": [
                 2,
-                "cS"
+                "cB"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "`": {
+    "/": {
         "opcode": "operator_and",
         "next": null,
-        "parent": "g",
+        "parent": "h",
         "inputs": {
             "OPERAND1": [
                 2,
-                "{"
+                ":"
             ],
             "OPERAND2": [
                 2,
-                "|"
+                ";"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "{": {
+    ":": {
         "opcode": "operator_equals",
         "next": null,
-        "parent": "`",
+        "parent": "/",
         "inputs": {
             "OPERAND1": [
                 3,
-                "cT",
+                "cC",
                 [
                     10,
                     ""
@@ -825,7 +825,7 @@
             ],
             "OPERAND2": [
                 3,
-                "cU",
+                "cD",
                 [
                     10,
                     ""
@@ -836,14 +836,14 @@
         "shadow": false,
         "topLevel": false
     },
-    "cT": {
+    "cC": {
         "opcode": "operator_round",
         "next": null,
-        "parent": "{",
+        "parent": ":",
         "inputs": {
             "NUM": [
                 3,
-                "gs",
+                "f*",
                 [
                     4,
                     "10"
@@ -854,23 +854,23 @@
         "shadow": false,
         "topLevel": false
     },
-    "gs": {
+    "f*": {
         "opcode": "motion_xposition",
         "next": null,
-        "parent": "cT",
+        "parent": "cC",
         "inputs": {},
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "cU": {
+    "cD": {
         "opcode": "operator_round",
         "next": null,
-        "parent": "{",
+        "parent": ":",
         "inputs": {
             "NUM": [
                 3,
-                "gt",
+                "f+",
                 [
                     4,
                     "10"
@@ -881,10 +881,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "gt": {
+    "f+": {
         "opcode": "argument_reporter_string_number",
         "next": null,
-        "parent": "cU",
+        "parent": "cD",
         "inputs": {},
         "fields": {
             "VALUE": [
@@ -895,14 +895,14 @@
         "shadow": false,
         "topLevel": false
     },
-    "|": {
+    ";": {
         "opcode": "operator_equals",
         "next": null,
-        "parent": "`",
+        "parent": "/",
         "inputs": {
             "OPERAND1": [
                 3,
-                "cV",
+                "cE",
                 [
                     10,
                     ""
@@ -910,7 +910,7 @@
             ],
             "OPERAND2": [
                 3,
-                "cW",
+                "cF",
                 [
                     10,
                     ""
@@ -921,14 +921,14 @@
         "shadow": false,
         "topLevel": false
     },
-    "cV": {
+    "cE": {
         "opcode": "operator_round",
         "next": null,
-        "parent": "|",
+        "parent": ";",
         "inputs": {
             "NUM": [
                 3,
-                "gu",
+                "f,",
                 [
                     4,
                     "10"
@@ -939,23 +939,23 @@
         "shadow": false,
         "topLevel": false
     },
-    "gu": {
+    "f,": {
         "opcode": "motion_yposition",
         "next": null,
-        "parent": "cV",
+        "parent": "cE",
         "inputs": {},
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "cW": {
+    "cF": {
         "opcode": "operator_round",
         "next": null,
-        "parent": "|",
+        "parent": ";",
         "inputs": {
             "NUM": [
                 3,
-                "gv",
+                "f-",
                 [
                     4,
                     "10"
@@ -966,10 +966,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "gv": {
+    "f-": {
         "opcode": "argument_reporter_string_number",
         "next": null,
-        "parent": "cW",
+        "parent": "cF",
         "inputs": {},
         "fields": {
             "VALUE": [
@@ -980,23 +980,23 @@
         "shadow": false,
         "topLevel": false
     },
-    "cS": {
+    "cB": {
         "opcode": "looks_show",
-        "next": "}",
-        "parent": "g",
+        "next": "=",
+        "parent": "h",
         "inputs": {},
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "}": {
+    "=": {
         "opcode": "motion_changexby",
-        "next": "~",
-        "parent": "cS",
+        "next": "?",
+        "parent": "cB",
         "inputs": {
             "DX": [
                 3,
-                "aa",
+                "@",
                 [
                     4,
                     "10"
@@ -1007,14 +1007,14 @@
         "shadow": false,
         "topLevel": false
     },
-    "aa": {
+    "@": {
         "opcode": "operator_divide",
         "next": null,
-        "parent": "}",
+        "parent": "=",
         "inputs": {
             "NUM1": [
                 3,
-                "ab",
+                "[",
                 [
                     4,
                     "10"
@@ -1022,7 +1022,7 @@
             ],
             "NUM2": [
                 3,
-                "gw",
+                "f.",
                 [
                     4,
                     "10"
@@ -1033,14 +1033,14 @@
         "shadow": false,
         "topLevel": false
     },
-    "ab": {
+    "[": {
         "opcode": "operator_subtract",
         "next": null,
-        "parent": "aa",
+        "parent": "@",
         "inputs": {
             "NUM1": [
                 3,
-                "cX",
+                "cG",
                 [
                     4,
                     "10"
@@ -1048,7 +1048,7 @@
             ],
             "NUM2": [
                 3,
-                "cY",
+                "cH",
                 [
                     4,
                     "10"
@@ -1059,14 +1059,14 @@
         "shadow": false,
         "topLevel": false
     },
-    "cX": {
+    "cG": {
         "opcode": "operator_round",
         "next": null,
-        "parent": "ab",
+        "parent": "[",
         "inputs": {
             "NUM": [
                 3,
-                "gx",
+                "f/",
                 [
                     4,
                     "10"
@@ -1077,10 +1077,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "gx": {
+    "f/": {
         "opcode": "argument_reporter_string_number",
         "next": null,
-        "parent": "cX",
+        "parent": "cG",
         "inputs": {},
         "fields": {
             "VALUE": [
@@ -1091,14 +1091,14 @@
         "shadow": false,
         "topLevel": false
     },
-    "cY": {
+    "cH": {
         "opcode": "operator_round",
         "next": null,
-        "parent": "ab",
+        "parent": "[",
         "inputs": {
             "NUM": [
                 3,
-                "gy",
+                "f:",
                 [
                     4,
                     "10"
@@ -1109,19 +1109,19 @@
         "shadow": false,
         "topLevel": false
     },
-    "gy": {
+    "f:": {
         "opcode": "motion_xposition",
         "next": null,
-        "parent": "cY",
+        "parent": "cH",
         "inputs": {},
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "gw": {
+    "f.": {
         "opcode": "argument_reporter_string_number",
         "next": null,
-        "parent": "aa",
+        "parent": "@",
         "inputs": {},
         "fields": {
             "VALUE": [
@@ -1132,14 +1132,14 @@
         "shadow": false,
         "topLevel": false
     },
-    "~": {
+    "?": {
         "opcode": "motion_changeyby",
-        "next": "cZ",
-        "parent": "}",
+        "next": "cI",
+        "parent": "=",
         "inputs": {
             "DY": [
                 3,
-                "ac",
+                "]",
                 [
                     4,
                     "10"
@@ -1150,14 +1150,14 @@
         "shadow": false,
         "topLevel": false
     },
-    "ac": {
+    "]": {
         "opcode": "operator_divide",
         "next": null,
-        "parent": "~",
+        "parent": "?",
         "inputs": {
             "NUM1": [
                 3,
-                "ad",
+                "^",
                 [
                     4,
                     "10"
@@ -1165,7 +1165,7 @@
             ],
             "NUM2": [
                 3,
-                "gz",
+                "f;",
                 [
                     4,
                     "10"
@@ -1176,14 +1176,14 @@
         "shadow": false,
         "topLevel": false
     },
-    "ad": {
+    "^": {
         "opcode": "operator_subtract",
         "next": null,
-        "parent": "ac",
+        "parent": "]",
         "inputs": {
             "NUM1": [
                 3,
-                "c!",
+                "cJ",
                 [
                     4,
                     "10"
@@ -1191,7 +1191,7 @@
             ],
             "NUM2": [
                 3,
-                "c#",
+                "cK",
                 [
                     4,
                     "10"
@@ -1202,14 +1202,14 @@
         "shadow": false,
         "topLevel": false
     },
-    "c!": {
+    "cJ": {
         "opcode": "operator_round",
         "next": null,
-        "parent": "ad",
+        "parent": "^",
         "inputs": {
             "NUM": [
                 3,
-                "gA",
+                "f=",
                 [
                     4,
                     "10"
@@ -1220,10 +1220,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "gA": {
+    "f=": {
         "opcode": "argument_reporter_string_number",
         "next": null,
-        "parent": "c!",
+        "parent": "cJ",
         "inputs": {},
         "fields": {
             "VALUE": [
@@ -1234,14 +1234,14 @@
         "shadow": false,
         "topLevel": false
     },
-    "c#": {
+    "cK": {
         "opcode": "operator_round",
         "next": null,
-        "parent": "ad",
+        "parent": "^",
         "inputs": {
             "NUM": [
                 3,
-                "gB",
+                "f?",
                 [
                     4,
                     "10"
@@ -1252,19 +1252,19 @@
         "shadow": false,
         "topLevel": false
     },
-    "gB": {
+    "f?": {
         "opcode": "motion_yposition",
         "next": null,
-        "parent": "c#",
+        "parent": "cK",
         "inputs": {},
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "gz": {
+    "f;": {
         "opcode": "argument_reporter_string_number",
         "next": null,
-        "parent": "ac",
+        "parent": "]",
         "inputs": {},
         "fields": {
             "VALUE": [
@@ -1275,14 +1275,14 @@
         "shadow": false,
         "topLevel": false
     },
-    "cZ": {
+    "cI": {
         "opcode": "looks_changeeffectby",
         "next": null,
-        "parent": "~",
+        "parent": "?",
         "inputs": {
             "CHANGE": [
                 3,
-                "ae",
+                "_",
                 [
                     4,
                     "25"
@@ -1298,14 +1298,14 @@
         "shadow": false,
         "topLevel": false
     },
-    "ae": {
+    "_": {
         "opcode": "operator_subtract",
         "next": null,
-        "parent": "cZ",
+        "parent": "cI",
         "inputs": {
             "NUM1": [
                 3,
-                "gC",
+                "f@",
                 [
                     4,
                     ""
@@ -1313,7 +1313,7 @@
             ],
             "NUM2": [
                 3,
-                "c%",
+                "cL",
                 [
                     4,
                     ""
@@ -1324,10 +1324,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "gC": {
+    "f@": {
         "opcode": "argument_reporter_string_number",
         "next": null,
-        "parent": "ae",
+        "parent": "_",
         "inputs": {},
         "fields": {
             "VALUE": [
@@ -1338,14 +1338,14 @@
         "shadow": false,
         "topLevel": false
     },
-    "c%": {
+    "cL": {
         "opcode": "operator_multiply",
         "next": null,
-        "parent": "ae",
+        "parent": "_",
         "inputs": {
             "NUM1": [
                 3,
-                "gD",
+                "f[",
                 [
                     4,
                     ""
@@ -1363,10 +1363,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "gD": {
+    "f[": {
         "opcode": "argument_reporter_string_number",
         "next": null,
-        "parent": "c%",
+        "parent": "cL",
         "inputs": {},
         "fields": {
             "VALUE": [
@@ -1377,14 +1377,14 @@
         "shadow": false,
         "topLevel": false
     },
-    "_": {
+    ".": {
         "opcode": "motion_gotoxy",
         "next": null,
-        "parent": "g",
+        "parent": "h",
         "inputs": {
             "X": [
                 3,
-                "gE",
+                "f]",
                 [
                     4,
                     "10"
@@ -1392,7 +1392,7 @@
             ],
             "Y": [
                 3,
-                "gF",
+                "f^",
                 [
                     4,
                     "10"
@@ -1403,10 +1403,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "gE": {
+    "f]": {
         "opcode": "argument_reporter_string_number",
         "next": null,
-        "parent": "_",
+        "parent": ".",
         "inputs": {},
         "fields": {
             "VALUE": [
@@ -1417,10 +1417,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "gF": {
+    "f^": {
         "opcode": "argument_reporter_string_number",
         "next": null,
-        "parent": "_",
+        "parent": ".",
         "inputs": {},
         "fields": {
             "VALUE": [
@@ -1431,9 +1431,9 @@
         "shadow": false,
         "topLevel": false
     },
-    "gG": {
+    "f_": {
         "opcode": "event_whenbroadcastreceived",
-        "next": "gH",
+        "next": "f`",
         "parent": null,
         "inputs": {},
         "fields": {
@@ -1447,10 +1447,10 @@
         "x": 5,
         "y": 525
     },
-    "gH": {
+    "f`": {
         "opcode": "looks_hide",
         "next": null,
-        "parent": "gG",
+        "parent": "f_",
         "inputs": {},
         "fields": {},
         "shadow": false,
