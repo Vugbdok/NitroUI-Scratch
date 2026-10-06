@@ -1,0 +1,1459 @@
+{
+    "hn": {
+        "opcode": "argument_reporter_string_number",
+        "next": null,
+        "parent": "c",
+        "inputs": {},
+        "fields": {
+            "VALUE": [
+                "x",
+                null
+            ]
+        },
+        "shadow": true,
+        "topLevel": false
+    },
+    "ho": {
+        "opcode": "argument_reporter_string_number",
+        "next": null,
+        "parent": "c",
+        "inputs": {},
+        "fields": {
+            "VALUE": [
+                "y",
+                null
+            ]
+        },
+        "shadow": true,
+        "topLevel": false
+    },
+    "hp": {
+        "opcode": "argument_reporter_string_number",
+        "next": null,
+        "parent": "c",
+        "inputs": {},
+        "fields": {
+            "VALUE": [
+                "speed",
+                null
+            ]
+        },
+        "shadow": true,
+        "topLevel": false
+    },
+    "hq": {
+        "opcode": "argument_reporter_string_number",
+        "next": null,
+        "parent": "c",
+        "inputs": {},
+        "fields": {
+            "VALUE": [
+                "speed2",
+                null
+            ]
+        },
+        "shadow": true,
+        "topLevel": false
+    },
+    "hr": {
+        "opcode": "event_whenthisspriteclicked",
+        "next": null,
+        "parent": null,
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": true,
+        "x": 409,
+        "y": 434
+    },
+    "ge": {
+        "opcode": "event_whenbroadcastreceived",
+        "next": "cy",
+        "parent": null,
+        "inputs": {},
+        "fields": {
+            "BROADCAST_OPTION": [
+                "System menu start",
+                "_C0]2Mci,D%5E4#-]|ZH"
+            ]
+        },
+        "shadow": false,
+        "topLevel": true,
+        "x": 251,
+        "y": 181
+    },
+    "cy": {
+        "opcode": "looks_gotofrontback",
+        "next": "gf",
+        "parent": "ge",
+        "inputs": {},
+        "fields": {
+            "FRONT_BACK": [
+                "front",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "gf": {
+        "opcode": "looks_hide",
+        "next": null,
+        "parent": "cy",
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "gg": {
+        "opcode": "event_whenflagclicked",
+        "next": "cz",
+        "parent": null,
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": true,
+        "x": 617,
+        "y": 73
+    },
+    "cz": {
+        "opcode": "looks_seteffectto",
+        "next": "cA",
+        "parent": "gg",
+        "inputs": {
+            "VALUE": [
+                1,
+                [
+                    4,
+                    "0"
+                ]
+            ]
+        },
+        "fields": {
+            "EFFECT": [
+                "GHOST",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "cA": {
+        "opcode": "motion_gotoxy",
+        "next": "gh",
+        "parent": "cz",
+        "inputs": {
+            "X": [
+                1,
+                [
+                    4,
+                    "0"
+                ]
+            ],
+            "Y": [
+                1,
+                [
+                    4,
+                    "0"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "gh": {
+        "opcode": "looks_hide",
+        "next": null,
+        "parent": "cA",
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "gi": {
+        "opcode": "event_whenbroadcastreceived",
+        "next": "cB",
+        "parent": null,
+        "inputs": {},
+        "fields": {
+            "BROADCAST_OPTION": [
+                "System menu start",
+                "_C0]2Mci,D%5E4#-]|ZH"
+            ]
+        },
+        "shadow": false,
+        "topLevel": true,
+        "x": 44,
+        "y": 378
+    },
+    "cB": {
+        "opcode": "looks_gotofrontback",
+        "next": "gj",
+        "parent": "gi",
+        "inputs": {},
+        "fields": {
+            "FRONT_BACK": [
+                "front",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "gj": {
+        "opcode": "looks_hide",
+        "next": null,
+        "parent": "cB",
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "hs": {
+        "opcode": "event_whenbroadcastreceived",
+        "next": null,
+        "parent": null,
+        "inputs": {},
+        "fields": {
+            "BROADCAST_OPTION": [
+                " settings open",
+                "xX:Bmb.9]LoB=#~L/wqF"
+            ]
+        },
+        "shadow": false,
+        "topLevel": true,
+        "x": 495,
+        "y": 651
+    },
+    "gk": {
+        "opcode": "looks_show",
+        "next": "cC",
+        "parent": null,
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": true,
+        "x": 480,
+        "y": 944
+    },
+    "cC": {
+        "opcode": "motion_gotoxy",
+        "next": "cD",
+        "parent": "gk",
+        "inputs": {
+            "X": [
+                1,
+                [
+                    4,
+                    "-56"
+                ]
+            ],
+            "Y": [
+                1,
+                [
+                    4,
+                    "-113"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "cD": {
+        "opcode": "control_wait",
+        "next": "cE",
+        "parent": "cC",
+        "inputs": {
+            "DURATION": [
+                1,
+                [
+                    5,
+                    "0.7"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "cE": {
+        "opcode": "motion_gotoxy",
+        "next": "cF",
+        "parent": "cD",
+        "inputs": {
+            "X": [
+                1,
+                [
+                    4,
+                    "-18"
+                ]
+            ],
+            "Y": [
+                1,
+                [
+                    4,
+                    "-113"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "cF": {
+        "opcode": "control_wait",
+        "next": "cG",
+        "parent": "cE",
+        "inputs": {
+            "DURATION": [
+                1,
+                [
+                    5,
+                    "0.2"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "cG": {
+        "opcode": "motion_gotoxy",
+        "next": "gl",
+        "parent": "cF",
+        "inputs": {
+            "X": [
+                1,
+                [
+                    4,
+                    "18"
+                ]
+            ],
+            "Y": [
+                1,
+                [
+                    4,
+                    "-113"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "gl": {
+        "opcode": "control_wait",
+        "next": null,
+        "parent": "cG",
+        "inputs": {
+            "DURATION": [
+                1,
+                [
+                    5,
+                    "0.2"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "gm": {
+        "opcode": "event_whenbroadcastreceived",
+        "next": "cH",
+        "parent": null,
+        "inputs": {},
+        "fields": {
+            "BROADCAST_OPTION": [
+                " settings open",
+                "xX:Bmb.9]LoB=#~L/wqF"
+            ]
+        },
+        "shadow": false,
+        "topLevel": true,
+        "x": 75,
+        "y": 769
+    },
+    "cH": {
+        "opcode": "looks_show",
+        "next": "cI",
+        "parent": "gm",
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "cI": {
+        "opcode": "motion_gotoxy",
+        "next": "cJ",
+        "parent": "cH",
+        "inputs": {
+            "X": [
+                1,
+                [
+                    4,
+                    "-56"
+                ]
+            ],
+            "Y": [
+                1,
+                [
+                    4,
+                    "-113"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "cJ": {
+        "opcode": "control_wait",
+        "next": "cK",
+        "parent": "cI",
+        "inputs": {
+            "DURATION": [
+                1,
+                [
+                    5,
+                    "0.7"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "cK": {
+        "opcode": "procedures_call",
+        "next": "cL",
+        "parent": "cJ",
+        "inputs": {
+            "input0": [
+                1,
+                [
+                    10,
+                    "-18"
+                ]
+            ],
+            "input1": [
+                1,
+                [
+                    10,
+                    "-113"
+                ]
+            ],
+            "input2": [
+                1,
+                [
+                    10,
+                    "2"
+                ]
+            ],
+            "VN|Cb9wMI`.sL}d/8W/s": [
+                1,
+                [
+                    10,
+                    "20"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false,
+        "mutation": {
+            "tagName": "mutation",
+            "children": [],
+            "proccode": "Smooth Glide x: %s y: %s speed: %s %s",
+            "argumentids": "[\"input0\",\"input1\",\"input2\",\"VN|Cb9wMI`.sL}d/8W/s\"]",
+            "warp": "false"
+        }
+    },
+    "cL": {
+        "opcode": "motion_gotoxy",
+        "next": "cM",
+        "parent": "cK",
+        "inputs": {
+            "X": [
+                1,
+                [
+                    4,
+                    "-18"
+                ]
+            ],
+            "Y": [
+                1,
+                [
+                    4,
+                    "-113"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "cM": {
+        "opcode": "control_wait",
+        "next": "cN",
+        "parent": "cL",
+        "inputs": {
+            "DURATION": [
+                1,
+                [
+                    5,
+                    "0.2"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "cN": {
+        "opcode": "procedures_call",
+        "next": "cO",
+        "parent": "cM",
+        "inputs": {
+            "input0": [
+                1,
+                [
+                    10,
+                    "18"
+                ]
+            ],
+            "input1": [
+                1,
+                [
+                    10,
+                    "-113"
+                ]
+            ],
+            "input2": [
+                1,
+                [
+                    10,
+                    "2"
+                ]
+            ],
+            "VN|Cb9wMI`.sL}d/8W/s": [
+                1,
+                [
+                    10,
+                    "20"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false,
+        "mutation": {
+            "tagName": "mutation",
+            "children": [],
+            "proccode": "Smooth Glide x: %s y: %s speed: %s %s",
+            "argumentids": "[\"input0\",\"input1\",\"input2\",\"VN|Cb9wMI`.sL}d/8W/s\"]",
+            "warp": "false"
+        }
+    },
+    "cO": {
+        "opcode": "motion_gotoxy",
+        "next": "cP",
+        "parent": "cN",
+        "inputs": {
+            "X": [
+                1,
+                [
+                    4,
+                    "18"
+                ]
+            ],
+            "Y": [
+                1,
+                [
+                    4,
+                    "-113"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "cP": {
+        "opcode": "control_wait",
+        "next": "cQ",
+        "parent": "cO",
+        "inputs": {
+            "DURATION": [
+                1,
+                [
+                    5,
+                    "0.1"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "cQ": {
+        "opcode": "procedures_call",
+        "next": "gn",
+        "parent": "cP",
+        "inputs": {
+            "input0": [
+                1,
+                [
+                    10,
+                    "18"
+                ]
+            ],
+            "input1": [
+                1,
+                [
+                    10,
+                    "-113"
+                ]
+            ],
+            "input2": [
+                1,
+                [
+                    10,
+                    "2"
+                ]
+            ],
+            "VN|Cb9wMI`.sL}d/8W/s": [
+                1,
+                [
+                    10,
+                    "20"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false,
+        "mutation": {
+            "tagName": "mutation",
+            "children": [],
+            "proccode": "Smooth Glide x: %s y: %s speed: %s %s",
+            "argumentids": "[\"input0\",\"input1\",\"input2\",\"VN|Cb9wMI`.sL}d/8W/s\"]",
+            "warp": "false"
+        }
+    },
+    "gn": {
+        "opcode": "motion_gotoxy",
+        "next": null,
+        "parent": "cQ",
+        "inputs": {
+            "X": [
+                1,
+                [
+                    4,
+                    "56"
+                ]
+            ],
+            "Y": [
+                1,
+                [
+                    4,
+                    "-113"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "cR": {
+        "opcode": "procedures_definition",
+        "next": "g",
+        "parent": null,
+        "inputs": {
+            "custom_block": [
+                1,
+                "c"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": true,
+        "x": 329,
+        "y": -7
+    },
+    "c": {
+        "opcode": "procedures_prototype",
+        "next": null,
+        "parent": "cR",
+        "inputs": {
+            "input0": [
+                1,
+                "go"
+            ],
+            "input1": [
+                1,
+                "gp"
+            ],
+            "input2": [
+                1,
+                "gq"
+            ],
+            "VN|Cb9wMI`.sL}d/8W/s": [
+                1,
+                "gr"
+            ]
+        },
+        "fields": {},
+        "shadow": true,
+        "topLevel": false,
+        "mutation": {
+            "tagName": "mutation",
+            "children": [],
+            "proccode": "Smooth Glide x: %s y: %s speed: %s %s",
+            "argumentids": "[\"input0\",\"input1\",\"input2\",\"VN|Cb9wMI`.sL}d/8W/s\"]",
+            "argumentnames": "[\"x\",\"y\",\"speed\",\"speed2\"]",
+            "argumentdefaults": "[1,1,1,\"\"]",
+            "warp": "false"
+        }
+    },
+    "go": {
+        "opcode": "argument_reporter_string_number",
+        "next": null,
+        "parent": "c",
+        "inputs": {},
+        "fields": {
+            "VALUE": [
+                "x",
+                null
+            ]
+        },
+        "shadow": true,
+        "topLevel": false
+    },
+    "gp": {
+        "opcode": "argument_reporter_string_number",
+        "next": null,
+        "parent": "c",
+        "inputs": {},
+        "fields": {
+            "VALUE": [
+                "y",
+                null
+            ]
+        },
+        "shadow": true,
+        "topLevel": false
+    },
+    "gq": {
+        "opcode": "argument_reporter_string_number",
+        "next": null,
+        "parent": "c",
+        "inputs": {},
+        "fields": {
+            "VALUE": [
+                "speed",
+                null
+            ]
+        },
+        "shadow": true,
+        "topLevel": false
+    },
+    "gr": {
+        "opcode": "argument_reporter_string_number",
+        "next": null,
+        "parent": "c",
+        "inputs": {},
+        "fields": {
+            "VALUE": [
+                "speed2",
+                null
+            ]
+        },
+        "shadow": true,
+        "topLevel": false
+    },
+    "g": {
+        "opcode": "control_repeat_until",
+        "next": "_",
+        "parent": "cR",
+        "inputs": {
+            "CONDITION": [
+                2,
+                "`"
+            ],
+            "SUBSTACK": [
+                2,
+                "cS"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "`": {
+        "opcode": "operator_and",
+        "next": null,
+        "parent": "g",
+        "inputs": {
+            "OPERAND1": [
+                2,
+                "{"
+            ],
+            "OPERAND2": [
+                2,
+                "|"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "{": {
+        "opcode": "operator_equals",
+        "next": null,
+        "parent": "`",
+        "inputs": {
+            "OPERAND1": [
+                3,
+                "cT",
+                [
+                    10,
+                    ""
+                ]
+            ],
+            "OPERAND2": [
+                3,
+                "cU",
+                [
+                    10,
+                    ""
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "cT": {
+        "opcode": "operator_round",
+        "next": null,
+        "parent": "{",
+        "inputs": {
+            "NUM": [
+                3,
+                "gs",
+                [
+                    4,
+                    "10"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "gs": {
+        "opcode": "motion_xposition",
+        "next": null,
+        "parent": "cT",
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "cU": {
+        "opcode": "operator_round",
+        "next": null,
+        "parent": "{",
+        "inputs": {
+            "NUM": [
+                3,
+                "gt",
+                [
+                    4,
+                    "10"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "gt": {
+        "opcode": "argument_reporter_string_number",
+        "next": null,
+        "parent": "cU",
+        "inputs": {},
+        "fields": {
+            "VALUE": [
+                "x",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "|": {
+        "opcode": "operator_equals",
+        "next": null,
+        "parent": "`",
+        "inputs": {
+            "OPERAND1": [
+                3,
+                "cV",
+                [
+                    10,
+                    ""
+                ]
+            ],
+            "OPERAND2": [
+                3,
+                "cW",
+                [
+                    10,
+                    ""
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "cV": {
+        "opcode": "operator_round",
+        "next": null,
+        "parent": "|",
+        "inputs": {
+            "NUM": [
+                3,
+                "gu",
+                [
+                    4,
+                    "10"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "gu": {
+        "opcode": "motion_yposition",
+        "next": null,
+        "parent": "cV",
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "cW": {
+        "opcode": "operator_round",
+        "next": null,
+        "parent": "|",
+        "inputs": {
+            "NUM": [
+                3,
+                "gv",
+                [
+                    4,
+                    "10"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "gv": {
+        "opcode": "argument_reporter_string_number",
+        "next": null,
+        "parent": "cW",
+        "inputs": {},
+        "fields": {
+            "VALUE": [
+                "y",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "cS": {
+        "opcode": "looks_show",
+        "next": "}",
+        "parent": "g",
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "}": {
+        "opcode": "motion_changexby",
+        "next": "~",
+        "parent": "cS",
+        "inputs": {
+            "DX": [
+                3,
+                "aa",
+                [
+                    4,
+                    "10"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "aa": {
+        "opcode": "operator_divide",
+        "next": null,
+        "parent": "}",
+        "inputs": {
+            "NUM1": [
+                3,
+                "ab",
+                [
+                    4,
+                    "10"
+                ]
+            ],
+            "NUM2": [
+                3,
+                "gw",
+                [
+                    4,
+                    "10"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "ab": {
+        "opcode": "operator_subtract",
+        "next": null,
+        "parent": "aa",
+        "inputs": {
+            "NUM1": [
+                3,
+                "cX",
+                [
+                    4,
+                    "10"
+                ]
+            ],
+            "NUM2": [
+                3,
+                "cY",
+                [
+                    4,
+                    "10"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "cX": {
+        "opcode": "operator_round",
+        "next": null,
+        "parent": "ab",
+        "inputs": {
+            "NUM": [
+                3,
+                "gx",
+                [
+                    4,
+                    "10"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "gx": {
+        "opcode": "argument_reporter_string_number",
+        "next": null,
+        "parent": "cX",
+        "inputs": {},
+        "fields": {
+            "VALUE": [
+                "x",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "cY": {
+        "opcode": "operator_round",
+        "next": null,
+        "parent": "ab",
+        "inputs": {
+            "NUM": [
+                3,
+                "gy",
+                [
+                    4,
+                    "10"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "gy": {
+        "opcode": "motion_xposition",
+        "next": null,
+        "parent": "cY",
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "gw": {
+        "opcode": "argument_reporter_string_number",
+        "next": null,
+        "parent": "aa",
+        "inputs": {},
+        "fields": {
+            "VALUE": [
+                "speed",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "~": {
+        "opcode": "motion_changeyby",
+        "next": "cZ",
+        "parent": "}",
+        "inputs": {
+            "DY": [
+                3,
+                "ac",
+                [
+                    4,
+                    "10"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "ac": {
+        "opcode": "operator_divide",
+        "next": null,
+        "parent": "~",
+        "inputs": {
+            "NUM1": [
+                3,
+                "ad",
+                [
+                    4,
+                    "10"
+                ]
+            ],
+            "NUM2": [
+                3,
+                "gz",
+                [
+                    4,
+                    "10"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "ad": {
+        "opcode": "operator_subtract",
+        "next": null,
+        "parent": "ac",
+        "inputs": {
+            "NUM1": [
+                3,
+                "c!",
+                [
+                    4,
+                    "10"
+                ]
+            ],
+            "NUM2": [
+                3,
+                "c#",
+                [
+                    4,
+                    "10"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "c!": {
+        "opcode": "operator_round",
+        "next": null,
+        "parent": "ad",
+        "inputs": {
+            "NUM": [
+                3,
+                "gA",
+                [
+                    4,
+                    "10"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "gA": {
+        "opcode": "argument_reporter_string_number",
+        "next": null,
+        "parent": "c!",
+        "inputs": {},
+        "fields": {
+            "VALUE": [
+                "y",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "c#": {
+        "opcode": "operator_round",
+        "next": null,
+        "parent": "ad",
+        "inputs": {
+            "NUM": [
+                3,
+                "gB",
+                [
+                    4,
+                    "10"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "gB": {
+        "opcode": "motion_yposition",
+        "next": null,
+        "parent": "c#",
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "gz": {
+        "opcode": "argument_reporter_string_number",
+        "next": null,
+        "parent": "ac",
+        "inputs": {},
+        "fields": {
+            "VALUE": [
+                "speed",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "cZ": {
+        "opcode": "looks_changeeffectby",
+        "next": null,
+        "parent": "~",
+        "inputs": {
+            "CHANGE": [
+                3,
+                "ae",
+                [
+                    4,
+                    "25"
+                ]
+            ]
+        },
+        "fields": {
+            "EFFECT": [
+                "GHOST",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "ae": {
+        "opcode": "operator_subtract",
+        "next": null,
+        "parent": "cZ",
+        "inputs": {
+            "NUM1": [
+                3,
+                "gC",
+                [
+                    4,
+                    ""
+                ]
+            ],
+            "NUM2": [
+                3,
+                "c%",
+                [
+                    4,
+                    ""
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "gC": {
+        "opcode": "argument_reporter_string_number",
+        "next": null,
+        "parent": "ae",
+        "inputs": {},
+        "fields": {
+            "VALUE": [
+                "speed2",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "c%": {
+        "opcode": "operator_multiply",
+        "next": null,
+        "parent": "ae",
+        "inputs": {
+            "NUM1": [
+                3,
+                "gD",
+                [
+                    4,
+                    ""
+                ]
+            ],
+            "NUM2": [
+                1,
+                [
+                    4,
+                    "2"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "gD": {
+        "opcode": "argument_reporter_string_number",
+        "next": null,
+        "parent": "c%",
+        "inputs": {},
+        "fields": {
+            "VALUE": [
+                "speed2",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "_": {
+        "opcode": "motion_gotoxy",
+        "next": null,
+        "parent": "g",
+        "inputs": {
+            "X": [
+                3,
+                "gE",
+                [
+                    4,
+                    "10"
+                ]
+            ],
+            "Y": [
+                3,
+                "gF",
+                [
+                    4,
+                    "10"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "gE": {
+        "opcode": "argument_reporter_string_number",
+        "next": null,
+        "parent": "_",
+        "inputs": {},
+        "fields": {
+            "VALUE": [
+                "x",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "gF": {
+        "opcode": "argument_reporter_string_number",
+        "next": null,
+        "parent": "_",
+        "inputs": {},
+        "fields": {
+            "VALUE": [
+                "y",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "gG": {
+        "opcode": "event_whenbroadcastreceived",
+        "next": "gH",
+        "parent": null,
+        "inputs": {},
+        "fields": {
+            "BROADCAST_OPTION": [
+                "Startup animation",
+                "o*8v]lIGr{4Jd^(q+)Y}"
+            ]
+        },
+        "shadow": false,
+        "topLevel": true,
+        "x": 5,
+        "y": 525
+    },
+    "gH": {
+        "opcode": "looks_hide",
+        "next": null,
+        "parent": "gG",
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    }
+}

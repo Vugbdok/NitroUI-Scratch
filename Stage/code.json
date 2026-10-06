@@ -1,0 +1,97 @@
+{
+    "g;": {
+        "opcode": "event_whenbroadcastreceived",
+        "next": null,
+        "parent": null,
+        "inputs": {},
+        "fields": {
+            "BROADCAST_OPTION": [
+                "System menu start",
+                "_C0]2Mci,D%5E4#-]|ZH"
+            ]
+        },
+        "shadow": false,
+        "topLevel": true,
+        "x": 130,
+        "y": 515
+    },
+    "da": {
+        "opcode": "control_forever",
+        "next": null,
+        "parent": null,
+        "inputs": {
+            "SUBSTACK": [
+                2,
+                "as"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": true,
+        "x": 195,
+        "y": 623
+    },
+    "as": {
+        "opcode": "sound_playuntildone",
+        "next": null,
+        "parent": "da",
+        "inputs": {
+            "SOUND_MENU": [
+                1,
+                "db"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "db": {
+        "opcode": "sound_sounds_menu",
+        "next": null,
+        "parent": "as",
+        "inputs": {},
+        "fields": {
+            "SOUND_MENU": [
+                "clock Loop",
+                null
+            ]
+        },
+        "shadow": true,
+        "topLevel": false
+    },
+    "dc": {
+        "opcode": "event_whenbroadcastreceived",
+        "next": "dd",
+        "parent": null,
+        "inputs": {},
+        "fields": {
+            "BROADCAST_OPTION": [
+                "Startup animation",
+                "o*8v]lIGr{4Jd^(q+)Y}"
+            ]
+        },
+        "shadow": false,
+        "topLevel": true,
+        "x": 277,
+        "y": 335
+    },
+    "dd": {
+        "opcode": "control_stop",
+        "next": null,
+        "parent": "dc",
+        "inputs": {},
+        "fields": {
+            "STOP_OPTION": [
+                "other scripts in sprite",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false,
+        "mutation": {
+            "tagName": "mutation",
+            "children": [],
+            "hasnext": "true"
+        }
+    }
+}

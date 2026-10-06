@@ -1,0 +1,232 @@
+{
+    "e%": {
+        "opcode": "event_whenflagclicked",
+        "next": "e(",
+        "parent": null,
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": true,
+        "x": 540,
+        "y": 194
+    },
+    "g^": {
+        "opcode": "motion_gotoxy",
+        "next": null,
+        "parent": null,
+        "inputs": {
+            "X": [
+                1,
+                [
+                    4,
+                    "0"
+                ]
+            ],
+            "Y": [
+                1,
+                [
+                    4,
+                    "0"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": true,
+        "x": 842,
+        "y": 240
+    },
+    "bj": {
+        "opcode": "control_forever",
+        "next": null,
+        "parent": "bk",
+        "inputs": {
+            "SUBSTACK": [
+                2,
+                "bl"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "bl": {
+        "opcode": "motion_pointindirection",
+        "next": null,
+        "parent": "bj",
+        "inputs": {
+            "DIRECTION": [
+                3,
+                "bm",
+                [
+                    8,
+                    "90"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "bm": {
+        "opcode": "operator_add",
+        "next": null,
+        "parent": "bl",
+        "inputs": {
+            "NUM1": [
+                3,
+                "bn",
+                [
+                    4,
+                    ""
+                ]
+            ],
+            "NUM2": [
+                1,
+                [
+                    4,
+                    "90"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "bn": {
+        "opcode": "operator_multiply",
+        "next": null,
+        "parent": "bm",
+        "inputs": {
+            "NUM1": [
+                3,
+                "bo",
+                [
+                    4,
+                    ""
+                ]
+            ],
+            "NUM2": [
+                1,
+                [
+                    4,
+                    "360"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "bo": {
+        "opcode": "operator_divide",
+        "next": null,
+        "parent": "bn",
+        "inputs": {
+            "NUM1": [
+                3,
+                "e)",
+                [
+                    4,
+                    ""
+                ]
+            ],
+            "NUM2": [
+                1,
+                [
+                    4,
+                    "60"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "e)": {
+        "opcode": "sensing_current",
+        "next": null,
+        "parent": "bo",
+        "inputs": {},
+        "fields": {
+            "CURRENTMENU": [
+                "MINUTE",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "e*": {
+        "opcode": "event_whenbroadcastreceived",
+        "next": "bp",
+        "parent": null,
+        "inputs": {},
+        "fields": {
+            "BROADCAST_OPTION": [
+                "System menu start",
+                "_C0]2Mci,D%5E4#-]|ZH"
+            ]
+        },
+        "shadow": false,
+        "topLevel": true,
+        "x": 740,
+        "y": 465
+    },
+    "e(": {
+        "opcode": "looks_hide",
+        "next": null,
+        "parent": "e%",
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "bk": {
+        "opcode": "looks_show",
+        "next": "bj",
+        "parent": "bp",
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "bp": {
+        "opcode": "looks_gotofrontback",
+        "next": "bk",
+        "parent": "e*",
+        "inputs": {},
+        "fields": {
+            "FRONT_BACK": [
+                "front"
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "e+": {
+        "opcode": "event_whenbroadcastreceived",
+        "next": "e,",
+        "parent": null,
+        "inputs": {},
+        "fields": {
+            "BROADCAST_OPTION": [
+                "Startup animation",
+                "o*8v]lIGr{4Jd^(q+)Y}"
+            ]
+        },
+        "shadow": false,
+        "topLevel": true,
+        "x": 44,
+        "y": 44
+    },
+    "e,": {
+        "opcode": "looks_hide",
+        "next": null,
+        "parent": "e+",
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    }
+}

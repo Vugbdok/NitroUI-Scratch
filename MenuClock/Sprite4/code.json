@@ -1,0 +1,117 @@
+{
+    "e-": {
+        "opcode": "event_whenbroadcastreceived",
+        "next": "bq",
+        "parent": null,
+        "inputs": {},
+        "fields": {
+            "BROADCAST_OPTION": [
+                "System menu start",
+                "_C0]2Mci,D%5E4#-]|ZH"
+            ]
+        },
+        "shadow": false,
+        "topLevel": true,
+        "x": 48,
+        "y": 64
+    },
+    "bq": {
+        "opcode": "looks_show",
+        "next": "br",
+        "parent": "e-",
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "br": {
+        "opcode": "control_wait",
+        "next": "e.",
+        "parent": "bq",
+        "inputs": {
+            "DURATION": [
+                1,
+                [
+                    5,
+                    "0"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "e.": {
+        "opcode": "looks_gotofrontback",
+        "next": null,
+        "parent": "br",
+        "inputs": {},
+        "fields": {
+            "FRONT_BACK": [
+                "front",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "e/": {
+        "opcode": "event_whenflagclicked",
+        "next": "bs",
+        "parent": null,
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": true,
+        "x": 48,
+        "y": 336
+    },
+    "bs": {
+        "opcode": "looks_hide",
+        "next": "e:",
+        "parent": "e/",
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "e:": {
+        "opcode": "looks_gotofrontback",
+        "next": null,
+        "parent": "bs",
+        "inputs": {},
+        "fields": {
+            "FRONT_BACK": [
+                "front",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "e;": {
+        "opcode": "event_whenbroadcastreceived",
+        "next": "e=",
+        "parent": null,
+        "inputs": {},
+        "fields": {
+            "BROADCAST_OPTION": [
+                "Startup animation",
+                "o*8v]lIGr{4Jd^(q+)Y}"
+            ]
+        },
+        "shadow": false,
+        "topLevel": true,
+        "x": 48,
+        "y": 560
+    },
+    "e=": {
+        "opcode": "looks_hide",
+        "next": null,
+        "parent": "e;",
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    }
+}

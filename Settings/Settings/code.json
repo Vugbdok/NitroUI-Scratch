@@ -1,0 +1,572 @@
+{
+    "e`": {
+        "opcode": "event_whenthisspriteclicked",
+        "next": "bA",
+        "parent": null,
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": true,
+        "x": 197,
+        "y": 259
+    },
+    "bA": {
+        "opcode": "looks_gotofrontback",
+        "next": "bB",
+        "parent": "e`",
+        "inputs": {},
+        "fields": {
+            "FRONT_BACK": [
+                "front",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "bB": {
+        "opcode": "motion_gotoxy",
+        "next": "T",
+        "parent": "bA",
+        "inputs": {
+            "X": [
+                1,
+                [
+                    4,
+                    "0"
+                ]
+            ],
+            "Y": [
+                1,
+                [
+                    4,
+                    "0"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "T": {
+        "opcode": "sound_play",
+        "next": "e{",
+        "parent": "bB",
+        "inputs": {
+            "SOUND_MENU": [
+                1,
+                "e|"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "e|": {
+        "opcode": "sound_sounds_menu",
+        "next": null,
+        "parent": "T",
+        "inputs": {},
+        "fields": {
+            "SOUND_MENU": [
+                "Click/Open",
+                null
+            ]
+        },
+        "shadow": true,
+        "topLevel": false
+    },
+    "e{": {
+        "opcode": "motion_glidesecstoxy",
+        "next": null,
+        "parent": "T",
+        "inputs": {
+            "SECS": [
+                1,
+                [
+                    4,
+                    "0.3"
+                ]
+            ],
+            "X": [
+                1,
+                [
+                    4,
+                    "0"
+                ]
+            ],
+            "Y": [
+                1,
+                [
+                    4,
+                    "120"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "e}": {
+        "opcode": "event_whenthisspriteclicked",
+        "next": "bC",
+        "parent": null,
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": true,
+        "x": 523,
+        "y": 259
+    },
+    "bC": {
+        "opcode": "looks_gotofrontback",
+        "next": "bD",
+        "parent": "e}",
+        "inputs": {},
+        "fields": {
+            "FRONT_BACK": [
+                "front",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "bD": {
+        "opcode": "motion_gotoxy",
+        "next": "U",
+        "parent": "bC",
+        "inputs": {
+            "X": [
+                1,
+                [
+                    4,
+                    "0"
+                ]
+            ],
+            "Y": [
+                1,
+                [
+                    4,
+                    "0"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "U": {
+        "opcode": "sound_play",
+        "next": "V",
+        "parent": "bD",
+        "inputs": {
+            "SOUND_MENU": [
+                1,
+                "e~"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "e~": {
+        "opcode": "sound_sounds_menu",
+        "next": null,
+        "parent": "U",
+        "inputs": {},
+        "fields": {
+            "SOUND_MENU": [
+                "Click/Open",
+                null
+            ]
+        },
+        "shadow": true,
+        "topLevel": false
+    },
+    "V": {
+        "opcode": "control_create_clone_of",
+        "next": "bE",
+        "parent": "U",
+        "inputs": {
+            "CLONE_OPTION": [
+                1,
+                "fa"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "fa": {
+        "opcode": "control_create_clone_of_menu",
+        "next": null,
+        "parent": "V",
+        "inputs": {},
+        "fields": {
+            "CLONE_OPTION": [
+                "MainUI//bottom",
+                null
+            ]
+        },
+        "shadow": true,
+        "topLevel": false
+    },
+    "bE": {
+        "opcode": "data_setvariableto",
+        "next": "bF",
+        "parent": "V",
+        "inputs": {
+            "VALUE": [
+                1,
+                [
+                    10,
+                    "crash"
+                ]
+            ]
+        },
+        "fields": {
+            "VARIABLE": [
+                "Clone",
+                "?sW^5sK-QRNX~6MV$u30"
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "bF": {
+        "opcode": "looks_seteffectto",
+        "next": "W",
+        "parent": "bE",
+        "inputs": {
+            "VALUE": [
+                1,
+                [
+                    4,
+                    "0"
+                ]
+            ]
+        },
+        "fields": {
+            "EFFECT": [
+                "GHOST",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "W": {
+        "opcode": "control_repeat",
+        "next": "bG",
+        "parent": "bF",
+        "inputs": {
+            "TIMES": [
+                1,
+                [
+                    6,
+                    "10"
+                ]
+            ],
+            "SUBSTACK": [
+                2,
+                "fb"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "fb": {
+        "opcode": "looks_changeeffectby",
+        "next": null,
+        "parent": "W",
+        "inputs": {
+            "CHANGE": [
+                1,
+                [
+                    4,
+                    "25"
+                ]
+            ]
+        },
+        "fields": {
+            "EFFECT": [
+                "GHOST",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "bG": {
+        "opcode": "event_broadcast",
+        "next": "bH",
+        "parent": "W",
+        "inputs": {
+            "BROADCAST_INPUT": [
+                1,
+                [
+                    11,
+                    " settings open",
+                    "xX:Bmb.9]LoB=#~L/wqF"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "bH": {
+        "opcode": "control_wait",
+        "next": "bI",
+        "parent": "bG",
+        "inputs": {
+            "DURATION": [
+                1,
+                [
+                    5,
+                    "1"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "bI": {
+        "opcode": "sound_play",
+        "next": null,
+        "parent": "bH",
+        "inputs": {
+            "SOUND_MENU": [
+                1,
+                "fc"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "fc": {
+        "opcode": "sound_sounds_menu",
+        "next": null,
+        "parent": "bI",
+        "inputs": {},
+        "fields": {
+            "SOUND_MENU": [
+                "Settings app open",
+                null
+            ]
+        },
+        "shadow": true,
+        "topLevel": false
+    },
+    "g`": {
+        "opcode": "control_wait",
+        "next": null,
+        "parent": null,
+        "inputs": {
+            "DURATION": [
+                1,
+                [
+                    5,
+                    "1"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": true,
+        "x": 816,
+        "y": 902
+    },
+    "g{": {
+        "opcode": "control_stop",
+        "next": null,
+        "parent": null,
+        "inputs": {},
+        "fields": {
+            "STOP_OPTION": [
+                "all",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": true,
+        "x": 348,
+        "y": 942,
+        "mutation": {
+            "tagName": "mutation",
+            "children": [],
+            "hasnext": "false"
+        }
+    },
+    "fd": {
+        "opcode": "event_whenflagclicked",
+        "next": "bJ",
+        "parent": null,
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": true,
+        "x": 350,
+        "y": -17
+    },
+    "bJ": {
+        "opcode": "looks_seteffectto",
+        "next": "fe",
+        "parent": "fd",
+        "inputs": {
+            "VALUE": [
+                1,
+                [
+                    4,
+                    "0"
+                ]
+            ]
+        },
+        "fields": {
+            "EFFECT": [
+                "GHOST",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "fe": {
+        "opcode": "motion_gotoxy",
+        "next": null,
+        "parent": "bJ",
+        "inputs": {
+            "X": [
+                1,
+                [
+                    4,
+                    "0"
+                ]
+            ],
+            "Y": [
+                1,
+                [
+                    4,
+                    "0"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "ff": {
+        "opcode": "event_whenbroadcastreceived",
+        "next": "bK",
+        "parent": null,
+        "inputs": {},
+        "fields": {
+            "BROADCAST_OPTION": [
+                "System menu start",
+                "_C0]2Mci,D%5E4#-]|ZH"
+            ]
+        },
+        "shadow": false,
+        "topLevel": true,
+        "x": 757,
+        "y": 223
+    },
+    "bK": {
+        "opcode": "looks_gotofrontback",
+        "next": "fg",
+        "parent": "ff",
+        "inputs": {},
+        "fields": {
+            "FRONT_BACK": [
+                "front",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "fg": {
+        "opcode": "looks_show",
+        "next": null,
+        "parent": "bK",
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "fh": {
+        "opcode": "event_whenbroadcastreceived",
+        "next": "bL",
+        "parent": null,
+        "inputs": {},
+        "fields": {
+            "BROADCAST_OPTION": [
+                "Startup animation",
+                "o*8v]lIGr{4Jd^(q+)Y}"
+            ]
+        },
+        "shadow": false,
+        "topLevel": true,
+        "x": 709,
+        "y": -16
+    },
+    "bL": {
+        "opcode": "looks_hide",
+        "next": "bM",
+        "parent": "fh",
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "bM": {
+        "opcode": "motion_gotoxy",
+        "next": "fi",
+        "parent": "bL",
+        "inputs": {
+            "X": [
+                1,
+                [
+                    4,
+                    "0"
+                ]
+            ],
+            "Y": [
+                1,
+                [
+                    4,
+                    "0"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "fi": {
+        "opcode": "looks_seteffectto",
+        "next": null,
+        "parent": "bM",
+        "inputs": {
+            "VALUE": [
+                1,
+                [
+                    4,
+                    "0"
+                ]
+            ]
+        },
+        "fields": {
+            "EFFECT": [
+                "GHOST",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    }
+}

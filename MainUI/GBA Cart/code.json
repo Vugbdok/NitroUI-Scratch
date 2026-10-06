@@ -1,0 +1,187 @@
+{
+    "eD": {
+        "opcode": "event_whenthisspriteclicked",
+        "next": "a@",
+        "parent": null,
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": true,
+        "x": 409,
+        "y": 434
+    },
+    "a@": {
+        "opcode": "sound_play",
+        "next": null,
+        "parent": "eD",
+        "inputs": {
+            "SOUND_MENU": [
+                1,
+                "eE"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "eE": {
+        "opcode": "sound_sounds_menu",
+        "next": null,
+        "parent": "a@",
+        "inputs": {},
+        "fields": {
+            "SOUND_MENU": [
+                "no",
+                null
+            ]
+        },
+        "shadow": true,
+        "topLevel": false
+    },
+    "eF": {
+        "opcode": "event_whenbroadcastreceived",
+        "next": "eG",
+        "parent": null,
+        "inputs": {},
+        "fields": {
+            "BROADCAST_OPTION": [
+                " settings open",
+                "xX:Bmb.9]LoB=#~L/wqF"
+            ]
+        },
+        "shadow": false,
+        "topLevel": true,
+        "x": 44,
+        "y": 44
+    },
+    "eG": {
+        "opcode": "looks_hide",
+        "next": null,
+        "parent": "eF",
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "eH": {
+        "opcode": "event_whenbroadcastreceived",
+        "next": "a[",
+        "parent": null,
+        "inputs": {},
+        "fields": {
+            "BROADCAST_OPTION": [
+                "System menu start",
+                "_C0]2Mci,D%5E4#-]|ZH"
+            ]
+        },
+        "shadow": false,
+        "topLevel": true,
+        "x": 251,
+        "y": 181
+    },
+    "a[": {
+        "opcode": "looks_gotofrontback",
+        "next": "eI",
+        "parent": "eH",
+        "inputs": {},
+        "fields": {
+            "FRONT_BACK": [
+                "front",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "eI": {
+        "opcode": "looks_show",
+        "next": null,
+        "parent": "a[",
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "eJ": {
+        "opcode": "event_whenflagclicked",
+        "next": "a]",
+        "parent": null,
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": true,
+        "x": 617,
+        "y": 73
+    },
+    "a]": {
+        "opcode": "looks_seteffectto",
+        "next": "eK",
+        "parent": "eJ",
+        "inputs": {
+            "VALUE": [
+                1,
+                [
+                    4,
+                    "0"
+                ]
+            ]
+        },
+        "fields": {
+            "EFFECT": [
+                "GHOST",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "eK": {
+        "opcode": "motion_gotoxy",
+        "next": null,
+        "parent": "a]",
+        "inputs": {
+            "X": [
+                1,
+                [
+                    4,
+                    "0"
+                ]
+            ],
+            "Y": [
+                1,
+                [
+                    4,
+                    "0"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "eL": {
+        "opcode": "event_whenbroadcastreceived",
+        "next": "eM",
+        "parent": null,
+        "inputs": {},
+        "fields": {
+            "BROADCAST_OPTION": [
+                "Startup animation",
+                "o*8v]lIGr{4Jd^(q+)Y}"
+            ]
+        },
+        "shadow": false,
+        "topLevel": true,
+        "x": 44,
+        "y": 44
+    },
+    "eM": {
+        "opcode": "looks_hide",
+        "next": null,
+        "parent": "eL",
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    }
+}

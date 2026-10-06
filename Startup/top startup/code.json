@@ -1,0 +1,122 @@
+{
+    "de": {
+        "opcode": "event_whenbroadcastreceived",
+        "next": "i",
+        "parent": null,
+        "inputs": {},
+        "fields": {
+            "BROADCAST_OPTION": [
+                "Startup animation",
+                "o*8v]lIGr{4Jd^(q+)Y}"
+            ]
+        },
+        "shadow": false,
+        "topLevel": true,
+        "x": 241,
+        "y": 380
+    },
+    "i": {
+        "opcode": "sound_play",
+        "next": "j",
+        "parent": "de",
+        "inputs": {
+            "SOUND_MENU": [
+                1,
+                "df"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "df": {
+        "opcode": "sound_sounds_menu",
+        "next": null,
+        "parent": "i",
+        "inputs": {},
+        "fields": {
+            "SOUND_MENU": [
+                "Nintendo DS Start-Up Screen \u2714",
+                null
+            ]
+        },
+        "shadow": true,
+        "topLevel": false
+    },
+    "j": {
+        "opcode": "looks_switchcostumeto",
+        "next": "k",
+        "parent": "i",
+        "inputs": {
+            "COSTUME": [
+                1,
+                "dg"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "dg": {
+        "opcode": "looks_costume",
+        "next": null,
+        "parent": "j",
+        "inputs": {},
+        "fields": {
+            "COSTUME": [
+                "nintendo-ds42",
+                null
+            ]
+        },
+        "shadow": true,
+        "topLevel": false
+    },
+    "k": {
+        "opcode": "control_repeat",
+        "next": "dh",
+        "parent": "j",
+        "inputs": {
+            "TIMES": [
+                1,
+                [
+                    6,
+                    "37"
+                ]
+            ],
+            "SUBSTACK": [
+                2,
+                "di"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "di": {
+        "opcode": "looks_nextcostume",
+        "next": null,
+        "parent": "k",
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "dh": {
+        "opcode": "event_broadcast",
+        "next": null,
+        "parent": "k",
+        "inputs": {
+            "BROADCAST_INPUT": [
+                1,
+                [
+                    11,
+                    "Startup done",
+                    "B8q_o|E,18BS%i3!+1Fu"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    }
+}

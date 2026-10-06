@@ -1,0 +1,555 @@
+{
+    "eN": {
+        "opcode": "event_whenflagclicked",
+        "next": "eO",
+        "parent": null,
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": true,
+        "x": 0,
+        "y": 152
+    },
+    "eO": {
+        "opcode": "looks_hide",
+        "next": null,
+        "parent": "eN",
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "eP": {
+        "opcode": "event_whenbroadcastreceived",
+        "next": "a^",
+        "parent": null,
+        "inputs": {},
+        "fields": {
+            "BROADCAST_OPTION": [
+                "System menu start",
+                "_C0]2Mci,D%5E4#-]|ZH"
+            ]
+        },
+        "shadow": false,
+        "topLevel": true,
+        "x": 64,
+        "y": 1144
+    },
+    "a^": {
+        "opcode": "looks_gotofrontback",
+        "next": "a_",
+        "parent": "eP",
+        "inputs": {},
+        "fields": {
+            "FRONT_BACK": [
+                "front",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "a_": {
+        "opcode": "looks_show",
+        "next": "a`",
+        "parent": "a^",
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "a`": {
+        "opcode": "control_forever",
+        "next": null,
+        "parent": "a_",
+        "inputs": {
+            "SUBSTACK": [
+                2,
+                "a{"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "a{": {
+        "opcode": "motion_pointindirection",
+        "next": null,
+        "parent": "a`",
+        "inputs": {
+            "DIRECTION": [
+                3,
+                "a|",
+                [
+                    8,
+                    "90"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "a|": {
+        "opcode": "operator_add",
+        "next": null,
+        "parent": "a{",
+        "inputs": {
+            "NUM1": [
+                3,
+                "a}",
+                [
+                    4,
+                    ""
+                ]
+            ],
+            "NUM2": [
+                1,
+                [
+                    4,
+                    "90"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "a}": {
+        "opcode": "operator_multiply",
+        "next": null,
+        "parent": "a|",
+        "inputs": {
+            "NUM1": [
+                3,
+                "a~",
+                [
+                    4,
+                    ""
+                ]
+            ],
+            "NUM2": [
+                1,
+                [
+                    4,
+                    "360"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "a~": {
+        "opcode": "operator_divide",
+        "next": null,
+        "parent": "a}",
+        "inputs": {
+            "NUM1": [
+                3,
+                "eQ",
+                [
+                    4,
+                    ""
+                ]
+            ],
+            "NUM2": [
+                1,
+                [
+                    4,
+                    "60"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "eQ": {
+        "opcode": "sensing_current",
+        "next": null,
+        "parent": "a~",
+        "inputs": {},
+        "fields": {
+            "CURRENTMENU": [
+                "SECOND",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "eR": {
+        "opcode": "event_whenbroadcastreceived",
+        "next": "eS",
+        "parent": null,
+        "inputs": {},
+        "fields": {
+            "BROADCAST_OPTION": [
+                "Startup animation",
+                "o*8v]lIGr{4Jd^(q+)Y}"
+            ]
+        },
+        "shadow": false,
+        "topLevel": true,
+        "x": 0,
+        "y": 0
+    },
+    "eS": {
+        "opcode": "looks_hide",
+        "next": null,
+        "parent": "eR",
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "eT": {
+        "opcode": "event_whenbroadcastreceived",
+        "next": "ba",
+        "parent": null,
+        "inputs": {},
+        "fields": {
+            "BROADCAST_OPTION": [
+                "System menu start",
+                "_C0]2Mci,D%5E4#-]|ZH"
+            ]
+        },
+        "shadow": false,
+        "topLevel": true,
+        "x": -137,
+        "y": 754
+    },
+    "ba": {
+        "opcode": "looks_gotofrontback",
+        "next": "bb",
+        "parent": "eT",
+        "inputs": {},
+        "fields": {
+            "FRONT_BACK": [
+                "front",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "bb": {
+        "opcode": "looks_show",
+        "next": "bc",
+        "parent": "ba",
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "bc": {
+        "opcode": "control_forever",
+        "next": null,
+        "parent": "bb",
+        "inputs": {
+            "SUBSTACK": [
+                2,
+                "Q"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "Q": {
+        "opcode": "control_repeat_until",
+        "next": null,
+        "parent": "bc",
+        "inputs": {
+            "CONDITION": [
+                2,
+                "bd"
+            ],
+            "SUBSTACK": [
+                2,
+                "R"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "bd": {
+        "opcode": "operator_not",
+        "next": null,
+        "parent": "Q",
+        "inputs": {
+            "OPERAND": [
+                2,
+                "be"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "be": {
+        "opcode": "operator_equals",
+        "next": null,
+        "parent": "bd",
+        "inputs": {
+            "OPERAND1": [
+                3,
+                "eU",
+                [
+                    10,
+                    ""
+                ]
+            ],
+            "OPERAND2": [
+                3,
+                [
+                    12,
+                    "sec",
+                    "_/lyc=]kdwW$eOfPLkF5"
+                ],
+                [
+                    10,
+                    "50"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "eU": {
+        "opcode": "sensing_current",
+        "next": null,
+        "parent": "be",
+        "inputs": {},
+        "fields": {
+            "CURRENTMENU": [
+                "SECOND",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "R": {
+        "opcode": "control_wait_until",
+        "next": "bf",
+        "parent": "Q",
+        "inputs": {
+            "CONDITION": [
+                2,
+                "bg"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "bg": {
+        "opcode": "operator_not",
+        "next": null,
+        "parent": "R",
+        "inputs": {
+            "OPERAND": [
+                2,
+                "bh"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "bh": {
+        "opcode": "operator_equals",
+        "next": null,
+        "parent": "bg",
+        "inputs": {
+            "OPERAND1": [
+                3,
+                "eV",
+                [
+                    10,
+                    ""
+                ]
+            ],
+            "OPERAND2": [
+                3,
+                [
+                    12,
+                    "sec",
+                    "_/lyc=]kdwW$eOfPLkF5"
+                ],
+                [
+                    10,
+                    "50"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "eV": {
+        "opcode": "sensing_current",
+        "next": null,
+        "parent": "bh",
+        "inputs": {},
+        "fields": {
+            "CURRENTMENU": [
+                "SECOND",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "bf": {
+        "opcode": "sound_play",
+        "next": null,
+        "parent": "R",
+        "inputs": {
+            "SOUND_MENU": [
+                1,
+                "eW"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "eW": {
+        "opcode": "sound_sounds_menu",
+        "next": null,
+        "parent": "bf",
+        "inputs": {},
+        "fields": {
+            "SOUND_MENU": [
+                "clock tik2",
+                null
+            ]
+        },
+        "shadow": true,
+        "topLevel": false
+    },
+    "eX": {
+        "opcode": "event_whenbroadcastreceived",
+        "next": "eY",
+        "parent": null,
+        "inputs": {},
+        "fields": {
+            "BROADCAST_OPTION": [
+                "Startup animation",
+                "o*8v]lIGr{4Jd^(q+)Y}"
+            ]
+        },
+        "shadow": false,
+        "topLevel": true,
+        "x": 0,
+        "y": 304
+    },
+    "eY": {
+        "opcode": "control_stop",
+        "next": null,
+        "parent": "eX",
+        "inputs": {},
+        "fields": {
+            "STOP_OPTION": [
+                "other scripts in sprite",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false,
+        "mutation": {
+            "tagName": "mutation",
+            "children": [],
+            "hasnext": "true"
+        }
+    },
+    "eZ": {
+        "opcode": "event_whenbroadcastreceived",
+        "next": "bi",
+        "parent": null,
+        "inputs": {},
+        "fields": {
+            "BROADCAST_OPTION": [
+                "System menu start",
+                "_C0]2Mci,D%5E4#-]|ZH"
+            ]
+        },
+        "shadow": false,
+        "topLevel": true,
+        "x": 0,
+        "y": 456
+    },
+    "bi": {
+        "opcode": "control_forever",
+        "next": null,
+        "parent": "eZ",
+        "inputs": {
+            "SUBSTACK": [
+                2,
+                "S"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "S": {
+        "opcode": "data_setvariableto",
+        "next": "e!",
+        "parent": "bi",
+        "inputs": {
+            "VALUE": [
+                3,
+                "e#",
+                [
+                    10,
+                    "0"
+                ]
+            ]
+        },
+        "fields": {
+            "VARIABLE": [
+                "sec",
+                "_/lyc=]kdwW$eOfPLkF5"
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "e#": {
+        "opcode": "sensing_current",
+        "next": null,
+        "parent": "S",
+        "inputs": {},
+        "fields": {
+            "CURRENTMENU": [
+                "SECOND",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "e!": {
+        "opcode": "control_wait",
+        "next": null,
+        "parent": "S",
+        "inputs": {
+            "DURATION": [
+                1,
+                [
+                    5,
+                    "1"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    }
+}

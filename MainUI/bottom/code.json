@@ -1,0 +1,1446 @@
+{
+    "dj": {
+        "opcode": "event_whenflagclicked",
+        "next": "at",
+        "parent": null,
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": true,
+        "x": 278,
+        "y": 162
+    },
+    "at": {
+        "opcode": "looks_gotofrontback",
+        "next": "l",
+        "parent": "dj",
+        "inputs": {},
+        "fields": {
+            "FRONT_BACK": [
+                "front",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "l": {
+        "opcode": "looks_switchcostumeto",
+        "next": "m",
+        "parent": "at",
+        "inputs": {
+            "COSTUME": [
+                1,
+                "dk"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "dk": {
+        "opcode": "looks_costume",
+        "next": null,
+        "parent": "l",
+        "inputs": {},
+        "fields": {
+            "COSTUME": [
+                "nintendo-ds2",
+                null
+            ]
+        },
+        "shadow": true,
+        "topLevel": false
+    },
+    "m": {
+        "opcode": "control_create_clone_of",
+        "next": "dl",
+        "parent": "l",
+        "inputs": {
+            "CLONE_OPTION": [
+                1,
+                "dm"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "dm": {
+        "opcode": "control_create_clone_of_menu",
+        "next": null,
+        "parent": "m",
+        "inputs": {},
+        "fields": {
+            "CLONE_OPTION": [
+                "_myself_",
+                null
+            ]
+        },
+        "shadow": true,
+        "topLevel": false
+    },
+    "dl": {
+        "opcode": "data_setvariableto",
+        "next": null,
+        "parent": "m",
+        "inputs": {
+            "VALUE": [
+                1,
+                [
+                    10,
+                    "Startup"
+                ]
+            ]
+        },
+        "fields": {
+            "VARIABLE": [
+                "Clone",
+                "?sW^5sK-QRNX~6MV$u30"
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "dn": {
+        "opcode": "control_start_as_clone",
+        "next": "n",
+        "parent": null,
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": true,
+        "x": 109,
+        "y": 401
+    },
+    "n": {
+        "opcode": "control_if",
+        "next": null,
+        "parent": "dn",
+        "inputs": {
+            "CONDITION": [
+                2,
+                "do"
+            ],
+            "SUBSTACK": [
+                2,
+                "o"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "do": {
+        "opcode": "operator_equals",
+        "next": null,
+        "parent": "n",
+        "inputs": {
+            "OPERAND1": [
+                3,
+                [
+                    12,
+                    "Clone",
+                    "?sW^5sK-QRNX~6MV$u30"
+                ],
+                [
+                    10,
+                    ""
+                ]
+            ],
+            "OPERAND2": [
+                1,
+                [
+                    10,
+                    "Startup"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "o": {
+        "opcode": "sound_play",
+        "next": "p",
+        "parent": "n",
+        "inputs": {
+            "SOUND_MENU": [
+                1,
+                "dp"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "dp": {
+        "opcode": "sound_sounds_menu",
+        "next": null,
+        "parent": "o",
+        "inputs": {},
+        "fields": {
+            "SOUND_MENU": [
+                "Nintendo DS Start-Up Screen \u2714",
+                null
+            ]
+        },
+        "shadow": true,
+        "topLevel": false
+    },
+    "p": {
+        "opcode": "looks_switchcostumeto",
+        "next": "au",
+        "parent": "o",
+        "inputs": {
+            "COSTUME": [
+                1,
+                "dq"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "dq": {
+        "opcode": "looks_costume",
+        "next": null,
+        "parent": "p",
+        "inputs": {},
+        "fields": {
+            "COSTUME": [
+                "nintendo-ds3",
+                null
+            ]
+        },
+        "shadow": true,
+        "topLevel": false
+    },
+    "au": {
+        "opcode": "looks_seteffectto",
+        "next": "av",
+        "parent": "p",
+        "inputs": {
+            "VALUE": [
+                1,
+                [
+                    4,
+                    "0"
+                ]
+            ]
+        },
+        "fields": {
+            "EFFECT": [
+                "GHOST",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "av": {
+        "opcode": "motion_gotoxy",
+        "next": "aw",
+        "parent": "au",
+        "inputs": {
+            "X": [
+                1,
+                [
+                    4,
+                    "0"
+                ]
+            ],
+            "Y": [
+                1,
+                [
+                    4,
+                    "96"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "aw": {
+        "opcode": "control_wait",
+        "next": "q",
+        "parent": "av",
+        "inputs": {
+            "DURATION": [
+                1,
+                [
+                    5,
+                    "1"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "q": {
+        "opcode": "control_repeat",
+        "next": "ax",
+        "parent": "aw",
+        "inputs": {
+            "TIMES": [
+                1,
+                [
+                    6,
+                    "10"
+                ]
+            ],
+            "SUBSTACK": [
+                2,
+                "dr"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "dr": {
+        "opcode": "looks_changeeffectby",
+        "next": null,
+        "parent": "q",
+        "inputs": {
+            "CHANGE": [
+                1,
+                [
+                    4,
+                    "25"
+                ]
+            ]
+        },
+        "fields": {
+            "EFFECT": [
+                "GHOST",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "ax": {
+        "opcode": "event_broadcast",
+        "next": "ds",
+        "parent": "q",
+        "inputs": {
+            "BROADCAST_INPUT": [
+                1,
+                [
+                    11,
+                    "Startup animation",
+                    "o*8v]lIGr{4Jd^(q+)Y}"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "ds": {
+        "opcode": "control_delete_this_clone",
+        "next": null,
+        "parent": "ax",
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "dt": {
+        "opcode": "event_whenbroadcastreceived",
+        "next": "r",
+        "parent": null,
+        "inputs": {},
+        "fields": {
+            "BROADCAST_OPTION": [
+                "Startup done",
+                "B8q_o|E,18BS%i3!+1Fu"
+            ]
+        },
+        "shadow": false,
+        "topLevel": true,
+        "x": 546,
+        "y": 563
+    },
+    "r": {
+        "opcode": "control_create_clone_of",
+        "next": "ay",
+        "parent": "dt",
+        "inputs": {
+            "CLONE_OPTION": [
+                1,
+                "du"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "du": {
+        "opcode": "control_create_clone_of_menu",
+        "next": null,
+        "parent": "r",
+        "inputs": {},
+        "fields": {
+            "CLONE_OPTION": [
+                "_myself_",
+                null
+            ]
+        },
+        "shadow": true,
+        "topLevel": false
+    },
+    "ay": {
+        "opcode": "data_setvariableto",
+        "next": "az",
+        "parent": "r",
+        "inputs": {
+            "VALUE": [
+                1,
+                [
+                    10,
+                    "startup done"
+                ]
+            ]
+        },
+        "fields": {
+            "VARIABLE": [
+                "Clone",
+                "?sW^5sK-QRNX~6MV$u30"
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "az": {
+        "opcode": "looks_switchcostumeto",
+        "next": null,
+        "parent": "ay",
+        "inputs": {
+            "COSTUME": [
+                1,
+                "dv"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "dv": {
+        "opcode": "looks_costume",
+        "next": null,
+        "parent": "az",
+        "inputs": {},
+        "fields": {
+            "COSTUME": [
+                "nintendo-ds",
+                null
+            ]
+        },
+        "shadow": true,
+        "topLevel": false
+    },
+    "dw": {
+        "opcode": "control_start_as_clone",
+        "next": "s",
+        "parent": null,
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": true,
+        "x": 562,
+        "y": 803
+    },
+    "s": {
+        "opcode": "control_if",
+        "next": null,
+        "parent": "dw",
+        "inputs": {
+            "CONDITION": [
+                2,
+                "dx"
+            ],
+            "SUBSTACK": [
+                2,
+                "aA"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "dx": {
+        "opcode": "operator_equals",
+        "next": null,
+        "parent": "s",
+        "inputs": {
+            "OPERAND1": [
+                3,
+                [
+                    12,
+                    "Clone",
+                    "?sW^5sK-QRNX~6MV$u30"
+                ],
+                [
+                    10,
+                    ""
+                ]
+            ],
+            "OPERAND2": [
+                1,
+                [
+                    10,
+                    "startup done"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "aA": {
+        "opcode": "looks_gotofrontback",
+        "next": "t",
+        "parent": "s",
+        "inputs": {},
+        "fields": {
+            "FRONT_BACK": [
+                "front",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "t": {
+        "opcode": "looks_switchcostumeto",
+        "next": "aB",
+        "parent": "aA",
+        "inputs": {
+            "COSTUME": [
+                1,
+                "dy"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "dy": {
+        "opcode": "looks_costume",
+        "next": null,
+        "parent": "t",
+        "inputs": {},
+        "fields": {
+            "COSTUME": [
+                "nintendo-ds2",
+                null
+            ]
+        },
+        "shadow": true,
+        "topLevel": false
+    },
+    "aB": {
+        "opcode": "looks_seteffectto",
+        "next": "u",
+        "parent": "t",
+        "inputs": {
+            "VALUE": [
+                1,
+                [
+                    4,
+                    "0"
+                ]
+            ]
+        },
+        "fields": {
+            "EFFECT": [
+                "GHOST",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "u": {
+        "opcode": "control_repeat",
+        "next": "dz",
+        "parent": "aB",
+        "inputs": {
+            "TIMES": [
+                1,
+                [
+                    6,
+                    "10"
+                ]
+            ],
+            "SUBSTACK": [
+                2,
+                "dA"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "dA": {
+        "opcode": "looks_changeeffectby",
+        "next": null,
+        "parent": "u",
+        "inputs": {
+            "CHANGE": [
+                1,
+                [
+                    4,
+                    "25"
+                ]
+            ]
+        },
+        "fields": {
+            "EFFECT": [
+                "GHOST",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "dz": {
+        "opcode": "control_delete_this_clone",
+        "next": null,
+        "parent": "u",
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "dB": {
+        "opcode": "event_whenthisspriteclicked",
+        "next": "v",
+        "parent": null,
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": true,
+        "x": 946,
+        "y": 747
+    },
+    "v": {
+        "opcode": "sound_play",
+        "next": "w",
+        "parent": "dB",
+        "inputs": {
+            "SOUND_MENU": [
+                1,
+                "dC"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "dC": {
+        "opcode": "sound_sounds_menu",
+        "next": null,
+        "parent": "v",
+        "inputs": {},
+        "fields": {
+            "SOUND_MENU": [
+                "Click/Open",
+                null
+            ]
+        },
+        "shadow": true,
+        "topLevel": false
+    },
+    "w": {
+        "opcode": "control_create_clone_of",
+        "next": "aC",
+        "parent": "v",
+        "inputs": {
+            "CLONE_OPTION": [
+                1,
+                "dD"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "dD": {
+        "opcode": "control_create_clone_of_menu",
+        "next": null,
+        "parent": "w",
+        "inputs": {},
+        "fields": {
+            "CLONE_OPTION": [
+                "_myself_",
+                null
+            ]
+        },
+        "shadow": true,
+        "topLevel": false
+    },
+    "aC": {
+        "opcode": "data_setvariableto",
+        "next": "x",
+        "parent": "w",
+        "inputs": {
+            "VALUE": [
+                1,
+                [
+                    10,
+                    "touch to start"
+                ]
+            ]
+        },
+        "fields": {
+            "VARIABLE": [
+                "Clone",
+                "?sW^5sK-QRNX~6MV$u30"
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "x": {
+        "opcode": "looks_switchcostumeto",
+        "next": "dE",
+        "parent": "aC",
+        "inputs": {
+            "COSTUME": [
+                1,
+                "dF"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "dF": {
+        "opcode": "looks_costume",
+        "next": null,
+        "parent": "x",
+        "inputs": {},
+        "fields": {
+            "COSTUME": [
+                "nintendo-ds menu",
+                null
+            ]
+        },
+        "shadow": true,
+        "topLevel": false
+    },
+    "dE": {
+        "opcode": "event_broadcast",
+        "next": null,
+        "parent": "x",
+        "inputs": {
+            "BROADCAST_INPUT": [
+                1,
+                [
+                    11,
+                    "System menu start",
+                    "_C0]2Mci,D%5E4#-]|ZH"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "dG": {
+        "opcode": "control_start_as_clone",
+        "next": "y",
+        "parent": null,
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": true,
+        "x": 892,
+        "y": 1071
+    },
+    "y": {
+        "opcode": "control_if",
+        "next": null,
+        "parent": "dG",
+        "inputs": {
+            "CONDITION": [
+                2,
+                "dH"
+            ],
+            "SUBSTACK": [
+                2,
+                "aD"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "dH": {
+        "opcode": "operator_equals",
+        "next": null,
+        "parent": "y",
+        "inputs": {
+            "OPERAND1": [
+                3,
+                [
+                    12,
+                    "Clone",
+                    "?sW^5sK-QRNX~6MV$u30"
+                ],
+                [
+                    10,
+                    ""
+                ]
+            ],
+            "OPERAND2": [
+                1,
+                [
+                    10,
+                    "touch to start"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "aD": {
+        "opcode": "looks_gotofrontback",
+        "next": "z",
+        "parent": "y",
+        "inputs": {},
+        "fields": {
+            "FRONT_BACK": [
+                "front",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "z": {
+        "opcode": "looks_switchcostumeto",
+        "next": "aE",
+        "parent": "aD",
+        "inputs": {
+            "COSTUME": [
+                1,
+                "dI"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "dI": {
+        "opcode": "looks_costume",
+        "next": null,
+        "parent": "z",
+        "inputs": {},
+        "fields": {
+            "COSTUME": [
+                "nintendo-ds old",
+                null
+            ]
+        },
+        "shadow": true,
+        "topLevel": false
+    },
+    "aE": {
+        "opcode": "looks_seteffectto",
+        "next": "A",
+        "parent": "z",
+        "inputs": {
+            "VALUE": [
+                1,
+                [
+                    4,
+                    "0"
+                ]
+            ]
+        },
+        "fields": {
+            "EFFECT": [
+                "GHOST",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "A": {
+        "opcode": "control_repeat",
+        "next": "dJ",
+        "parent": "aE",
+        "inputs": {
+            "TIMES": [
+                1,
+                [
+                    6,
+                    "10"
+                ]
+            ],
+            "SUBSTACK": [
+                2,
+                "dK"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "dK": {
+        "opcode": "looks_changeeffectby",
+        "next": null,
+        "parent": "A",
+        "inputs": {
+            "CHANGE": [
+                1,
+                [
+                    4,
+                    "25"
+                ]
+            ]
+        },
+        "fields": {
+            "EFFECT": [
+                "GHOST",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "dJ": {
+        "opcode": "control_delete_this_clone",
+        "next": null,
+        "parent": "A",
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "dL": {
+        "opcode": "control_start_as_clone",
+        "next": "aF",
+        "parent": null,
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": true,
+        "x": 508,
+        "y": 1365
+    },
+    "aF": {
+        "opcode": "control_if",
+        "next": null,
+        "parent": "dL",
+        "inputs": {
+            "CONDITION": [
+                2,
+                "dM"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "dM": {
+        "opcode": "operator_equals",
+        "next": null,
+        "parent": "aF",
+        "inputs": {
+            "OPERAND1": [
+                3,
+                [
+                    12,
+                    "Clone",
+                    "?sW^5sK-QRNX~6MV$u30"
+                ],
+                [
+                    10,
+                    ""
+                ]
+            ],
+            "OPERAND2": [
+                1,
+                [
+                    10,
+                    "crash"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "dN": {
+        "opcode": "looks_gotofrontback",
+        "next": "B",
+        "parent": null,
+        "inputs": {},
+        "fields": {
+            "FRONT_BACK": [
+                "front",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": true,
+        "x": 358,
+        "y": 1043
+    },
+    "B": {
+        "opcode": "looks_switchcostumeto",
+        "next": "aG",
+        "parent": "dN",
+        "inputs": {
+            "COSTUME": [
+                1,
+                "dO"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "dO": {
+        "opcode": "looks_costume",
+        "next": null,
+        "parent": "B",
+        "inputs": {},
+        "fields": {
+            "COSTUME": [
+                "nintendo-ds2",
+                null
+            ]
+        },
+        "shadow": true,
+        "topLevel": false
+    },
+    "aG": {
+        "opcode": "looks_seteffectto",
+        "next": "C",
+        "parent": "B",
+        "inputs": {
+            "VALUE": [
+                1,
+                [
+                    4,
+                    "100"
+                ]
+            ]
+        },
+        "fields": {
+            "EFFECT": [
+                "GHOST",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "C": {
+        "opcode": "control_repeat",
+        "next": "aH",
+        "parent": "aG",
+        "inputs": {
+            "TIMES": [
+                1,
+                [
+                    6,
+                    "10"
+                ]
+            ],
+            "SUBSTACK": [
+                2,
+                "dP"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "dP": {
+        "opcode": "looks_changeeffectby",
+        "next": null,
+        "parent": "C",
+        "inputs": {
+            "CHANGE": [
+                1,
+                [
+                    4,
+                    "-25"
+                ]
+            ]
+        },
+        "fields": {
+            "EFFECT": [
+                "GHOST",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "aH": {
+        "opcode": "looks_gotofrontback",
+        "next": "D",
+        "parent": "C",
+        "inputs": {},
+        "fields": {
+            "FRONT_BACK": [
+                "front",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "D": {
+        "opcode": "looks_switchcostumeto",
+        "next": "aI",
+        "parent": "aH",
+        "inputs": {
+            "COSTUME": [
+                1,
+                "dQ"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "dQ": {
+        "opcode": "looks_costume",
+        "next": null,
+        "parent": "D",
+        "inputs": {},
+        "fields": {
+            "COSTUME": [
+                "nintendo-ds2",
+                null
+            ]
+        },
+        "shadow": true,
+        "topLevel": false
+    },
+    "aI": {
+        "opcode": "looks_seteffectto",
+        "next": "E",
+        "parent": "D",
+        "inputs": {
+            "VALUE": [
+                1,
+                [
+                    4,
+                    "0"
+                ]
+            ]
+        },
+        "fields": {
+            "EFFECT": [
+                "GHOST",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "E": {
+        "opcode": "control_repeat",
+        "next": "dR",
+        "parent": "aI",
+        "inputs": {
+            "TIMES": [
+                1,
+                [
+                    6,
+                    "10"
+                ]
+            ],
+            "SUBSTACK": [
+                2,
+                "dS"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "dS": {
+        "opcode": "looks_changeeffectby",
+        "next": null,
+        "parent": "E",
+        "inputs": {
+            "CHANGE": [
+                1,
+                [
+                    4,
+                    "25"
+                ]
+            ]
+        },
+        "fields": {
+            "EFFECT": [
+                "GHOST",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "dR": {
+        "opcode": "control_delete_this_clone",
+        "next": null,
+        "parent": "E",
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "g?": {
+        "opcode": "control_delete_this_clone",
+        "next": null,
+        "parent": null,
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": true,
+        "x": 572,
+        "y": 1837
+    },
+    "dT": {
+        "opcode": "event_whenbroadcastreceived",
+        "next": "aJ",
+        "parent": null,
+        "inputs": {},
+        "fields": {
+            "BROADCAST_OPTION": [
+                " settings open",
+                "xX:Bmb.9]LoB=#~L/wqF"
+            ]
+        },
+        "shadow": false,
+        "topLevel": true,
+        "x": 631,
+        "y": 2132
+    },
+    "aJ": {
+        "opcode": "looks_seteffectto",
+        "next": "aK",
+        "parent": "dT",
+        "inputs": {
+            "VALUE": [
+                1,
+                [
+                    4,
+                    "0"
+                ]
+            ]
+        },
+        "fields": {
+            "EFFECT": [
+                "GHOST",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "aK": {
+        "opcode": "looks_show",
+        "next": "aL",
+        "parent": "aJ",
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "aL": {
+        "opcode": "looks_switchcostumeto",
+        "next": null,
+        "parent": "aK",
+        "inputs": {
+            "COSTUME": [
+                1,
+                "dU"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "dU": {
+        "opcode": "looks_costume",
+        "next": null,
+        "parent": "aL",
+        "inputs": {},
+        "fields": {
+            "COSTUME": [
+                "nintendo-ds me",
+                null
+            ]
+        },
+        "shadow": true,
+        "topLevel": false
+    },
+    "dV": {
+        "opcode": "event_whenbroadcastreceived",
+        "next": "aM",
+        "parent": null,
+        "inputs": {},
+        "fields": {
+            "BROADCAST_OPTION": [
+                "Startup animation",
+                "o*8v]lIGr{4Jd^(q+)Y}"
+            ]
+        },
+        "shadow": false,
+        "topLevel": true,
+        "x": -72,
+        "y": 840
+    },
+    "aM": {
+        "opcode": "looks_switchcostumeto",
+        "next": null,
+        "parent": "dV",
+        "inputs": {
+            "COSTUME": [
+                1,
+                "dW"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "dW": {
+        "opcode": "looks_costume",
+        "next": null,
+        "parent": "aM",
+        "inputs": {},
+        "fields": {
+            "COSTUME": [
+                "nintendo-ds2",
+                null
+            ]
+        },
+        "shadow": true,
+        "topLevel": false
+    },
+    "dX": {
+        "opcode": "event_whenbroadcastreceived",
+        "next": "aN",
+        "parent": null,
+        "inputs": {},
+        "fields": {
+            "BROADCAST_OPTION": [
+                "ooo",
+                "QAe@29bNWLoUjoJUA8s+"
+            ]
+        },
+        "shadow": false,
+        "topLevel": true,
+        "x": 629,
+        "y": 172
+    },
+    "aN": {
+        "opcode": "looks_gotofrontback",
+        "next": "F",
+        "parent": "dX",
+        "inputs": {},
+        "fields": {
+            "FRONT_BACK": [
+                "front",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "F": {
+        "opcode": "looks_switchcostumeto",
+        "next": "G",
+        "parent": "aN",
+        "inputs": {
+            "COSTUME": [
+                1,
+                "dY"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "dY": {
+        "opcode": "looks_costume",
+        "next": null,
+        "parent": "F",
+        "inputs": {},
+        "fields": {
+            "COSTUME": [
+                "nintendo-ds2",
+                null
+            ]
+        },
+        "shadow": true,
+        "topLevel": false
+    },
+    "G": {
+        "opcode": "control_create_clone_of",
+        "next": "dZ",
+        "parent": "F",
+        "inputs": {
+            "CLONE_OPTION": [
+                1,
+                "d!"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "d!": {
+        "opcode": "control_create_clone_of_menu",
+        "next": null,
+        "parent": "G",
+        "inputs": {},
+        "fields": {
+            "CLONE_OPTION": [
+                "_myself_",
+                null
+            ]
+        },
+        "shadow": true,
+        "topLevel": false
+    },
+    "dZ": {
+        "opcode": "data_setvariableto",
+        "next": null,
+        "parent": "G",
+        "inputs": {
+            "VALUE": [
+                1,
+                [
+                    10,
+                    "Startup"
+                ]
+            ]
+        },
+        "fields": {
+            "VARIABLE": [
+                "Clone",
+                "?sW^5sK-QRNX~6MV$u30"
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    }
+}

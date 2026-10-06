@@ -1,0 +1,192 @@
+{
+    "et": {
+        "opcode": "event_whenthisspriteclicked",
+        "next": "a;",
+        "parent": null,
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": true,
+        "x": 409,
+        "y": 434
+    },
+    "a;": {
+        "opcode": "sound_play",
+        "next": null,
+        "parent": "et",
+        "inputs": {
+            "SOUND_MENU": [
+                1,
+                "eu"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "eu": {
+        "opcode": "sound_sounds_menu",
+        "next": null,
+        "parent": "a;",
+        "inputs": {},
+        "fields": {
+            "SOUND_MENU": [
+                "no",
+                null
+            ]
+        },
+        "shadow": true,
+        "topLevel": false
+    },
+    "ev": {
+        "opcode": "event_whenbroadcastreceived",
+        "next": "ew",
+        "parent": null,
+        "inputs": {},
+        "fields": {
+            "BROADCAST_OPTION": [
+                " settings open",
+                "xX:Bmb.9]LoB=#~L/wqF"
+            ]
+        },
+        "shadow": false,
+        "topLevel": true,
+        "x": 44,
+        "y": 44
+    },
+    "ew": {
+        "opcode": "looks_hide",
+        "next": null,
+        "parent": "ev",
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "ex": {
+        "opcode": "event_whenbroadcastreceived",
+        "next": "ey",
+        "parent": null,
+        "inputs": {},
+        "fields": {
+            "BROADCAST_OPTION": [
+                "System menu start",
+                "_C0]2Mci,D%5E4#-]|ZH"
+            ]
+        },
+        "shadow": false,
+        "topLevel": true,
+        "x": 251,
+        "y": 181
+    },
+    "ey": {
+        "opcode": "looks_gotofrontback",
+        "next": null,
+        "parent": "ex",
+        "inputs": {},
+        "fields": {
+            "FRONT_BACK": [
+                "front",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "ez": {
+        "opcode": "event_whenflagclicked",
+        "next": "a=",
+        "parent": null,
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": true,
+        "x": 617,
+        "y": 73
+    },
+    "a=": {
+        "opcode": "looks_seteffectto",
+        "next": "eA",
+        "parent": "ez",
+        "inputs": {
+            "VALUE": [
+                1,
+                [
+                    4,
+                    "0"
+                ]
+            ]
+        },
+        "fields": {
+            "EFFECT": [
+                "GHOST",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "eA": {
+        "opcode": "motion_gotoxy",
+        "next": null,
+        "parent": "a=",
+        "inputs": {
+            "X": [
+                1,
+                [
+                    4,
+                    "0"
+                ]
+            ],
+            "Y": [
+                1,
+                [
+                    4,
+                    "0"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "eB": {
+        "opcode": "event_whenbroadcastreceived",
+        "next": "a?",
+        "parent": null,
+        "inputs": {},
+        "fields": {
+            "BROADCAST_OPTION": [
+                "System menu start",
+                "_C0]2Mci,D%5E4#-]|ZH"
+            ]
+        },
+        "shadow": false,
+        "topLevel": true,
+        "x": 44,
+        "y": 44
+    },
+    "a?": {
+        "opcode": "looks_gotofrontback",
+        "next": "eC",
+        "parent": "eB",
+        "inputs": {},
+        "fields": {
+            "FRONT_BACK": [
+                "front",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "eC": {
+        "opcode": "looks_show",
+        "next": null,
+        "parent": "a?",
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    }
+}

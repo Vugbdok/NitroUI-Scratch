@@ -1,0 +1,177 @@
+{
+    "g(": {
+        "opcode": "event_whenthisspriteclicked",
+        "next": "ar",
+        "parent": null,
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": true,
+        "x": 210,
+        "y": 424
+    },
+    "ar": {
+        "opcode": "sound_play",
+        "next": "g)",
+        "parent": "g(",
+        "inputs": {
+            "SOUND_MENU": [
+                1,
+                "g*"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "g*": {
+        "opcode": "sound_sounds_menu",
+        "next": null,
+        "parent": "ar",
+        "inputs": {},
+        "fields": {
+            "SOUND_MENU": [
+                "no",
+                null
+            ]
+        },
+        "shadow": true,
+        "topLevel": false
+    },
+    "g)": {
+        "opcode": "event_broadcast",
+        "next": null,
+        "parent": "ar",
+        "inputs": {
+            "BROADCAST_INPUT": [
+                1,
+                [
+                    11,
+                    "back",
+                    "M.rX!WEP[Q$=e]t^hhZf"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "g+": {
+        "opcode": "event_whenbroadcastreceived",
+        "next": "g,",
+        "parent": null,
+        "inputs": {},
+        "fields": {
+            "BROADCAST_OPTION": [
+                "Startup animation",
+                "o*8v]lIGr{4Jd^(q+)Y}"
+            ]
+        },
+        "shadow": false,
+        "topLevel": true,
+        "x": 44,
+        "y": 44
+    },
+    "g,": {
+        "opcode": "looks_hide",
+        "next": null,
+        "parent": "g+",
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "hx": {
+        "opcode": "event_broadcast",
+        "next": null,
+        "parent": null,
+        "inputs": {
+            "BROADCAST_INPUT": [
+                1,
+                [
+                    11,
+                    "Startup animation",
+                    "o*8v]lIGr{4Jd^(q+)Y}"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": true,
+        "x": 310,
+        "y": 757
+    },
+    "g-": {
+        "opcode": "event_whenbroadcastreceived",
+        "next": "g.",
+        "parent": null,
+        "inputs": {},
+        "fields": {
+            "BROADCAST_OPTION": [
+                "back",
+                "M.rX!WEP[Q$=e]t^hhZf"
+            ]
+        },
+        "shadow": false,
+        "topLevel": true,
+        "x": 226,
+        "y": 581
+    },
+    "g.": {
+        "opcode": "event_broadcast",
+        "next": null,
+        "parent": "g-",
+        "inputs": {
+            "BROADCAST_INPUT": [
+                1,
+                [
+                    11,
+                    "notff",
+                    "aFbLS*V3l)_TBror_W$2"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "g/": {
+        "opcode": "event_whenbroadcastreceived",
+        "next": "c~",
+        "parent": null,
+        "inputs": {},
+        "fields": {
+            "BROADCAST_OPTION": [
+                " settings open",
+                "xX:Bmb.9]LoB=#~L/wqF"
+            ]
+        },
+        "shadow": false,
+        "topLevel": true,
+        "x": 520,
+        "y": 264
+    },
+    "c~": {
+        "opcode": "looks_gotofrontback",
+        "next": "g:",
+        "parent": "g/",
+        "inputs": {},
+        "fields": {
+            "FRONT_BACK": [
+                "front",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "g:": {
+        "opcode": "looks_show",
+        "next": null,
+        "parent": "c~",
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    }
+}
