@@ -7,8 +7,8 @@
         "fields": {},
         "shadow": false,
         "topLevel": true,
-        "x": 278,
-        "y": 162
+        "x": 448,
+        "y": 64
     },
     "at": {
         "opcode": "looks_gotofrontback",
@@ -110,8 +110,8 @@
         "fields": {},
         "shadow": false,
         "topLevel": true,
-        "x": 109,
-        "y": 401
+        "x": 448,
+        "y": 384
     },
     "n": {
         "opcode": "control_if",
@@ -362,8 +362,8 @@
         },
         "shadow": false,
         "topLevel": true,
-        "x": 546,
-        "y": 563
+        "x": 945,
+        "y": 384
     },
     "r": {
         "opcode": "control_create_clone_of",
@@ -451,8 +451,8 @@
         "fields": {},
         "shadow": false,
         "topLevel": true,
-        "x": 562,
-        "y": 803
+        "x": 945,
+        "y": 656
     },
     "s": {
         "opcode": "control_if",
@@ -625,8 +625,8 @@
         "fields": {},
         "shadow": false,
         "topLevel": true,
-        "x": 946,
-        "y": 747
+        "x": 1390,
+        "y": 64
     },
     "v": {
         "opcode": "sound_play",
@@ -727,7 +727,7 @@
         "inputs": {},
         "fields": {
             "COSTUME": [
-                "nintendo-ds menu",
+                "Menu",
                 null
             ]
         },
@@ -760,8 +760,8 @@
         "fields": {},
         "shadow": false,
         "topLevel": true,
-        "x": 892,
-        "y": 1071
+        "x": 1390,
+        "y": 432
     },
     "y": {
         "opcode": "control_if",
@@ -934,8 +934,8 @@
         "fields": {},
         "shadow": false,
         "topLevel": true,
-        "x": 508,
-        "y": 1365
+        "x": 945,
+        "y": 1192
     },
     "aF": {
         "opcode": "control_if",
@@ -993,8 +993,8 @@
         },
         "shadow": false,
         "topLevel": true,
-        "x": 358,
-        "y": 1043
+        "x": 448,
+        "y": 1064
     },
     "B": {
         "opcode": "looks_switchcostumeto",
@@ -1213,8 +1213,8 @@
         "fields": {},
         "shadow": false,
         "topLevel": true,
-        "x": 572,
-        "y": 1837
+        "x": 945,
+        "y": 1432
     },
     "dT": {
         "opcode": "event_whenbroadcastreceived",
@@ -1229,8 +1229,8 @@
         },
         "shadow": false,
         "topLevel": true,
-        "x": 631,
-        "y": 2132
+        "x": 945,
+        "y": 1552
     },
     "aJ": {
         "opcode": "looks_seteffectto",
@@ -1304,8 +1304,8 @@
         },
         "shadow": false,
         "topLevel": true,
-        "x": -72,
-        "y": 840
+        "x": 48,
+        "y": 64
     },
     "aM": {
         "opcode": "looks_switchcostumeto",
@@ -1348,8 +1348,8 @@
         },
         "shadow": false,
         "topLevel": true,
-        "x": 629,
-        "y": 172
+        "x": 945,
+        "y": 64
     },
     "aN": {
         "opcode": "looks_gotofrontback",

@@ -286,7 +286,7 @@
         "inputs": {},
         "fields": {
             "CLONE_OPTION": [
-                "MainUI//bottom"
+                "MainUI//MenuUI"
             ]
         },
         "shadow": true,
