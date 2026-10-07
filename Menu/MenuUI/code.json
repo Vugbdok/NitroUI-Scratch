@@ -1,94 +1,19 @@
 {
-    "H": {
-        "opcode": "looks_switchcostumeto",
-        "next": "dq",
-        "parent": "dp",
-        "inputs": {
-            "COSTUME": [
-                1,
-                "dr"
-            ]
-        },
-        "fields": {},
-        "shadow": false,
-        "topLevel": false
-    },
-    "dr": {
-        "opcode": "looks_costume",
-        "next": null,
-        "parent": "H",
-        "inputs": {},
-        "fields": {
-            "COSTUME": [
-                "Menu",
-                null
-            ]
-        },
-        "shadow": true,
-        "topLevel": false
-    },
-    "ds": {
+    "a{": {
         "opcode": "control_start_as_clone",
-        "next": "I",
+        "next": "+",
         "parent": null,
         "inputs": {},
         "fields": {},
         "shadow": false,
         "topLevel": true,
-        "x": 666,
+        "x": 421,
         "y": 64
     },
-    "I": {
-        "opcode": "control_if",
-        "next": null,
-        "parent": "ds",
-        "inputs": {
-            "CONDITION": [
-                2,
-                "dt"
-            ],
-            "SUBSTACK": [
-                2,
-                "aL"
-            ]
-        },
-        "fields": {},
-        "shadow": false,
-        "topLevel": false
-    },
-    "dt": {
-        "opcode": "operator_equals",
-        "next": null,
-        "parent": "I",
-        "inputs": {
-            "OPERAND1": [
-                3,
-                [
-                    12,
-                    "Clone",
-                    "?sW^5sK-QRNX~6MV$u30"
-                ],
-                [
-                    10,
-                    ""
-                ]
-            ],
-            "OPERAND2": [
-                1,
-                [
-                    10,
-                    "touch to start"
-                ]
-            ]
-        },
-        "fields": {},
-        "shadow": false,
-        "topLevel": false
-    },
-    "aL": {
+    "+": {
         "opcode": "looks_gotofrontback",
-        "next": "J",
-        "parent": "I",
+        "next": "k",
+        "parent": "a{",
         "inputs": {},
         "fields": {
             "FRONT_BACK": [
@@ -99,40 +24,135 @@
         "shadow": false,
         "topLevel": false
     },
-    "J": {
-        "opcode": "looks_switchcostumeto",
-        "next": "aM",
-        "parent": "aL",
+    "k": {
+        "opcode": "control_if",
+        "next": "v",
+        "parent": "+",
         "inputs": {
-            "COSTUME": [
-                1,
-                "du"
+            "CONDITION": [
+                2,
+                ","
+            ],
+            "SUBSTACK": [
+                2,
+                "-"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "du": {
+    ",": {
+        "opcode": "operator_equals",
+        "next": null,
+        "parent": "k",
+        "inputs": {
+            "OPERAND1": [
+                3,
+                "a|",
+                [
+                    10,
+                    ""
+                ]
+            ],
+            "OPERAND2": [
+                1,
+                [
+                    10,
+                    "TopBar"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "a|": {
+        "opcode": "looks_costumenumbername",
+        "next": null,
+        "parent": ",",
+        "inputs": {},
+        "fields": {
+            "NUMBER_NAME": [
+                "name",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "-": {
+        "opcode": "motion_gotoxy",
+        "next": "w",
+        "parent": "k",
+        "inputs": {
+            "X": [
+                1,
+                [
+                    4,
+                    "0"
+                ]
+            ],
+            "Y": [
+                1,
+                [
+                    4,
+                    "20"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "w": {
+        "opcode": "looks_switchcostumeto",
+        "next": "a}",
+        "parent": "-",
+        "inputs": {
+            "COSTUME": [
+                1,
+                "a~"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "a~": {
         "opcode": "looks_costume",
         "next": null,
-        "parent": "J",
+        "parent": "w",
         "inputs": {},
         "fields": {
             "COSTUME": [
-                "nintendo-ds old",
+                "TopBar",
                 null
             ]
         },
         "shadow": true,
         "topLevel": false
     },
-    "aM": {
-        "opcode": "looks_seteffectto",
-        "next": "K",
-        "parent": "J",
+    "a}": {
+        "opcode": "motion_glidesecstoxy",
+        "next": null,
+        "parent": "w",
         "inputs": {
-            "VALUE": [
+            "SECS": [
+                1,
+                [
+                    4,
+                    ".3"
+                ]
+            ],
+            "X": [
+                1,
+                [
+                    4,
+                    "0"
+                ]
+            ],
+            "Y": [
                 1,
                 [
                     4,
@@ -140,70 +160,70 @@
                 ]
             ]
         },
-        "fields": {
-            "EFFECT": [
-                "GHOST",
-                null
-            ]
-        },
+        "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "K": {
-        "opcode": "control_repeat",
-        "next": "dv",
-        "parent": "aM",
+    "v": {
+        "opcode": "control_if",
+        "next": null,
+        "parent": "k",
         "inputs": {
-            "TIMES": [
-                1,
-                [
-                    6,
-                    "10"
-                ]
+            "CONDITION": [
+                2,
+                "."
             ],
             "SUBSTACK": [
                 2,
-                "dw"
+                "/"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "dw": {
-        "opcode": "looks_changeeffectby",
+    ".": {
+        "opcode": "operator_equals",
         "next": null,
-        "parent": "K",
+        "parent": "v",
         "inputs": {
-            "CHANGE": [
+            "OPERAND1": [
+                3,
+                "ba",
+                [
+                    10,
+                    ""
+                ]
+            ],
+            "OPERAND2": [
                 1,
                 [
-                    4,
-                    "25"
+                    10,
+                    "TopScreen"
                 ]
             ]
         },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "ba": {
+        "opcode": "looks_costumenumbername",
+        "next": null,
+        "parent": ".",
+        "inputs": {},
         "fields": {
-            "EFFECT": [
-                "GHOST",
+            "NUMBER_NAME": [
+                "name",
                 null
             ]
         },
         "shadow": false,
         "topLevel": false
     },
-    "dv": {
-        "opcode": "control_delete_this_clone",
-        "next": null,
-        "parent": "K",
-        "inputs": {},
-        "fields": {},
-        "shadow": false,
-        "topLevel": false
-    },
-    "dx": {
+    "bb": {
         "opcode": "event_whenbroadcastreceived",
-        "next": "aN",
+        "next": ":",
         "parent": null,
         "inputs": {},
         "fields": {
@@ -214,13 +234,13 @@
         },
         "shadow": false,
         "topLevel": true,
-        "x": 292,
+        "x": 48,
         "y": 64
     },
-    "aN": {
+    ":": {
         "opcode": "looks_seteffectto",
-        "next": "aO",
-        "parent": "dx",
+        "next": ";",
+        "parent": "bb",
         "inputs": {
             "VALUE": [
                 1,
@@ -239,33 +259,33 @@
         "shadow": false,
         "topLevel": false
     },
-    "aO": {
+    ";": {
         "opcode": "looks_show",
-        "next": "aP",
-        "parent": "aN",
+        "next": "=",
+        "parent": ":",
         "inputs": {},
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "aP": {
+    "=": {
         "opcode": "looks_switchcostumeto",
         "next": null,
-        "parent": "aO",
+        "parent": ";",
         "inputs": {
             "COSTUME": [
                 1,
-                "dy"
+                "bc"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "dy": {
+    "bc": {
         "opcode": "looks_costume",
         "next": null,
-        "parent": "aP",
+        "parent": "=",
         "inputs": {},
         "fields": {
             "COSTUME": [
@@ -276,26 +296,175 @@
         "shadow": true,
         "topLevel": false
     },
-    "dp": {
+    "bd": {
         "opcode": "event_whenbroadcastreceived",
-        "next": "H",
+        "next": "?",
         "parent": null,
         "inputs": {},
         "fields": {
             "BROADCAST_OPTION": [
-                "System menu start",
-                "_C0]2Mci,D%5E4#-]|ZH"
+                "Start System Menu",
+                "GU+Z~z=8s*weH3:V9Qxc"
             ]
         },
         "shadow": false,
         "topLevel": true,
-        "x": 666,
-        "y": 600
+        "x": 421,
+        "y": 736
     },
-    "dq": {
-        "opcode": "data_setvariableto",
+    "?": {
+        "opcode": "looks_show",
+        "next": "x",
+        "parent": "bd",
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "x": {
+        "opcode": "looks_switchcostumeto",
+        "next": "y",
+        "parent": "?",
+        "inputs": {
+            "COSTUME": [
+                1,
+                "be"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "be": {
+        "opcode": "looks_costume",
         "next": null,
-        "parent": "H",
+        "parent": "x",
+        "inputs": {},
+        "fields": {
+            "COSTUME": [
+                "TopScreen",
+                null
+            ]
+        },
+        "shadow": true,
+        "topLevel": false
+    },
+    "y": {
+        "opcode": "control_create_clone_of",
+        "next": "z",
+        "parent": "x",
+        "inputs": {
+            "CLONE_OPTION": [
+                1,
+                "bf"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "bf": {
+        "opcode": "control_create_clone_of_menu",
+        "next": null,
+        "parent": "y",
+        "inputs": {},
+        "fields": {
+            "CLONE_OPTION": [
+                "_myself_",
+                null
+            ]
+        },
+        "shadow": true,
+        "topLevel": false
+    },
+    "z": {
+        "opcode": "looks_switchcostumeto",
+        "next": "A",
+        "parent": "y",
+        "inputs": {
+            "COSTUME": [
+                1,
+                "bg"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "bg": {
+        "opcode": "looks_costume",
+        "next": null,
+        "parent": "z",
+        "inputs": {},
+        "fields": {
+            "COSTUME": [
+                "TopBar",
+                null
+            ]
+        },
+        "shadow": true,
+        "topLevel": false
+    },
+    "A": {
+        "opcode": "control_create_clone_of",
+        "next": "B",
+        "parent": "z",
+        "inputs": {
+            "CLONE_OPTION": [
+                1,
+                "bh"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "bh": {
+        "opcode": "control_create_clone_of_menu",
+        "next": null,
+        "parent": "A",
+        "inputs": {},
+        "fields": {
+            "CLONE_OPTION": [
+                "_myself_",
+                null
+            ]
+        },
+        "shadow": true,
+        "topLevel": false
+    },
+    "B": {
+        "opcode": "looks_switchcostumeto",
+        "next": "@",
+        "parent": "A",
+        "inputs": {
+            "COSTUME": [
+                1,
+                "bi"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "bi": {
+        "opcode": "looks_costume",
+        "next": null,
+        "parent": "B",
+        "inputs": {},
+        "fields": {
+            "COSTUME": [
+                "Menu",
+                null
+            ]
+        },
+        "shadow": true,
+        "topLevel": false
+    },
+    "@": {
+        "opcode": "data_setvariableto",
+        "next": "[",
+        "parent": "B",
         "inputs": {
             "VALUE": [
                 1,
@@ -314,23 +483,153 @@
         "shadow": false,
         "topLevel": false
     },
-    "dz": {
+    "bj": {
         "opcode": "event_whenflagclicked",
-        "next": "dA",
+        "next": "bk",
         "parent": null,
         "inputs": {},
         "fields": {},
         "shadow": false,
         "topLevel": true,
         "x": 48,
-        "y": 64
+        "y": 336
     },
-    "dA": {
+    "bk": {
         "opcode": "looks_hide",
         "next": null,
-        "parent": "dz",
+        "parent": "bj",
         "inputs": {},
         "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "/": {
+        "opcode": "looks_seteffectto",
+        "next": "]",
+        "parent": "v",
+        "inputs": {
+            "VALUE": [
+                1,
+                [
+                    4,
+                    "100"
+                ]
+            ]
+        },
+        "fields": {
+            "EFFECT": [
+                "GHOST",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "]": {
+        "opcode": "control_repeat",
+        "next": null,
+        "parent": "/",
+        "inputs": {
+            "TIMES": [
+                1,
+                [
+                    6,
+                    "10"
+                ]
+            ],
+            "SUBSTACK": [
+                2,
+                "bl"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "bl": {
+        "opcode": "looks_changeeffectby",
+        "next": null,
+        "parent": "]",
+        "inputs": {
+            "CHANGE": [
+                1,
+                [
+                    4,
+                    "-15"
+                ]
+            ]
+        },
+        "fields": {
+            "EFFECT": [
+                "GHOST",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "[": {
+        "opcode": "looks_seteffectto",
+        "next": "^",
+        "parent": "@",
+        "inputs": {
+            "VALUE": [
+                1,
+                [
+                    4,
+                    "100"
+                ]
+            ]
+        },
+        "fields": {
+            "EFFECT": [
+                "GHOST",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "^": {
+        "opcode": "control_repeat",
+        "next": null,
+        "parent": "[",
+        "inputs": {
+            "TIMES": [
+                1,
+                [
+                    6,
+                    "10"
+                ]
+            ],
+            "SUBSTACK": [
+                2,
+                "bm"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "bm": {
+        "opcode": "looks_changeeffectby",
+        "next": null,
+        "parent": "^",
+        "inputs": {
+            "CHANGE": [
+                1,
+                [
+                    4,
+                    "-15"
+                ]
+            ]
+        },
+        "fields": {
+            "EFFECT": [
+                "GHOST",
+                null
+            ]
+        },
         "shadow": false,
         "topLevel": false
     }

@@ -1,7 +1,7 @@
 {
-    "ex": {
+    "bW": {
         "opcode": "event_whenbroadcastreceived",
-        "next": "be",
+        "next": "av",
         "parent": null,
         "inputs": {},
         "fields": {
@@ -15,19 +15,19 @@
         "x": 48,
         "y": 64
     },
-    "be": {
+    "av": {
         "opcode": "looks_show",
-        "next": "bf",
-        "parent": "ex",
+        "next": "aw",
+        "parent": "bW",
         "inputs": {},
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "bf": {
+    "aw": {
         "opcode": "control_wait",
-        "next": "ey",
-        "parent": "be",
+        "next": "bX",
+        "parent": "av",
         "inputs": {
             "DURATION": [
                 1,
@@ -41,10 +41,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "ey": {
+    "bX": {
         "opcode": "looks_gotofrontback",
         "next": null,
-        "parent": "bf",
+        "parent": "aw",
         "inputs": {},
         "fields": {
             "FRONT_BACK": [
@@ -55,9 +55,9 @@
         "shadow": false,
         "topLevel": false
     },
-    "ez": {
+    "bY": {
         "opcode": "event_whenflagclicked",
-        "next": "bg",
+        "next": "ax",
         "parent": null,
         "inputs": {},
         "fields": {},
@@ -66,19 +66,19 @@
         "x": 48,
         "y": 336
     },
-    "bg": {
+    "ax": {
         "opcode": "looks_hide",
-        "next": "eA",
-        "parent": "ez",
+        "next": "bZ",
+        "parent": "bY",
         "inputs": {},
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "eA": {
+    "bZ": {
         "opcode": "looks_gotofrontback",
         "next": null,
-        "parent": "bg",
+        "parent": "ax",
         "inputs": {},
         "fields": {
             "FRONT_BACK": [
@@ -89,9 +89,9 @@
         "shadow": false,
         "topLevel": false
     },
-    "eB": {
+    "b!": {
         "opcode": "event_whenbroadcastreceived",
-        "next": "eC",
+        "next": "b#",
         "parent": null,
         "inputs": {},
         "fields": {
@@ -105,10 +105,10 @@
         "x": 48,
         "y": 560
     },
-    "eC": {
+    "b#": {
         "opcode": "looks_hide",
         "next": null,
-        "parent": "eB",
+        "parent": "b!",
         "inputs": {},
         "fields": {},
         "shadow": false,
