@@ -1,0 +1,1450 @@
+{
+    "c:": {
+        "opcode": "event_whenbroadcastreceived",
+        "next": "ao",
+        "parent": null,
+        "inputs": {},
+        "fields": {
+            "BROADCAST_OPTION": [
+                "BootDS",
+                "^)L6YF|Up]a_9d|O5a?A"
+            ]
+        },
+        "shadow": false,
+        "topLevel": true,
+        "x": 48,
+        "y": 64
+    },
+    "ao": {
+        "opcode": "procedures_call",
+        "next": "ap",
+        "parent": "c:",
+        "inputs": {
+            "arg0": [
+                1,
+                [
+                    10,
+                    "Boot started."
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false,
+        "mutation": {
+            "tagName": "mutation",
+            "children": [],
+            "proccode": "\u200b\u200blog\u200b\u200b %s",
+            "argumentids": "[\"arg0\"]",
+            "warp": "false"
+        }
+    },
+    "ap": {
+        "opcode": "procedures_call",
+        "next": "aq",
+        "parent": "ao",
+        "inputs": {
+            "arg0": [
+                1,
+                [
+                    10,
+                    "Running init tasks..."
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false,
+        "mutation": {
+            "tagName": "mutation",
+            "children": [],
+            "proccode": "\u200b\u200blog\u200b\u200b %s",
+            "argumentids": "[\"arg0\"]",
+            "warp": "false"
+        }
+    },
+    "aq": {
+        "opcode": "looks_hide",
+        "next": "ar",
+        "parent": "ap",
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "ar": {
+        "opcode": "looks_seteffectto",
+        "next": "x",
+        "parent": "aq",
+        "inputs": {
+            "VALUE": [
+                1,
+                [
+                    4,
+                    "0"
+                ]
+            ]
+        },
+        "fields": {
+            "EFFECT": [
+                "GHOST",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "x": {
+        "opcode": "looks_switchbackdropto",
+        "next": "as",
+        "parent": "ar",
+        "inputs": {
+            "BACKDROP": [
+                1,
+                "c;"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "c;": {
+        "opcode": "looks_backdrops",
+        "next": null,
+        "parent": "x",
+        "inputs": {},
+        "fields": {
+            "BACKDROP": [
+                "Black",
+                null
+            ]
+        },
+        "shadow": true,
+        "topLevel": false
+    },
+    "as": {
+        "opcode": "data_setvariableto",
+        "next": "at",
+        "parent": "x",
+        "inputs": {
+            "VALUE": [
+                1,
+                [
+                    10,
+                    "1"
+                ]
+            ]
+        },
+        "fields": {
+            "VARIABLE": [
+                "Boot",
+                "Pc[at-gI4*H/b@f?i;-5"
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "at": {
+        "opcode": "data_setvariableto",
+        "next": "au",
+        "parent": "as",
+        "inputs": {
+            "VALUE": [
+                1,
+                [
+                    10,
+                    "0"
+                ]
+            ]
+        },
+        "fields": {
+            "VARIABLE": [
+                "On Menu?",
+                "46Mf?jZ]ZM[nUm7PW/*0"
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "au": {
+        "opcode": "control_wait",
+        "next": "av",
+        "parent": "at",
+        "inputs": {
+            "DURATION": [
+                1,
+                [
+                    5,
+                    ".3"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "av": {
+        "opcode": "procedures_call",
+        "next": "f",
+        "parent": "au",
+        "inputs": {
+            "arg0": [
+                1,
+                [
+                    10,
+                    "Checking if it's the user's birth day"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false,
+        "mutation": {
+            "tagName": "mutation",
+            "children": [],
+            "proccode": "\u200b\u200blog\u200b\u200b %s",
+            "argumentids": "[\"arg0\"]",
+            "warp": "false"
+        }
+    },
+    "f": {
+        "opcode": "control_if_else",
+        "next": "aw",
+        "parent": "av",
+        "inputs": {
+            "CONDITION": [
+                2,
+                "y"
+            ],
+            "SUBSTACK": [
+                2,
+                "ax"
+            ],
+            "SUBSTACK2": [
+                2,
+                "ay"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "y": {
+        "opcode": "operator_equals",
+        "next": null,
+        "parent": "f",
+        "inputs": {
+            "OPERAND1": [
+                3,
+                "c=",
+                [
+                    10,
+                    ""
+                ]
+            ],
+            "OPERAND2": [
+                3,
+                "z",
+                [
+                    10,
+                    "1"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "c=": {
+        "opcode": "data_itemoflist",
+        "next": null,
+        "parent": "y",
+        "inputs": {
+            "INDEX": [
+                1,
+                [
+                    7,
+                    "3"
+                ]
+            ]
+        },
+        "fields": {
+            "LIST": [
+                "User",
+                "(:Ma()}@2Yg=s~-ES|U3"
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "z": {
+        "opcode": "operator_join",
+        "next": null,
+        "parent": "y",
+        "inputs": {
+            "STRING1": [
+                3,
+                "c?",
+                [
+                    10,
+                    ""
+                ]
+            ],
+            "STRING2": [
+                3,
+                "c@",
+                [
+                    10,
+                    ""
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "c?": {
+        "opcode": "sensing_current",
+        "next": null,
+        "parent": "z",
+        "inputs": {},
+        "fields": {
+            "CURRENTMENU": [
+                "MONTH",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "c@": {
+        "opcode": "sensing_current",
+        "next": null,
+        "parent": "z",
+        "inputs": {},
+        "fields": {
+            "CURRENTMENU": [
+                "DATE",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "ax": {
+        "opcode": "procedures_call",
+        "next": "c[",
+        "parent": "f",
+        "inputs": {
+            "arg0": [
+                1,
+                [
+                    10,
+                    "It is the user's birth day"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false,
+        "mutation": {
+            "tagName": "mutation",
+            "children": [],
+            "proccode": "\u200b\u200blog\u200b\u200b %s",
+            "argumentids": "[\"arg0\"]",
+            "warp": "false"
+        }
+    },
+    "c[": {
+        "opcode": "data_setvariableto",
+        "next": null,
+        "parent": "ax",
+        "inputs": {
+            "VALUE": [
+                1,
+                [
+                    10,
+                    "1"
+                ]
+            ]
+        },
+        "fields": {
+            "VARIABLE": [
+                "Is Bday?",
+                "yin+?Tg3Y6G9,iyvayV0"
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "ay": {
+        "opcode": "procedures_call",
+        "next": "c]",
+        "parent": "f",
+        "inputs": {
+            "arg0": [
+                1,
+                [
+                    10,
+                    "It's not the user's birth day"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false,
+        "mutation": {
+            "tagName": "mutation",
+            "children": [],
+            "proccode": "\u200b\u200blog\u200b\u200b %s",
+            "argumentids": "[\"arg0\"]",
+            "warp": "false"
+        }
+    },
+    "c]": {
+        "opcode": "data_setvariableto",
+        "next": null,
+        "parent": "ay",
+        "inputs": {
+            "VALUE": [
+                1,
+                [
+                    10,
+                    "0"
+                ]
+            ]
+        },
+        "fields": {
+            "VARIABLE": [
+                "Is Bday?",
+                "yin+?Tg3Y6G9,iyvayV0"
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "aw": {
+        "opcode": "procedures_call",
+        "next": "g",
+        "parent": "f",
+        "inputs": {
+            "arg0": [
+                1,
+                [
+                    10,
+                    "Checking if user data is present"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false,
+        "mutation": {
+            "tagName": "mutation",
+            "children": [],
+            "proccode": "\u200b\u200blog\u200b\u200b %s",
+            "argumentids": "[\"arg0\"]",
+            "warp": "false"
+        }
+    },
+    "g": {
+        "opcode": "control_if_else",
+        "next": "az",
+        "parent": "aw",
+        "inputs": {
+            "CONDITION": [
+                2,
+                "c^"
+            ],
+            "SUBSTACK": [
+                2,
+                "aA"
+            ],
+            "SUBSTACK2": [
+                2,
+                "q"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "c^": {
+        "opcode": "operator_equals",
+        "next": null,
+        "parent": "g",
+        "inputs": {
+            "OPERAND1": [
+                3,
+                [
+                    13,
+                    "User",
+                    "(:Ma()}@2Yg=s~-ES|U3"
+                ],
+                [
+                    10,
+                    ""
+                ]
+            ],
+            "OPERAND2": [
+                1,
+                [
+                    10,
+                    ""
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "aA": {
+        "opcode": "procedures_call",
+        "next": "c_",
+        "parent": "g",
+        "inputs": {
+            "arg0": [
+                1,
+                [
+                    10,
+                    "User data not present"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false,
+        "mutation": {
+            "tagName": "mutation",
+            "children": [],
+            "proccode": "\u200b\u200bwarn\u200b\u200b %s",
+            "argumentids": "[\"arg0\"]",
+            "warp": "false"
+        }
+    },
+    "c_": {
+        "opcode": "data_setvariableto",
+        "next": null,
+        "parent": "aA",
+        "inputs": {
+            "VALUE": [
+                1,
+                [
+                    10,
+                    "1"
+                ]
+            ]
+        },
+        "fields": {
+            "VARIABLE": [
+                "DS Setup?",
+                "3%M^dW5zVfxuY,6%_?)|"
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "q": {
+        "opcode": "control_if_else",
+        "next": null,
+        "parent": "g",
+        "inputs": {
+            "CONDITION": [
+                2,
+                "c`"
+            ],
+            "SUBSTACK": [
+                2,
+                "aB"
+            ],
+            "SUBSTACK2": [
+                2,
+                "r"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "c`": {
+        "opcode": "operator_equals",
+        "next": null,
+        "parent": "q",
+        "inputs": {
+            "OPERAND1": [
+                3,
+                [
+                    13,
+                    "User",
+                    "(:Ma()}@2Yg=s~-ES|U3"
+                ],
+                [
+                    10,
+                    ""
+                ]
+            ],
+            "OPERAND2": [
+                1,
+                [
+                    10,
+                    ""
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "aB": {
+        "opcode": "procedures_call",
+        "next": "c{",
+        "parent": "q",
+        "inputs": {
+            "arg0": [
+                1,
+                [
+                    10,
+                    "User data not present"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false,
+        "mutation": {
+            "tagName": "mutation",
+            "children": [],
+            "proccode": "\u200b\u200bwarn\u200b\u200b %s",
+            "argumentids": "[\"arg0\"]",
+            "warp": "false"
+        }
+    },
+    "c{": {
+        "opcode": "data_setvariableto",
+        "next": null,
+        "parent": "aB",
+        "inputs": {
+            "VALUE": [
+                1,
+                [
+                    10,
+                    "1"
+                ]
+            ]
+        },
+        "fields": {
+            "VARIABLE": [
+                "DS Setup?",
+                "3%M^dW5zVfxuY,6%_?)|"
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "r": {
+        "opcode": "control_if_else",
+        "next": null,
+        "parent": "q",
+        "inputs": {
+            "CONDITION": [
+                2,
+                "aC"
+            ],
+            "SUBSTACK": [
+                2,
+                "aD"
+            ],
+            "SUBSTACK2": [
+                2,
+                "aE"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "aC": {
+        "opcode": "operator_equals",
+        "next": null,
+        "parent": "r",
+        "inputs": {
+            "OPERAND1": [
+                3,
+                "aF",
+                [
+                    10,
+                    ""
+                ]
+            ],
+            "OPERAND2": [
+                1,
+                [
+                    10,
+                    "0"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "aF": {
+        "opcode": "data_itemnumoflist",
+        "next": null,
+        "parent": "aC",
+        "inputs": {
+            "ITEM": [
+                3,
+                "c|",
+                [
+                    10,
+                    "thing"
+                ]
+            ]
+        },
+        "fields": {
+            "LIST": [
+                "System Themes",
+                "Z(~irlF#p?0robaU0c%v"
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "c|": {
+        "opcode": "data_itemoflist",
+        "next": null,
+        "parent": "aF",
+        "inputs": {
+            "INDEX": [
+                1,
+                [
+                    7,
+                    "3"
+                ]
+            ]
+        },
+        "fields": {
+            "LIST": [
+                "User",
+                "(:Ma()}@2Yg=s~-ES|U3"
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "aD": {
+        "opcode": "procedures_call",
+        "next": "c}",
+        "parent": "r",
+        "inputs": {
+            "arg0": [
+                1,
+                [
+                    10,
+                    "User data corrupted"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false,
+        "mutation": {
+            "tagName": "mutation",
+            "children": [],
+            "proccode": "\u200b\u200berror\u200b\u200b %s",
+            "argumentids": "[\"arg0\"]",
+            "warp": "false"
+        }
+    },
+    "c}": {
+        "opcode": "data_setvariableto",
+        "next": null,
+        "parent": "aD",
+        "inputs": {
+            "VALUE": [
+                1,
+                [
+                    10,
+                    "1"
+                ]
+            ]
+        },
+        "fields": {
+            "VARIABLE": [
+                "DS Setup?",
+                "3%M^dW5zVfxuY,6%_?)|"
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "aE": {
+        "opcode": "procedures_call",
+        "next": "c~",
+        "parent": "r",
+        "inputs": {
+            "arg0": [
+                1,
+                [
+                    10,
+                    "User data present"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false,
+        "mutation": {
+            "tagName": "mutation",
+            "children": [],
+            "proccode": "\u200b\u200blog\u200b\u200b %s",
+            "argumentids": "[\"arg0\"]",
+            "warp": "false"
+        }
+    },
+    "c~": {
+        "opcode": "data_setvariableto",
+        "next": null,
+        "parent": "aE",
+        "inputs": {
+            "VALUE": [
+                1,
+                [
+                    10,
+                    "0"
+                ]
+            ]
+        },
+        "fields": {
+            "VARIABLE": [
+                "DS Setup?",
+                "3%M^dW5zVfxuY,6%_?)|"
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "az": {
+        "opcode": "procedures_call",
+        "next": "h",
+        "parent": "g",
+        "inputs": {
+            "arg0": [
+                1,
+                [
+                    10,
+                    "Showing boot screen"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false,
+        "mutation": {
+            "tagName": "mutation",
+            "children": [],
+            "proccode": "\u200b\u200blog\u200b\u200b %s",
+            "argumentids": "[\"arg0\"]",
+            "warp": "false"
+        }
+    },
+    "h": {
+        "opcode": "control_if_else",
+        "next": "aG",
+        "parent": "az",
+        "inputs": {
+            "CONDITION": [
+                2,
+                "da"
+            ],
+            "SUBSTACK": [
+                2,
+                "aH"
+            ],
+            "SUBSTACK2": [
+                2,
+                "aI"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "da": {
+        "opcode": "operator_equals",
+        "next": null,
+        "parent": "h",
+        "inputs": {
+            "OPERAND1": [
+                3,
+                [
+                    12,
+                    "Is Bday?",
+                    "yin+?Tg3Y6G9,iyvayV0"
+                ],
+                [
+                    10,
+                    ""
+                ]
+            ],
+            "OPERAND2": [
+                1,
+                [
+                    10,
+                    "1"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "aH": {
+        "opcode": "sound_play",
+        "next": null,
+        "parent": "h",
+        "inputs": {
+            "SOUND_MENU": [
+                1,
+                "db"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "db": {
+        "opcode": "sound_sounds_menu",
+        "next": null,
+        "parent": "aH",
+        "inputs": {},
+        "fields": {
+            "SOUND_MENU": [
+                "startup_birthday",
+                null
+            ]
+        },
+        "shadow": true,
+        "topLevel": false
+    },
+    "aI": {
+        "opcode": "sound_play",
+        "next": null,
+        "parent": "h",
+        "inputs": {
+            "SOUND_MENU": [
+                1,
+                "dc"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "dc": {
+        "opcode": "sound_sounds_menu",
+        "next": null,
+        "parent": "aI",
+        "inputs": {},
+        "fields": {
+            "SOUND_MENU": [
+                "startup",
+                null
+            ]
+        },
+        "shadow": true,
+        "topLevel": false
+    },
+    "aG": {
+        "opcode": "looks_show",
+        "next": "A",
+        "parent": "h",
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "A": {
+        "opcode": "looks_switchcostumeto",
+        "next": "B",
+        "parent": "aG",
+        "inputs": {
+            "COSTUME": [
+                1,
+                "dd"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "dd": {
+        "opcode": "looks_costume",
+        "next": null,
+        "parent": "A",
+        "inputs": {},
+        "fields": {
+            "COSTUME": [
+                "nintendo-ds42",
+                null
+            ]
+        },
+        "shadow": true,
+        "topLevel": false
+    },
+    "B": {
+        "opcode": "control_repeat",
+        "next": "de",
+        "parent": "A",
+        "inputs": {
+            "TIMES": [
+                1,
+                [
+                    6,
+                    "37"
+                ]
+            ],
+            "SUBSTACK": [
+                2,
+                "df"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "df": {
+        "opcode": "looks_nextcostume",
+        "next": null,
+        "parent": "B",
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "de": {
+        "opcode": "procedures_call",
+        "next": null,
+        "parent": "B",
+        "inputs": {
+            "arg0": [
+                1,
+                [
+                    10,
+                    "Boot Done"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false,
+        "mutation": {
+            "tagName": "mutation",
+            "children": [],
+            "proccode": "\u200b\u200blog\u200b\u200b %s",
+            "argumentids": "[\"arg0\"]",
+            "warp": "false"
+        }
+    },
+    "dg": {
+        "opcode": "event_whenflagclicked",
+        "next": "dh",
+        "parent": null,
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": true,
+        "x": 920,
+        "y": 64
+    },
+    "dh": {
+        "opcode": "event_broadcast",
+        "next": null,
+        "parent": "dg",
+        "inputs": {
+            "BROADCAST_INPUT": [
+                1,
+                [
+                    11,
+                    "BootDS",
+                    "^)L6YF|Up]a_9d|O5a?A"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "di": {
+        "opcode": "event_whenthisspriteclicked",
+        "next": "aJ",
+        "parent": null,
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": true,
+        "x": 48,
+        "y": 2280
+    },
+    "aJ": {
+        "opcode": "sound_stopallsounds",
+        "next": "C",
+        "parent": "di",
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "C": {
+        "opcode": "sound_play",
+        "next": "D",
+        "parent": "aJ",
+        "inputs": {
+            "SOUND_MENU": [
+                1,
+                "dj"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "dj": {
+        "opcode": "sound_sounds_menu",
+        "next": null,
+        "parent": "C",
+        "inputs": {},
+        "fields": {
+            "SOUND_MENU": [
+                "tap",
+                null
+            ]
+        },
+        "shadow": true,
+        "topLevel": false
+    },
+    "D": {
+        "opcode": "looks_switchbackdropto",
+        "next": "E",
+        "parent": "C",
+        "inputs": {
+            "BACKDROP": [
+                1,
+                "dk"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "dk": {
+        "opcode": "looks_backdrops",
+        "next": null,
+        "parent": "D",
+        "inputs": {},
+        "fields": {
+            "BACKDROP": [
+                "LinesBG",
+                null
+            ]
+        },
+        "shadow": true,
+        "topLevel": false
+    },
+    "E": {
+        "opcode": "control_repeat",
+        "next": "aK",
+        "parent": "D",
+        "inputs": {
+            "TIMES": [
+                1,
+                [
+                    6,
+                    "10"
+                ]
+            ],
+            "SUBSTACK": [
+                2,
+                "dl"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "dl": {
+        "opcode": "looks_changeeffectby",
+        "next": null,
+        "parent": "E",
+        "inputs": {
+            "CHANGE": [
+                1,
+                [
+                    4,
+                    "15"
+                ]
+            ]
+        },
+        "fields": {
+            "EFFECT": [
+                "GHOST",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "aK": {
+        "opcode": "looks_hide",
+        "next": "i",
+        "parent": "E",
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "i": {
+        "opcode": "control_if_else",
+        "next": "dm",
+        "parent": "aK",
+        "inputs": {
+            "CONDITION": [
+                2,
+                "dn"
+            ],
+            "SUBSTACK": [
+                2,
+                "j"
+            ],
+            "SUBSTACK2": [
+                2,
+                "do"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "dn": {
+        "opcode": "operator_equals",
+        "next": null,
+        "parent": "i",
+        "inputs": {
+            "OPERAND1": [
+                3,
+                [
+                    12,
+                    "DS Setup?",
+                    "3%M^dW5zVfxuY,6%_?)|"
+                ],
+                [
+                    10,
+                    ""
+                ]
+            ],
+            "OPERAND2": [
+                1,
+                [
+                    10,
+                    "1"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "j": {
+        "opcode": "procedures_call",
+        "next": "e",
+        "parent": "i",
+        "inputs": {
+            "arg0": [
+                1,
+                [
+                    10,
+                    "Starting System Setup"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false,
+        "mutation": {
+            "tagName": "mutation",
+            "children": [],
+            "proccode": "\u200b\u200blog\u200b\u200b %s",
+            "argumentids": "[\"arg0\"]",
+            "warp": "false"
+        }
+    },
+    "e": {
+        "opcode": "control_repeat",
+        "next": "k",
+        "parent": "j",
+        "inputs": {
+            "TIMES": [
+                1,
+                [
+                    6,
+                    "10"
+                ]
+            ],
+            "SUBSTACK": [
+                2,
+                "l"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "l": {
+        "opcode": "procedures_call",
+        "next": null,
+        "parent": "e",
+        "inputs": {
+            "arg0": [
+                3,
+                "m",
+                [
+                    10,
+                    "Fail to load asset: 00x"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false,
+        "mutation": {
+            "tagName": "mutation",
+            "children": [],
+            "proccode": "\u200b\u200berror\u200b\u200b %s",
+            "argumentids": "[\"arg0\"]",
+            "warp": "false"
+        }
+    },
+    "m": {
+        "opcode": "operator_join",
+        "next": null,
+        "parent": "l",
+        "inputs": {
+            "STRING1": [
+                1,
+                [
+                    10,
+                    "Fail asset load: 00x"
+                ]
+            ],
+            "STRING2": [
+                3,
+                "F",
+                [
+                    10,
+                    "banana"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "F": {
+        "opcode": "operator_random",
+        "next": null,
+        "parent": "m",
+        "inputs": {
+            "FROM": [
+                1,
+                [
+                    4,
+                    "1000"
+                ]
+            ],
+            "TO": [
+                1,
+                [
+                    4,
+                    "9999"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "k": {
+        "opcode": "procedures_call",
+        "next": "G",
+        "parent": "e",
+        "inputs": {
+            "arg0": [
+                1,
+                [
+                    10,
+                    "System Setup failed to start!"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false,
+        "mutation": {
+            "tagName": "mutation",
+            "children": [],
+            "proccode": "\u200b\u200berror\u200b\u200b %s",
+            "argumentids": "[\"arg0\"]",
+            "warp": "false"
+        }
+    },
+    "G": {
+        "opcode": "runtimeoptions_greenFlag",
+        "next": null,
+        "parent": "k",
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "do": {
+        "opcode": "event_broadcast",
+        "next": null,
+        "parent": "i",
+        "inputs": {
+            "BROADCAST_INPUT": [
+                1,
+                [
+                    11,
+                    "System menu start",
+                    "_C0]2Mci,D%5E4#-]|ZH"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "dm": {
+        "opcode": "data_setvariableto",
+        "next": null,
+        "parent": "i",
+        "inputs": {
+            "VALUE": [
+                1,
+                [
+                    10,
+                    "0"
+                ]
+            ]
+        },
+        "fields": {
+            "VARIABLE": [
+                "Boot",
+                "Pc[at-gI4*H/b@f?i;-5"
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    }
+}

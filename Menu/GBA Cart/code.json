@@ -1,46 +1,7 @@
 {
-    "d[": {
-        "opcode": "event_whenthisspriteclicked",
-        "next": "a)",
-        "parent": null,
-        "inputs": {},
-        "fields": {},
-        "shadow": false,
-        "topLevel": true,
-        "x": 409,
-        "y": 434
-    },
-    "a)": {
-        "opcode": "sound_play",
-        "next": null,
-        "parent": "d[",
-        "inputs": {
-            "SOUND_MENU": [
-                1,
-                "d]"
-            ]
-        },
-        "fields": {},
-        "shadow": false,
-        "topLevel": false
-    },
-    "d]": {
-        "opcode": "sound_sounds_menu",
-        "next": null,
-        "parent": "a)",
-        "inputs": {},
-        "fields": {
-            "SOUND_MENU": [
-                "no",
-                null
-            ]
-        },
-        "shadow": true,
-        "topLevel": false
-    },
-    "d^": {
+    "d{": {
         "opcode": "event_whenbroadcastreceived",
-        "next": "d_",
+        "next": "d|",
         "parent": null,
         "inputs": {},
         "fields": {
@@ -51,21 +12,21 @@
         },
         "shadow": false,
         "topLevel": true,
-        "x": 44,
-        "y": 44
+        "x": 48,
+        "y": 64
     },
-    "d_": {
+    "d|": {
         "opcode": "looks_hide",
         "next": null,
-        "parent": "d^",
+        "parent": "d{",
         "inputs": {},
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "d`": {
+    "d}": {
         "opcode": "event_whenbroadcastreceived",
-        "next": "a*",
+        "next": "a:",
         "parent": null,
         "inputs": {},
         "fields": {
@@ -76,13 +37,13 @@
         },
         "shadow": false,
         "topLevel": true,
-        "x": 251,
-        "y": 181
+        "x": 48,
+        "y": 592
     },
-    "a*": {
+    "a:": {
         "opcode": "looks_gotofrontback",
-        "next": "d{",
-        "parent": "d`",
+        "next": "d~",
+        "parent": "d}",
         "inputs": {},
         "fields": {
             "FRONT_BACK": [
@@ -93,30 +54,30 @@
         "shadow": false,
         "topLevel": false
     },
-    "d{": {
+    "d~": {
         "opcode": "looks_show",
         "next": null,
-        "parent": "a*",
+        "parent": "a:",
         "inputs": {},
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "d|": {
+    "ea": {
         "opcode": "event_whenflagclicked",
-        "next": "a+",
+        "next": "a;",
         "parent": null,
         "inputs": {},
         "fields": {},
         "shadow": false,
         "topLevel": true,
-        "x": 617,
-        "y": 73
+        "x": 455,
+        "y": 64
     },
-    "a+": {
+    "a;": {
         "opcode": "looks_seteffectto",
-        "next": "d}",
-        "parent": "d|",
+        "next": "eb",
+        "parent": "ea",
         "inputs": {
             "VALUE": [
                 1,
@@ -135,10 +96,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "d}": {
+    "eb": {
         "opcode": "motion_gotoxy",
         "next": null,
-        "parent": "a+",
+        "parent": "a;",
         "inputs": {
             "X": [
                 1,
@@ -159,9 +120,9 @@
         "shadow": false,
         "topLevel": false
     },
-    "d~": {
+    "ec": {
         "opcode": "event_whenbroadcastreceived",
-        "next": "ea",
+        "next": "ed",
         "parent": null,
         "inputs": {},
         "fields": {
@@ -172,13 +133,33 @@
         },
         "shadow": false,
         "topLevel": true,
-        "x": 44,
-        "y": 44
+        "x": 48,
+        "y": 240
     },
-    "ea": {
+    "ed": {
         "opcode": "looks_hide",
         "next": null,
-        "parent": "d~",
+        "parent": "ec",
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "ee": {
+        "opcode": "event_whenflagclicked",
+        "next": "ef",
+        "parent": null,
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": true,
+        "x": 48,
+        "y": 416
+    },
+    "ef": {
+        "opcode": "looks_hide",
+        "next": null,
+        "parent": "ee",
         "inputs": {},
         "fields": {},
         "shadow": false,

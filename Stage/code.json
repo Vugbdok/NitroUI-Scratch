@@ -1,7 +1,7 @@
 {
-    "c,": {
+    "c.": {
         "opcode": "event_whenbroadcastreceived",
-        "next": "c-",
+        "next": "c/",
         "parent": null,
         "inputs": {},
         "fields": {
@@ -15,10 +15,10 @@
         "x": 277,
         "y": 335
     },
-    "c-": {
+    "c/": {
         "opcode": "control_stop",
         "next": null,
-        "parent": "c,",
+        "parent": "c.",
         "inputs": {},
         "fields": {
             "STOP_OPTION": [

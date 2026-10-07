@@ -1,4 +1,7 @@
 my variable: 857
-Clone: Startup
+Clone: crash
 sec: 3
 On Menu?: 0
+Boot: 1
+DS Setup?: 1
+Is Bday?: 1

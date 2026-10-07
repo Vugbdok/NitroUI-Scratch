@@ -1,5 +1,5 @@
 {
-    "gM": {
+    "gW": {
         "opcode": "argument_reporter_string_number",
         "next": null,
         "parent": "a",
@@ -13,7 +13,7 @@
         "shadow": true,
         "topLevel": false
     },
-    "gN": {
+    "gX": {
         "opcode": "argument_reporter_string_number",
         "next": null,
         "parent": "a",
@@ -27,7 +27,7 @@
         "shadow": true,
         "topLevel": false
     },
-    "gO": {
+    "gY": {
         "opcode": "argument_reporter_string_number",
         "next": null,
         "parent": "a",
@@ -41,7 +41,7 @@
         "shadow": true,
         "topLevel": false
     },
-    "gP": {
+    "gZ": {
         "opcode": "argument_reporter_string_number",
         "next": null,
         "parent": "a",
@@ -55,9 +55,9 @@
         "shadow": true,
         "topLevel": false
     },
-    "bP": {
+    "bR": {
         "opcode": "procedures_definition",
-        "next": "f",
+        "next": "t",
         "parent": null,
         "inputs": {
             "custom_block": [
@@ -74,23 +74,23 @@
     "a": {
         "opcode": "procedures_prototype",
         "next": null,
-        "parent": "bP",
+        "parent": "bR",
         "inputs": {
             "input0": [
                 1,
-                "e-"
+                "e["
             ],
             "input1": [
                 1,
-                "e."
+                "e]"
             ],
             "input2": [
                 1,
-                "e/"
+                "e^"
             ],
             "VN|Cb9wMI`.sL}d/8W/s": [
                 1,
-                "e:"
+                "e_"
             ]
         },
         "fields": {},
@@ -106,7 +106,7 @@
             "warp": "false"
         }
     },
-    "e-": {
+    "e[": {
         "opcode": "argument_reporter_string_number",
         "next": null,
         "parent": "a",
@@ -120,7 +120,7 @@
         "shadow": true,
         "topLevel": false
     },
-    "e.": {
+    "e]": {
         "opcode": "argument_reporter_string_number",
         "next": null,
         "parent": "a",
@@ -134,7 +134,7 @@
         "shadow": true,
         "topLevel": false
     },
-    "e/": {
+    "e^": {
         "opcode": "argument_reporter_string_number",
         "next": null,
         "parent": "a",
@@ -148,7 +148,7 @@
         "shadow": true,
         "topLevel": false
     },
-    "e:": {
+    "e_": {
         "opcode": "argument_reporter_string_number",
         "next": null,
         "parent": "a",
@@ -162,131 +162,46 @@
         "shadow": true,
         "topLevel": false
     },
-    "f": {
+    "t": {
         "opcode": "control_repeat_until",
-        "next": "O",
-        "parent": "bP",
+        "next": "T",
+        "parent": "bR",
         "inputs": {
             "CONDITION": [
                 2,
-                "P"
+                "U"
             ],
             "SUBSTACK": [
                 2,
-                "bQ"
+                "bS"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "P": {
+    "U": {
         "opcode": "operator_and",
         "next": null,
-        "parent": "f",
+        "parent": "t",
         "inputs": {
             "OPERAND1": [
                 2,
-                "Q"
+                "V"
             ],
             "OPERAND2": [
                 2,
-                "R"
+                "W"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "Q": {
+    "V": {
         "opcode": "operator_equals",
         "next": null,
-        "parent": "P",
-        "inputs": {
-            "OPERAND1": [
-                3,
-                "bR",
-                [
-                    10,
-                    ""
-                ]
-            ],
-            "OPERAND2": [
-                3,
-                "bS",
-                [
-                    10,
-                    ""
-                ]
-            ]
-        },
-        "fields": {},
-        "shadow": false,
-        "topLevel": false
-    },
-    "bR": {
-        "opcode": "operator_round",
-        "next": null,
-        "parent": "Q",
-        "inputs": {
-            "NUM": [
-                3,
-                "e;",
-                [
-                    4,
-                    "10"
-                ]
-            ]
-        },
-        "fields": {},
-        "shadow": false,
-        "topLevel": false
-    },
-    "e;": {
-        "opcode": "motion_xposition",
-        "next": null,
-        "parent": "bR",
-        "inputs": {},
-        "fields": {},
-        "shadow": false,
-        "topLevel": false
-    },
-    "bS": {
-        "opcode": "operator_round",
-        "next": null,
-        "parent": "Q",
-        "inputs": {
-            "NUM": [
-                3,
-                "e=",
-                [
-                    4,
-                    "10"
-                ]
-            ]
-        },
-        "fields": {},
-        "shadow": false,
-        "topLevel": false
-    },
-    "e=": {
-        "opcode": "argument_reporter_string_number",
-        "next": null,
-        "parent": "bS",
-        "inputs": {},
-        "fields": {
-            "VALUE": [
-                "x",
-                null
-            ]
-        },
-        "shadow": false,
-        "topLevel": false
-    },
-    "R": {
-        "opcode": "operator_equals",
-        "next": null,
-        "parent": "P",
+        "parent": "U",
         "inputs": {
             "OPERAND1": [
                 3,
@@ -312,288 +227,7 @@
     "bT": {
         "opcode": "operator_round",
         "next": null,
-        "parent": "R",
-        "inputs": {
-            "NUM": [
-                3,
-                "e?",
-                [
-                    4,
-                    "10"
-                ]
-            ]
-        },
-        "fields": {},
-        "shadow": false,
-        "topLevel": false
-    },
-    "e?": {
-        "opcode": "motion_yposition",
-        "next": null,
-        "parent": "bT",
-        "inputs": {},
-        "fields": {},
-        "shadow": false,
-        "topLevel": false
-    },
-    "bU": {
-        "opcode": "operator_round",
-        "next": null,
-        "parent": "R",
-        "inputs": {
-            "NUM": [
-                3,
-                "e@",
-                [
-                    4,
-                    "10"
-                ]
-            ]
-        },
-        "fields": {},
-        "shadow": false,
-        "topLevel": false
-    },
-    "e@": {
-        "opcode": "argument_reporter_string_number",
-        "next": null,
-        "parent": "bU",
-        "inputs": {},
-        "fields": {
-            "VALUE": [
-                "y",
-                null
-            ]
-        },
-        "shadow": false,
-        "topLevel": false
-    },
-    "bQ": {
-        "opcode": "looks_show",
-        "next": "S",
-        "parent": "f",
-        "inputs": {},
-        "fields": {},
-        "shadow": false,
-        "topLevel": false
-    },
-    "S": {
-        "opcode": "motion_changexby",
-        "next": "T",
-        "parent": "bQ",
-        "inputs": {
-            "DX": [
-                3,
-                "U",
-                [
-                    4,
-                    "10"
-                ]
-            ]
-        },
-        "fields": {},
-        "shadow": false,
-        "topLevel": false
-    },
-    "U": {
-        "opcode": "operator_divide",
-        "next": null,
-        "parent": "S",
-        "inputs": {
-            "NUM1": [
-                3,
-                "V",
-                [
-                    4,
-                    "10"
-                ]
-            ],
-            "NUM2": [
-                3,
-                "e[",
-                [
-                    4,
-                    "10"
-                ]
-            ]
-        },
-        "fields": {},
-        "shadow": false,
-        "topLevel": false
-    },
-    "V": {
-        "opcode": "operator_subtract",
-        "next": null,
-        "parent": "U",
-        "inputs": {
-            "NUM1": [
-                3,
-                "bV",
-                [
-                    4,
-                    "10"
-                ]
-            ],
-            "NUM2": [
-                3,
-                "bW",
-                [
-                    4,
-                    "10"
-                ]
-            ]
-        },
-        "fields": {},
-        "shadow": false,
-        "topLevel": false
-    },
-    "bV": {
-        "opcode": "operator_round",
-        "next": null,
         "parent": "V",
-        "inputs": {
-            "NUM": [
-                3,
-                "e]",
-                [
-                    4,
-                    "10"
-                ]
-            ]
-        },
-        "fields": {},
-        "shadow": false,
-        "topLevel": false
-    },
-    "e]": {
-        "opcode": "argument_reporter_string_number",
-        "next": null,
-        "parent": "bV",
-        "inputs": {},
-        "fields": {
-            "VALUE": [
-                "x",
-                null
-            ]
-        },
-        "shadow": false,
-        "topLevel": false
-    },
-    "bW": {
-        "opcode": "operator_round",
-        "next": null,
-        "parent": "V",
-        "inputs": {
-            "NUM": [
-                3,
-                "e^",
-                [
-                    4,
-                    "10"
-                ]
-            ]
-        },
-        "fields": {},
-        "shadow": false,
-        "topLevel": false
-    },
-    "e^": {
-        "opcode": "motion_xposition",
-        "next": null,
-        "parent": "bW",
-        "inputs": {},
-        "fields": {},
-        "shadow": false,
-        "topLevel": false
-    },
-    "e[": {
-        "opcode": "argument_reporter_string_number",
-        "next": null,
-        "parent": "U",
-        "inputs": {},
-        "fields": {
-            "VALUE": [
-                "speed",
-                null
-            ]
-        },
-        "shadow": false,
-        "topLevel": false
-    },
-    "T": {
-        "opcode": "motion_changeyby",
-        "next": "bX",
-        "parent": "S",
-        "inputs": {
-            "DY": [
-                3,
-                "W",
-                [
-                    4,
-                    "10"
-                ]
-            ]
-        },
-        "fields": {},
-        "shadow": false,
-        "topLevel": false
-    },
-    "W": {
-        "opcode": "operator_divide",
-        "next": null,
-        "parent": "T",
-        "inputs": {
-            "NUM1": [
-                3,
-                "X",
-                [
-                    4,
-                    "10"
-                ]
-            ],
-            "NUM2": [
-                3,
-                "e_",
-                [
-                    4,
-                    "10"
-                ]
-            ]
-        },
-        "fields": {},
-        "shadow": false,
-        "topLevel": false
-    },
-    "X": {
-        "opcode": "operator_subtract",
-        "next": null,
-        "parent": "W",
-        "inputs": {
-            "NUM1": [
-                3,
-                "bY",
-                [
-                    4,
-                    "10"
-                ]
-            ],
-            "NUM2": [
-                3,
-                "bZ",
-                [
-                    4,
-                    "10"
-                ]
-            ]
-        },
-        "fields": {},
-        "shadow": false,
-        "topLevel": false
-    },
-    "bY": {
-        "opcode": "operator_round",
-        "next": null,
-        "parent": "X",
         "inputs": {
             "NUM": [
                 3,
@@ -609,23 +243,18 @@
         "topLevel": false
     },
     "e`": {
-        "opcode": "argument_reporter_string_number",
+        "opcode": "motion_xposition",
         "next": null,
-        "parent": "bY",
+        "parent": "bT",
         "inputs": {},
-        "fields": {
-            "VALUE": [
-                "y",
-                null
-            ]
-        },
+        "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "bZ": {
+    "bU": {
         "opcode": "operator_round",
         "next": null,
-        "parent": "X",
+        "parent": "V",
         "inputs": {
             "NUM": [
                 3,
@@ -641,18 +270,246 @@
         "topLevel": false
     },
     "e{": {
+        "opcode": "argument_reporter_string_number",
+        "next": null,
+        "parent": "bU",
+        "inputs": {},
+        "fields": {
+            "VALUE": [
+                "x",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "W": {
+        "opcode": "operator_equals",
+        "next": null,
+        "parent": "U",
+        "inputs": {
+            "OPERAND1": [
+                3,
+                "bV",
+                [
+                    10,
+                    ""
+                ]
+            ],
+            "OPERAND2": [
+                3,
+                "bW",
+                [
+                    10,
+                    ""
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "bV": {
+        "opcode": "operator_round",
+        "next": null,
+        "parent": "W",
+        "inputs": {
+            "NUM": [
+                3,
+                "e|",
+                [
+                    4,
+                    "10"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "e|": {
         "opcode": "motion_yposition",
         "next": null,
-        "parent": "bZ",
+        "parent": "bV",
         "inputs": {},
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "e_": {
-        "opcode": "argument_reporter_string_number",
+    "bW": {
+        "opcode": "operator_round",
         "next": null,
         "parent": "W",
+        "inputs": {
+            "NUM": [
+                3,
+                "e}",
+                [
+                    4,
+                    "10"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "e}": {
+        "opcode": "argument_reporter_string_number",
+        "next": null,
+        "parent": "bW",
+        "inputs": {},
+        "fields": {
+            "VALUE": [
+                "y",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "bS": {
+        "opcode": "looks_show",
+        "next": "X",
+        "parent": "t",
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "X": {
+        "opcode": "motion_changexby",
+        "next": "Y",
+        "parent": "bS",
+        "inputs": {
+            "DX": [
+                3,
+                "Z",
+                [
+                    4,
+                    "10"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "Z": {
+        "opcode": "operator_divide",
+        "next": null,
+        "parent": "X",
+        "inputs": {
+            "NUM1": [
+                3,
+                "!",
+                [
+                    4,
+                    "10"
+                ]
+            ],
+            "NUM2": [
+                3,
+                "e~",
+                [
+                    4,
+                    "10"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "!": {
+        "opcode": "operator_subtract",
+        "next": null,
+        "parent": "Z",
+        "inputs": {
+            "NUM1": [
+                3,
+                "bX",
+                [
+                    4,
+                    "10"
+                ]
+            ],
+            "NUM2": [
+                3,
+                "bY",
+                [
+                    4,
+                    "10"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "bX": {
+        "opcode": "operator_round",
+        "next": null,
+        "parent": "!",
+        "inputs": {
+            "NUM": [
+                3,
+                "fa",
+                [
+                    4,
+                    "10"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "fa": {
+        "opcode": "argument_reporter_string_number",
+        "next": null,
+        "parent": "bX",
+        "inputs": {},
+        "fields": {
+            "VALUE": [
+                "x",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "bY": {
+        "opcode": "operator_round",
+        "next": null,
+        "parent": "!",
+        "inputs": {
+            "NUM": [
+                3,
+                "fb",
+                [
+                    4,
+                    "10"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "fb": {
+        "opcode": "motion_xposition",
+        "next": null,
+        "parent": "bY",
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "e~": {
+        "opcode": "argument_reporter_string_number",
+        "next": null,
+        "parent": "Z",
         "inputs": {},
         "fields": {
             "VALUE": [
@@ -663,14 +520,157 @@
         "shadow": false,
         "topLevel": false
     },
-    "bX": {
+    "Y": {
+        "opcode": "motion_changeyby",
+        "next": "bZ",
+        "parent": "X",
+        "inputs": {
+            "DY": [
+                3,
+                "#",
+                [
+                    4,
+                    "10"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "#": {
+        "opcode": "operator_divide",
+        "next": null,
+        "parent": "Y",
+        "inputs": {
+            "NUM1": [
+                3,
+                "%",
+                [
+                    4,
+                    "10"
+                ]
+            ],
+            "NUM2": [
+                3,
+                "fc",
+                [
+                    4,
+                    "10"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "%": {
+        "opcode": "operator_subtract",
+        "next": null,
+        "parent": "#",
+        "inputs": {
+            "NUM1": [
+                3,
+                "b!",
+                [
+                    4,
+                    "10"
+                ]
+            ],
+            "NUM2": [
+                3,
+                "b#",
+                [
+                    4,
+                    "10"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "b!": {
+        "opcode": "operator_round",
+        "next": null,
+        "parent": "%",
+        "inputs": {
+            "NUM": [
+                3,
+                "fd",
+                [
+                    4,
+                    "10"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "fd": {
+        "opcode": "argument_reporter_string_number",
+        "next": null,
+        "parent": "b!",
+        "inputs": {},
+        "fields": {
+            "VALUE": [
+                "y",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "b#": {
+        "opcode": "operator_round",
+        "next": null,
+        "parent": "%",
+        "inputs": {
+            "NUM": [
+                3,
+                "fe",
+                [
+                    4,
+                    "10"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "fe": {
+        "opcode": "motion_yposition",
+        "next": null,
+        "parent": "b#",
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "fc": {
+        "opcode": "argument_reporter_string_number",
+        "next": null,
+        "parent": "#",
+        "inputs": {},
+        "fields": {
+            "VALUE": [
+                "speed",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "bZ": {
         "opcode": "looks_changeeffectby",
         "next": null,
-        "parent": "T",
+        "parent": "Y",
         "inputs": {
             "CHANGE": [
                 3,
-                "Y",
+                "(",
                 [
                     4,
                     "25"
@@ -686,14 +686,14 @@
         "shadow": false,
         "topLevel": false
     },
-    "Y": {
+    "(": {
         "opcode": "operator_subtract",
         "next": null,
-        "parent": "bX",
+        "parent": "bZ",
         "inputs": {
             "NUM1": [
                 3,
-                "e|",
+                "ff",
                 [
                     4,
                     ""
@@ -701,7 +701,7 @@
             ],
             "NUM2": [
                 3,
-                "b!",
+                "b%",
                 [
                     4,
                     ""
@@ -712,10 +712,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "e|": {
+    "ff": {
         "opcode": "argument_reporter_string_number",
         "next": null,
-        "parent": "Y",
+        "parent": "(",
         "inputs": {},
         "fields": {
             "VALUE": [
@@ -726,14 +726,14 @@
         "shadow": false,
         "topLevel": false
     },
-    "b!": {
+    "b%": {
         "opcode": "operator_multiply",
         "next": null,
-        "parent": "Y",
+        "parent": "(",
         "inputs": {
             "NUM1": [
                 3,
-                "e}",
+                "fg",
                 [
                     4,
                     ""
@@ -751,10 +751,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "e}": {
+    "fg": {
         "opcode": "argument_reporter_string_number",
         "next": null,
-        "parent": "b!",
+        "parent": "b%",
         "inputs": {},
         "fields": {
             "VALUE": [
@@ -765,14 +765,14 @@
         "shadow": false,
         "topLevel": false
     },
-    "O": {
+    "T": {
         "opcode": "motion_gotoxy",
         "next": null,
-        "parent": "f",
+        "parent": "t",
         "inputs": {
             "X": [
                 3,
-                "e~",
+                "fh",
                 [
                     4,
                     "10"
@@ -780,7 +780,7 @@
             ],
             "Y": [
                 3,
-                "fa",
+                "fi",
                 [
                     4,
                     "10"
@@ -791,10 +791,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "e~": {
+    "fh": {
         "opcode": "argument_reporter_string_number",
         "next": null,
-        "parent": "O",
+        "parent": "T",
         "inputs": {},
         "fields": {
             "VALUE": [
@@ -805,10 +805,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "fa": {
+    "fi": {
         "opcode": "argument_reporter_string_number",
         "next": null,
-        "parent": "O",
+        "parent": "T",
         "inputs": {},
         "fields": {
             "VALUE": [
@@ -819,7 +819,7 @@
         "shadow": false,
         "topLevel": false
     },
-    "gQ": {
+    "g!": {
         "opcode": "looks_seteffectto",
         "next": null,
         "parent": null,
@@ -843,7 +843,7 @@
         "x": -51,
         "y": 922
     },
-    "gR": {
+    "g#": {
         "opcode": "event_whenthisspriteclicked",
         "next": null,
         "parent": null,
@@ -854,9 +854,9 @@
         "x": 409,
         "y": 434
     },
-    "fb": {
+    "fj": {
         "opcode": "event_whenbroadcastreceived",
-        "next": "b#",
+        "next": "b(",
         "parent": null,
         "inputs": {},
         "fields": {
@@ -870,10 +870,10 @@
         "x": 251,
         "y": 181
     },
-    "b#": {
+    "b(": {
         "opcode": "looks_gotofrontback",
-        "next": "fc",
-        "parent": "fb",
+        "next": "fk",
+        "parent": "fj",
         "inputs": {},
         "fields": {
             "FRONT_BACK": [
@@ -884,18 +884,18 @@
         "shadow": false,
         "topLevel": false
     },
-    "fc": {
+    "fk": {
         "opcode": "looks_hide",
         "next": null,
-        "parent": "b#",
+        "parent": "b(",
         "inputs": {},
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "fd": {
+    "fl": {
         "opcode": "event_whenflagclicked",
-        "next": "b%",
+        "next": "b)",
         "parent": null,
         "inputs": {},
         "fields": {},
@@ -904,10 +904,10 @@
         "x": 617,
         "y": 73
     },
-    "b%": {
+    "b)": {
         "opcode": "looks_seteffectto",
-        "next": "b(",
-        "parent": "fd",
+        "next": "b*",
+        "parent": "fl",
         "inputs": {
             "VALUE": [
                 1,
@@ -926,10 +926,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "b(": {
+    "b*": {
         "opcode": "motion_gotoxy",
-        "next": "fe",
-        "parent": "b%",
+        "next": "fm",
+        "parent": "b)",
         "inputs": {
             "X": [
                 1,
@@ -950,18 +950,18 @@
         "shadow": false,
         "topLevel": false
     },
-    "fe": {
+    "fm": {
         "opcode": "looks_hide",
         "next": null,
-        "parent": "b(",
+        "parent": "b*",
         "inputs": {},
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "ff": {
+    "fn": {
         "opcode": "event_whenbroadcastreceived",
-        "next": "b)",
+        "next": "b+",
         "parent": null,
         "inputs": {},
         "fields": {
@@ -975,10 +975,10 @@
         "x": 422,
         "y": -81
     },
-    "b)": {
+    "b+": {
         "opcode": "looks_gotofrontback",
-        "next": "fg",
-        "parent": "ff",
+        "next": "fo",
+        "parent": "fn",
         "inputs": {},
         "fields": {
             "FRONT_BACK": [
@@ -989,18 +989,18 @@
         "shadow": false,
         "topLevel": false
     },
-    "fg": {
+    "fo": {
         "opcode": "looks_hide",
         "next": null,
-        "parent": "b)",
+        "parent": "b+",
         "inputs": {},
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "fh": {
+    "fp": {
         "opcode": "event_whenbroadcastreceived",
-        "next": "b*",
+        "next": "b,",
         "parent": null,
         "inputs": {},
         "fields": {
@@ -1014,19 +1014,19 @@
         "x": 399,
         "y": 570
     },
-    "b*": {
+    "b,": {
         "opcode": "looks_show",
-        "next": "b+",
-        "parent": "fh",
+        "next": "b-",
+        "parent": "fp",
         "inputs": {},
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "b+": {
+    "b-": {
         "opcode": "motion_gotoxy",
-        "next": "b,",
-        "parent": "b*",
+        "next": "b.",
+        "parent": "b,",
         "inputs": {
             "X": [
                 1,
@@ -1047,10 +1047,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "b,": {
+    "b.": {
         "opcode": "control_wait",
-        "next": "fi",
-        "parent": "b+",
+        "next": "fq",
+        "parent": "b-",
         "inputs": {
             "DURATION": [
                 1,
@@ -1064,10 +1064,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "fi": {
+    "fq": {
         "opcode": "procedures_call",
         "next": null,
-        "parent": "b,",
+        "parent": "b.",
         "inputs": {
             "input0": [
                 1,
@@ -1109,7 +1109,7 @@
             "warp": "false"
         }
     },
-    "gS": {
+    "g%": {
         "opcode": "motion_gotoxy",
         "next": null,
         "parent": null,
@@ -1135,9 +1135,9 @@
         "x": 622,
         "y": 931
     },
-    "fj": {
+    "fr": {
         "opcode": "event_whenbroadcastreceived",
-        "next": "fk",
+        "next": "fs",
         "parent": null,
         "inputs": {},
         "fields": {
@@ -1151,10 +1151,30 @@
         "x": 182,
         "y": 93
     },
-    "fk": {
+    "fs": {
         "opcode": "looks_hide",
         "next": null,
-        "parent": "fj",
+        "parent": "fr",
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "ft": {
+        "opcode": "event_whenflagclicked",
+        "next": "fu",
+        "parent": null,
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": true,
+        "x": 44,
+        "y": 44
+    },
+    "fu": {
+        "opcode": "looks_hide",
+        "next": null,
+        "parent": "ft",
         "inputs": {},
         "fields": {},
         "shadow": false,
