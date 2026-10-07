@@ -1,67 +1,7 @@
 {
-    "gF": {
+    "c,": {
         "opcode": "event_whenbroadcastreceived",
-        "next": null,
-        "parent": null,
-        "inputs": {},
-        "fields": {
-            "BROADCAST_OPTION": [
-                "System menu start",
-                "_C0]2Mci,D%5E4#-]|ZH"
-            ]
-        },
-        "shadow": false,
-        "topLevel": true,
-        "x": 130,
-        "y": 515
-    },
-    "c-": {
-        "opcode": "control_forever",
-        "next": null,
-        "parent": null,
-        "inputs": {
-            "SUBSTACK": [
-                2,
-                "al"
-            ]
-        },
-        "fields": {},
-        "shadow": false,
-        "topLevel": true,
-        "x": 195,
-        "y": 623
-    },
-    "al": {
-        "opcode": "sound_playuntildone",
-        "next": null,
-        "parent": "c-",
-        "inputs": {
-            "SOUND_MENU": [
-                1,
-                "c."
-            ]
-        },
-        "fields": {},
-        "shadow": false,
-        "topLevel": false
-    },
-    "c.": {
-        "opcode": "sound_sounds_menu",
-        "next": null,
-        "parent": "al",
-        "inputs": {},
-        "fields": {
-            "SOUND_MENU": [
-                "clock Loop",
-                null
-            ]
-        },
-        "shadow": true,
-        "topLevel": false
-    },
-    "c/": {
-        "opcode": "event_whenbroadcastreceived",
-        "next": "c:",
+        "next": "c-",
         "parent": null,
         "inputs": {},
         "fields": {
@@ -75,10 +15,10 @@
         "x": 277,
         "y": 335
     },
-    "c:": {
+    "c-": {
         "opcode": "control_stop",
         "next": null,
-        "parent": "c/",
+        "parent": "c,",
         "inputs": {},
         "fields": {
             "STOP_OPTION": [

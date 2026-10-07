@@ -1,7 +1,7 @@
 {
-    "gA": {
+    "gw": {
         "opcode": "event_whenbroadcastreceived",
-        "next": "ai",
+        "next": "aj",
         "parent": null,
         "inputs": {},
         "fields": {
@@ -15,24 +15,24 @@
         "x": 241,
         "y": 380
     },
-    "ai": {
+    "aj": {
         "opcode": "sound_play",
-        "next": "aj",
-        "parent": "gA",
+        "next": "ak",
+        "parent": "gw",
         "inputs": {
             "SOUND_MENU": [
                 1,
-                "gB"
+                "gx"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "gB": {
+    "gx": {
         "opcode": "sound_sounds_menu",
         "next": null,
-        "parent": "ai",
+        "parent": "aj",
         "inputs": {},
         "fields": {
             "SOUND_MENU": [
@@ -43,24 +43,24 @@
         "shadow": true,
         "topLevel": false
     },
-    "aj": {
+    "ak": {
         "opcode": "looks_switchcostumeto",
-        "next": "ak",
-        "parent": "ai",
+        "next": "al",
+        "parent": "aj",
         "inputs": {
             "COSTUME": [
                 1,
-                "gC"
+                "gy"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "gC": {
+    "gy": {
         "opcode": "looks_costume",
         "next": null,
-        "parent": "aj",
+        "parent": "ak",
         "inputs": {},
         "fields": {
             "COSTUME": [
@@ -71,10 +71,10 @@
         "shadow": true,
         "topLevel": false
     },
-    "ak": {
+    "al": {
         "opcode": "control_repeat",
-        "next": "gD",
-        "parent": "aj",
+        "next": "gz",
+        "parent": "ak",
         "inputs": {
             "TIMES": [
                 1,
@@ -85,26 +85,26 @@
             ],
             "SUBSTACK": [
                 2,
-                "gE"
+                "gA"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "gE": {
+    "gA": {
         "opcode": "looks_nextcostume",
         "next": null,
-        "parent": "ak",
+        "parent": "al",
         "inputs": {},
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "gD": {
+    "gz": {
         "opcode": "event_broadcast",
         "next": null,
-        "parent": "ak",
+        "parent": "al",
         "inputs": {
             "BROADCAST_INPUT": [
                 1,

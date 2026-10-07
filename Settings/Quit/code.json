@@ -1,7 +1,7 @@
 {
-    "gr": {
+    "gn": {
         "opcode": "event_whenthisspriteclicked",
-        "next": "ah",
+        "next": "ai",
         "parent": null,
         "inputs": {},
         "fields": {},
@@ -10,24 +10,24 @@
         "x": 210,
         "y": 424
     },
-    "ah": {
+    "ai": {
         "opcode": "sound_play",
-        "next": "gs",
-        "parent": "gr",
+        "next": "go",
+        "parent": "gn",
         "inputs": {
             "SOUND_MENU": [
                 1,
-                "gt"
+                "gp"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "gt": {
+    "gp": {
         "opcode": "sound_sounds_menu",
         "next": null,
-        "parent": "ah",
+        "parent": "ai",
         "inputs": {},
         "fields": {
             "SOUND_MENU": [
@@ -38,10 +38,10 @@
         "shadow": true,
         "topLevel": false
     },
-    "gs": {
+    "go": {
         "opcode": "event_broadcast",
         "next": null,
-        "parent": "ah",
+        "parent": "ai",
         "inputs": {
             "BROADCAST_INPUT": [
                 1,
@@ -56,9 +56,9 @@
         "shadow": false,
         "topLevel": false
     },
-    "gu": {
+    "gq": {
         "opcode": "event_whenbroadcastreceived",
-        "next": "gv",
+        "next": "gr",
         "parent": null,
         "inputs": {},
         "fields": {
@@ -72,16 +72,16 @@
         "x": 44,
         "y": 44
     },
-    "gv": {
+    "gr": {
         "opcode": "looks_hide",
         "next": null,
-        "parent": "gu",
+        "parent": "gq",
         "inputs": {},
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "g=": {
+    "g-": {
         "opcode": "event_broadcast",
         "next": null,
         "parent": null,
@@ -101,9 +101,9 @@
         "x": 310,
         "y": 757
     },
-    "gw": {
+    "gs": {
         "opcode": "event_whenbroadcastreceived",
-        "next": "gx",
+        "next": "gt",
         "parent": null,
         "inputs": {},
         "fields": {
@@ -117,10 +117,10 @@
         "x": 226,
         "y": 581
     },
-    "gx": {
+    "gt": {
         "opcode": "event_broadcast",
         "next": null,
-        "parent": "gw",
+        "parent": "gs",
         "inputs": {
             "BROADCAST_INPUT": [
                 1,
@@ -135,9 +135,9 @@
         "shadow": false,
         "topLevel": false
     },
-    "gy": {
+    "gu": {
         "opcode": "event_whenbroadcastreceived",
-        "next": "c,",
+        "next": "c+",
         "parent": null,
         "inputs": {},
         "fields": {
@@ -151,10 +151,10 @@
         "x": 520,
         "y": 264
     },
-    "c,": {
+    "c+": {
         "opcode": "looks_gotofrontback",
-        "next": "gz",
-        "parent": "gy",
+        "next": "gv",
+        "parent": "gu",
         "inputs": {},
         "fields": {
             "FRONT_BACK": [
@@ -165,10 +165,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "gz": {
+    "gv": {
         "opcode": "looks_show",
         "next": null,
-        "parent": "c,",
+        "parent": "c+",
         "inputs": {},
         "fields": {},
         "shadow": false,
