@@ -1,7 +1,7 @@
 {
-    "a)": {
+    "bd": {
         "opcode": "event_whenbroadcastreceived",
-        "next": "P",
+        "next": "X",
         "parent": null,
         "inputs": {},
         "fields": {
@@ -15,10 +15,10 @@
         "x": 48,
         "y": 64
     },
-    "P": {
+    "X": {
         "opcode": "procedures_call",
-        "next": "Q",
-        "parent": "a)",
+        "next": "Y",
+        "parent": "bd",
         "inputs": {
             "arg0": [
                 1,
@@ -39,10 +39,10 @@
             "warp": "false"
         }
     },
-    "Q": {
+    "Y": {
         "opcode": "procedures_call",
-        "next": "R",
-        "parent": "P",
+        "next": "Z",
+        "parent": "X",
         "inputs": {
             "arg0": [
                 1,
@@ -63,19 +63,19 @@
             "warp": "false"
         }
     },
-    "R": {
+    "Z": {
         "opcode": "looks_hide",
-        "next": "S",
-        "parent": "Q",
+        "next": "!",
+        "parent": "Y",
         "inputs": {},
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "S": {
+    "!": {
         "opcode": "looks_seteffectto",
-        "next": "l",
-        "parent": "R",
+        "next": "m",
+        "parent": "Z",
         "inputs": {
             "VALUE": [
                 1,
@@ -94,24 +94,24 @@
         "shadow": false,
         "topLevel": false
     },
-    "l": {
+    "m": {
         "opcode": "looks_switchbackdropto",
-        "next": "T",
-        "parent": "S",
+        "next": "#",
+        "parent": "!",
         "inputs": {
             "BACKDROP": [
                 1,
-                "a*"
+                "be"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "a*": {
+    "be": {
         "opcode": "looks_backdrops",
         "next": null,
-        "parent": "l",
+        "parent": "m",
         "inputs": {},
         "fields": {
             "BACKDROP": [
@@ -122,10 +122,10 @@
         "shadow": true,
         "topLevel": false
     },
-    "T": {
+    "#": {
         "opcode": "data_setvariableto",
-        "next": "U",
-        "parent": "l",
+        "next": "%",
+        "parent": "m",
         "inputs": {
             "VALUE": [
                 1,
@@ -144,10 +144,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "U": {
+    "%": {
         "opcode": "data_setvariableto",
-        "next": "V",
-        "parent": "T",
+        "next": "(",
+        "parent": "#",
         "inputs": {
             "VALUE": [
                 1,
@@ -166,10 +166,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "V": {
+    "(": {
         "opcode": "control_wait",
-        "next": "W",
-        "parent": "U",
+        "next": ")",
+        "parent": "%",
         "inputs": {
             "DURATION": [
                 1,
@@ -183,10 +183,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "W": {
+    ")": {
         "opcode": "procedures_call",
         "next": "a",
-        "parent": "V",
+        "parent": "(",
         "inputs": {
             "arg0": [
                 1,
@@ -209,34 +209,34 @@
     },
     "a": {
         "opcode": "control_if_else",
-        "next": "X",
-        "parent": "W",
+        "next": "*",
+        "parent": ")",
         "inputs": {
             "CONDITION": [
                 2,
-                "m"
+                "n"
             ],
             "SUBSTACK": [
                 2,
-                "Y"
+                "+"
             ],
             "SUBSTACK2": [
                 2,
-                "Z"
+                ","
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "m": {
+    "n": {
         "opcode": "operator_equals",
         "next": null,
         "parent": "a",
         "inputs": {
             "OPERAND1": [
                 3,
-                "a+",
+                "bf",
                 [
                     10,
                     ""
@@ -244,7 +244,7 @@
             ],
             "OPERAND2": [
                 3,
-                "n",
+                "o",
                 [
                     10,
                     "1"
@@ -255,10 +255,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "a+": {
+    "bf": {
         "opcode": "data_itemoflist",
         "next": null,
-        "parent": "m",
+        "parent": "n",
         "inputs": {
             "INDEX": [
                 1,
@@ -277,14 +277,14 @@
         "shadow": false,
         "topLevel": false
     },
-    "n": {
+    "o": {
         "opcode": "operator_join",
         "next": null,
-        "parent": "m",
+        "parent": "n",
         "inputs": {
             "STRING1": [
                 3,
-                "a,",
+                "bg",
                 [
                     10,
                     ""
@@ -292,7 +292,7 @@
             ],
             "STRING2": [
                 3,
-                "a-",
+                "bh",
                 [
                     10,
                     ""
@@ -303,10 +303,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "a,": {
+    "bg": {
         "opcode": "sensing_current",
         "next": null,
-        "parent": "n",
+        "parent": "o",
         "inputs": {},
         "fields": {
             "CURRENTMENU": [
@@ -317,10 +317,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "a-": {
+    "bh": {
         "opcode": "sensing_current",
         "next": null,
-        "parent": "n",
+        "parent": "o",
         "inputs": {},
         "fields": {
             "CURRENTMENU": [
@@ -331,9 +331,9 @@
         "shadow": false,
         "topLevel": false
     },
-    "Y": {
+    "+": {
         "opcode": "procedures_call",
-        "next": "a.",
+        "next": "bi",
         "parent": "a",
         "inputs": {
             "arg0": [
@@ -355,10 +355,10 @@
             "warp": "false"
         }
     },
-    "a.": {
+    "bi": {
         "opcode": "data_setvariableto",
         "next": null,
-        "parent": "Y",
+        "parent": "+",
         "inputs": {
             "VALUE": [
                 1,
@@ -377,9 +377,9 @@
         "shadow": false,
         "topLevel": false
     },
-    "Z": {
+    ",": {
         "opcode": "procedures_call",
-        "next": "a/",
+        "next": "bj",
         "parent": "a",
         "inputs": {
             "arg0": [
@@ -401,10 +401,10 @@
             "warp": "false"
         }
     },
-    "a/": {
+    "bj": {
         "opcode": "data_setvariableto",
         "next": null,
-        "parent": "Z",
+        "parent": ",",
         "inputs": {
             "VALUE": [
                 1,
@@ -423,7 +423,7 @@
         "shadow": false,
         "topLevel": false
     },
-    "X": {
+    "*": {
         "opcode": "procedures_call",
         "next": "b",
         "parent": "a",
@@ -449,16 +449,16 @@
     },
     "b": {
         "opcode": "control_if_else",
-        "next": "!",
-        "parent": "X",
+        "next": "-",
+        "parent": "*",
         "inputs": {
             "CONDITION": [
                 2,
-                "a:"
+                "bk"
             ],
             "SUBSTACK": [
                 2,
-                "#"
+                "."
             ],
             "SUBSTACK2": [
                 2,
@@ -469,7 +469,7 @@
         "shadow": false,
         "topLevel": false
     },
-    "a:": {
+    "bk": {
         "opcode": "operator_equals",
         "next": null,
         "parent": "b",
@@ -498,9 +498,9 @@
         "shadow": false,
         "topLevel": false
     },
-    "#": {
+    ".": {
         "opcode": "procedures_call",
-        "next": "a;",
+        "next": "bl",
         "parent": "b",
         "inputs": {
             "arg0": [
@@ -522,10 +522,10 @@
             "warp": "false"
         }
     },
-    "a;": {
+    "bl": {
         "opcode": "data_setvariableto",
         "next": null,
-        "parent": "#",
+        "parent": ".",
         "inputs": {
             "VALUE": [
                 1,
@@ -551,11 +551,11 @@
         "inputs": {
             "CONDITION": [
                 2,
-                "a="
+                "bm"
             ],
             "SUBSTACK": [
                 2,
-                "%"
+                "/"
             ],
             "SUBSTACK2": [
                 2,
@@ -566,7 +566,7 @@
         "shadow": false,
         "topLevel": false
     },
-    "a=": {
+    "bm": {
         "opcode": "operator_equals",
         "next": null,
         "parent": "f",
@@ -595,9 +595,9 @@
         "shadow": false,
         "topLevel": false
     },
-    "%": {
+    "/": {
         "opcode": "procedures_call",
-        "next": "a?",
+        "next": "bn",
         "parent": "f",
         "inputs": {
             "arg0": [
@@ -619,10 +619,10 @@
             "warp": "false"
         }
     },
-    "a?": {
+    "bn": {
         "opcode": "data_setvariableto",
         "next": null,
-        "parent": "%",
+        "parent": "/",
         "inputs": {
             "VALUE": [
                 1,
@@ -648,29 +648,29 @@
         "inputs": {
             "CONDITION": [
                 2,
-                "("
+                ":"
             ],
             "SUBSTACK": [
                 2,
-                ")"
+                ";"
             ],
             "SUBSTACK2": [
                 2,
-                "*"
+                "="
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "(": {
+    ":": {
         "opcode": "operator_equals",
         "next": null,
         "parent": "g",
         "inputs": {
             "OPERAND1": [
                 3,
-                "+",
+                "?",
                 [
                     10,
                     ""
@@ -688,14 +688,14 @@
         "shadow": false,
         "topLevel": false
     },
-    "+": {
+    "?": {
         "opcode": "data_itemnumoflist",
         "next": null,
-        "parent": "(",
+        "parent": ":",
         "inputs": {
             "ITEM": [
                 3,
-                "a@",
+                "bo",
                 [
                     10,
                     "thing"
@@ -711,10 +711,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "a@": {
+    "bo": {
         "opcode": "data_itemoflist",
         "next": null,
-        "parent": "+",
+        "parent": "?",
         "inputs": {
             "INDEX": [
                 1,
@@ -733,9 +733,9 @@
         "shadow": false,
         "topLevel": false
     },
-    ")": {
+    ";": {
         "opcode": "procedures_call",
-        "next": "a[",
+        "next": "bp",
         "parent": "g",
         "inputs": {
             "arg0": [
@@ -757,10 +757,10 @@
             "warp": "false"
         }
     },
-    "a[": {
+    "bp": {
         "opcode": "data_setvariableto",
         "next": null,
-        "parent": ")",
+        "parent": ";",
         "inputs": {
             "VALUE": [
                 1,
@@ -779,9 +779,9 @@
         "shadow": false,
         "topLevel": false
     },
-    "*": {
+    "=": {
         "opcode": "procedures_call",
-        "next": "a]",
+        "next": "bq",
         "parent": "g",
         "inputs": {
             "arg0": [
@@ -803,10 +803,10 @@
             "warp": "false"
         }
     },
-    "a]": {
+    "bq": {
         "opcode": "data_setvariableto",
         "next": null,
-        "parent": "*",
+        "parent": "=",
         "inputs": {
             "VALUE": [
                 1,
@@ -825,7 +825,7 @@
         "shadow": false,
         "topLevel": false
     },
-    "!": {
+    "-": {
         "opcode": "procedures_call",
         "next": "c",
         "parent": "b",
@@ -851,27 +851,27 @@
     },
     "c": {
         "opcode": "control_if_else",
-        "next": ",",
-        "parent": "!",
+        "next": "@",
+        "parent": "-",
         "inputs": {
             "CONDITION": [
                 2,
-                "a^"
+                "br"
             ],
             "SUBSTACK": [
                 2,
-                "-"
+                "["
             ],
             "SUBSTACK2": [
                 2,
-                "."
+                "]"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "a^": {
+    "br": {
         "opcode": "operator_equals",
         "next": null,
         "parent": "c",
@@ -900,24 +900,24 @@
         "shadow": false,
         "topLevel": false
     },
-    "-": {
+    "[": {
         "opcode": "sound_play",
         "next": null,
         "parent": "c",
         "inputs": {
             "SOUND_MENU": [
                 1,
-                "a_"
+                "bs"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "a_": {
+    "bs": {
         "opcode": "sound_sounds_menu",
         "next": null,
-        "parent": "-",
+        "parent": "[",
         "inputs": {},
         "fields": {
             "SOUND_MENU": [
@@ -928,24 +928,24 @@
         "shadow": true,
         "topLevel": false
     },
-    ".": {
+    "]": {
         "opcode": "sound_play",
         "next": null,
         "parent": "c",
         "inputs": {
             "SOUND_MENU": [
                 1,
-                "a`"
+                "bt"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "a`": {
+    "bt": {
         "opcode": "sound_sounds_menu",
         "next": null,
-        "parent": ".",
+        "parent": "]",
         "inputs": {},
         "fields": {
             "SOUND_MENU": [
@@ -956,47 +956,127 @@
         "shadow": true,
         "topLevel": false
     },
-    ",": {
+    "@": {
         "opcode": "looks_show",
-        "next": "o",
+        "next": "^",
         "parent": "c",
         "inputs": {},
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "o": {
-        "opcode": "looks_switchcostumeto",
-        "next": "a{",
-        "parent": ",",
+    "^": {
+        "opcode": "motion_gotoxy",
+        "next": "p",
+        "parent": "@",
         "inputs": {
-            "COSTUME": [
+            "X": [
                 1,
-                "a|"
+                [
+                    4,
+                    "0"
+                ]
+            ],
+            "Y": [
+                1,
+                [
+                    4,
+                    "-96"
+                ]
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "a|": {
+    "p": {
+        "opcode": "looks_switchcostumeto",
+        "next": "q",
+        "parent": "^",
+        "inputs": {
+            "COSTUME": [
+                1,
+                "bu"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "bu": {
         "opcode": "looks_costume",
         "next": null,
-        "parent": "o",
+        "parent": "p",
         "inputs": {},
         "fields": {
             "COSTUME": [
-                "Warning",
+                "Touch Promp",
                 null
             ]
         },
         "shadow": true,
         "topLevel": false
     },
-    "a{": {
-        "opcode": "procedures_call",
+    "q": {
+        "opcode": "control_create_clone_of",
+        "next": "r",
+        "parent": "p",
+        "inputs": {
+            "CLONE_OPTION": [
+                1,
+                "bv"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "bv": {
+        "opcode": "control_create_clone_of_menu",
         "next": null,
-        "parent": "o",
+        "parent": "q",
+        "inputs": {},
+        "fields": {
+            "CLONE_OPTION": [
+                "_myself_",
+                null
+            ]
+        },
+        "shadow": true,
+        "topLevel": false
+    },
+    "r": {
+        "opcode": "looks_switchcostumeto",
+        "next": "_",
+        "parent": "q",
+        "inputs": {
+            "COSTUME": [
+                1,
+                "bw"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "bw": {
+        "opcode": "looks_costume",
+        "next": null,
+        "parent": "r",
+        "inputs": {},
+        "fields": {
+            "COSTUME": [
+                "Boot Warning",
+                null
+            ]
+        },
+        "shadow": true,
+        "topLevel": false
+    },
+    "_": {
+        "opcode": "procedures_call",
+        "next": "`",
+        "parent": "r",
         "inputs": {
             "arg0": [
                 1,
@@ -1017,21 +1097,21 @@
             "warp": "false"
         }
     },
-    "a}": {
+    "bx": {
         "opcode": "event_whenflagclicked",
-        "next": "a~",
+        "next": "by",
         "parent": null,
         "inputs": {},
         "fields": {},
         "shadow": false,
         "topLevel": true,
-        "x": 920,
+        "x": 1482,
         "y": 64
     },
-    "a~": {
+    "by": {
         "opcode": "event_broadcast",
         "next": null,
-        "parent": "a}",
+        "parent": "bx",
         "inputs": {
             "BROADCAST_INPUT": [
                 1,
@@ -1046,44 +1126,361 @@
         "shadow": false,
         "topLevel": false
     },
-    "ba": {
+    "bz": {
         "opcode": "event_whenthisspriteclicked",
-        "next": "/",
+        "next": "{",
         "parent": null,
         "inputs": {},
         "fields": {},
         "shadow": false,
         "topLevel": true,
         "x": 48,
-        "y": 2152
+        "y": 2544
     },
-    "/": {
-        "opcode": "sound_stopallsounds",
-        "next": "p",
-        "parent": "ba",
+    "bA": {
+        "opcode": "event_whenbroadcastreceived",
+        "next": "s",
+        "parent": null,
         "inputs": {},
-        "fields": {},
+        "fields": {
+            "BROADCAST_OPTION": [
+                "Tab Open",
+                "|};Z/L_BqMi!+{UZII+~"
+            ]
+        },
         "shadow": false,
-        "topLevel": false
+        "topLevel": true,
+        "x": 48,
+        "y": 4016
     },
-    "p": {
-        "opcode": "sound_play",
-        "next": "q",
-        "parent": "/",
+    "s": {
+        "opcode": "control_repeat",
+        "next": "bB",
+        "parent": "bA",
         "inputs": {
-            "SOUND_MENU": [
+            "TIMES": [
                 1,
-                "bb"
+                [
+                    6,
+                    "10"
+                ]
+            ],
+            "SUBSTACK": [
+                2,
+                "bC"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "bb": {
+    "bC": {
+        "opcode": "looks_changeeffectby",
+        "next": null,
+        "parent": "s",
+        "inputs": {
+            "CHANGE": [
+                1,
+                [
+                    4,
+                    "15"
+                ]
+            ]
+        },
+        "fields": {
+            "EFFECT": [
+                "GHOST",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "bB": {
+        "opcode": "looks_hide",
+        "next": null,
+        "parent": "s",
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "bD": {
+        "opcode": "control_start_as_clone",
+        "next": "t",
+        "parent": null,
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": true,
+        "x": 920,
+        "y": 64
+    },
+    "t": {
+        "opcode": "control_if",
+        "next": null,
+        "parent": "bD",
+        "inputs": {
+            "CONDITION": [
+                2,
+                "|"
+            ],
+            "SUBSTACK": [
+                2,
+                "}"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "|": {
+        "opcode": "operator_equals",
+        "next": null,
+        "parent": "t",
+        "inputs": {
+            "OPERAND1": [
+                3,
+                "bE",
+                [
+                    10,
+                    ""
+                ]
+            ],
+            "OPERAND2": [
+                1,
+                [
+                    10,
+                    "Touch Promp"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "bE": {
+        "opcode": "looks_costumenumbername",
+        "next": null,
+        "parent": "|",
+        "inputs": {},
+        "fields": {
+            "NUMBER_NAME": [
+                "name",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "u": {
+        "opcode": "control_repeat",
+        "next": "aa",
+        "parent": "~",
+        "inputs": {
+            "TIMES": [
+                1,
+                [
+                    6,
+                    "10"
+                ]
+            ],
+            "SUBSTACK": [
+                2,
+                "bF"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "bF": {
+        "opcode": "looks_changeeffectby",
+        "next": null,
+        "parent": "u",
+        "inputs": {
+            "CHANGE": [
+                1,
+                [
+                    4,
+                    "15"
+                ]
+            ]
+        },
+        "fields": {
+            "EFFECT": [
+                "GHOST",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "}": {
+        "opcode": "looks_show",
+        "next": "ab",
+        "parent": "t",
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "ab": {
+        "opcode": "motion_gotoxy",
+        "next": "ac",
+        "parent": "}",
+        "inputs": {
+            "X": [
+                1,
+                [
+                    4,
+                    "0"
+                ]
+            ],
+            "Y": [
+                1,
+                [
+                    4,
+                    "-96"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "~": {
+        "opcode": "control_forever",
+        "next": null,
+        "parent": "ac",
+        "inputs": {
+            "SUBSTACK": [
+                2,
+                "u"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "ac": {
+        "opcode": "looks_gotofrontback",
+        "next": "~",
+        "parent": "ab",
+        "inputs": {},
+        "fields": {
+            "FRONT_BACK": [
+                "front",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "aa": {
+        "opcode": "control_wait",
+        "next": "v",
+        "parent": "u",
+        "inputs": {
+            "DURATION": [
+                1,
+                [
+                    5,
+                    "0"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "v": {
+        "opcode": "control_repeat",
+        "next": "bG",
+        "parent": "aa",
+        "inputs": {
+            "TIMES": [
+                1,
+                [
+                    6,
+                    "10"
+                ]
+            ],
+            "SUBSTACK": [
+                2,
+                "bH"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "bH": {
+        "opcode": "looks_changeeffectby",
+        "next": null,
+        "parent": "v",
+        "inputs": {
+            "CHANGE": [
+                1,
+                [
+                    4,
+                    "-15"
+                ]
+            ]
+        },
+        "fields": {
+            "EFFECT": [
+                "GHOST",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "bG": {
+        "opcode": "control_wait",
+        "next": null,
+        "parent": "v",
+        "inputs": {
+            "DURATION": [
+                1,
+                [
+                    5,
+                    "1"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "ad": {
+        "opcode": "sound_stopallsounds",
+        "next": "w",
+        "parent": "{",
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "w": {
+        "opcode": "sound_play",
+        "next": "bI",
+        "parent": "ad",
+        "inputs": {
+            "SOUND_MENU": [
+                1,
+                "bJ"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "bJ": {
         "opcode": "sound_sounds_menu",
         "next": null,
-        "parent": "p",
+        "parent": "w",
         "inputs": {},
         "fields": {
             "SOUND_MENU": [
@@ -1094,24 +1491,24 @@
         "shadow": true,
         "topLevel": false
     },
-    "q": {
+    "x": {
         "opcode": "looks_switchbackdropto",
         "next": "d",
-        "parent": "p",
+        "parent": "h",
         "inputs": {
             "BACKDROP": [
                 1,
-                "bc"
+                "bK"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "bc": {
+    "bK": {
         "opcode": "looks_backdrops",
         "next": null,
-        "parent": "q",
+        "parent": "x",
         "inputs": {},
         "fields": {
             "BACKDROP": [
@@ -1124,16 +1521,16 @@
     },
     "d": {
         "opcode": "control_if_else",
-        "next": "bd",
-        "parent": "q",
+        "next": "bL",
+        "parent": "x",
         "inputs": {
             "CONDITION": [
                 2,
-                "be"
+                "bM"
             ],
             "SUBSTACK": [
                 2,
-                "r"
+                "y"
             ],
             "SUBSTACK2": [
                 2,
@@ -1144,7 +1541,7 @@
         "shadow": false,
         "topLevel": false
     },
-    "be": {
+    "bM": {
         "opcode": "operator_equals",
         "next": null,
         "parent": "d",
@@ -1173,9 +1570,131 @@
         "shadow": false,
         "topLevel": false
     },
+    "y": {
+        "opcode": "control_repeat",
+        "next": "ae",
+        "parent": "d",
+        "inputs": {
+            "TIMES": [
+                1,
+                [
+                    6,
+                    "10"
+                ]
+            ],
+            "SUBSTACK": [
+                2,
+                "bN"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "bN": {
+        "opcode": "looks_changeeffectby",
+        "next": null,
+        "parent": "y",
+        "inputs": {
+            "CHANGE": [
+                1,
+                [
+                    4,
+                    "15"
+                ]
+            ]
+        },
+        "fields": {
+            "EFFECT": [
+                "GHOST",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "ae": {
+        "opcode": "looks_hide",
+        "next": "z",
+        "parent": "y",
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "z": {
+        "opcode": "looks_switchbackdropto",
+        "next": "af",
+        "parent": "ae",
+        "inputs": {
+            "BACKDROP": [
+                1,
+                "bO"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "bO": {
+        "opcode": "looks_backdrops",
+        "next": null,
+        "parent": "z",
+        "inputs": {},
+        "fields": {
+            "BACKDROP": [
+                "LinesBG",
+                null
+            ]
+        },
+        "shadow": true,
+        "topLevel": false
+    },
+    "af": {
+        "opcode": "procedures_call",
+        "next": "bP",
+        "parent": "z",
+        "inputs": {
+            "arg0": [
+                1,
+                [
+                    10,
+                    "Starting System Menu"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false,
+        "mutation": {
+            "tagName": "mutation",
+            "children": [],
+            "proccode": "\u200b\u200blog\u200b\u200b %s",
+            "argumentids": "[\"arg0\"]",
+            "warp": "false"
+        }
+    },
+    "bP": {
+        "opcode": "event_broadcast",
+        "next": null,
+        "parent": "af",
+        "inputs": {
+            "BROADCAST_INPUT": [
+                1,
+                [
+                    11,
+                    "Start System Menu",
+                    "GU+Z~z=8s*weH3:V9Qxc"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
     "e": {
         "opcode": "procedures_call",
-        "next": ":",
+        "next": "ag",
         "parent": "d",
         "inputs": {
             "arg0": [
@@ -1197,7 +1716,43 @@
             "warp": "false"
         }
     },
-    "bd": {
+    "ag": {
+        "opcode": "event_broadcastandwait",
+        "next": "bQ",
+        "parent": "e",
+        "inputs": {
+            "BROADCAST_INPUT": [
+                1,
+                [
+                    11,
+                    "Tab Open",
+                    "|};Z/L_BqMi!+{UZII+~"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "bQ": {
+        "opcode": "event_broadcast",
+        "next": null,
+        "parent": "ag",
+        "inputs": {
+            "BROADCAST_INPUT": [
+                1,
+                [
+                    11,
+                    "Start System Setup",
+                    "bIH:LoKGS3dqqX0tQHT:"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "bL": {
         "opcode": "data_setvariableto",
         "next": null,
         "parent": "d",
@@ -1219,16 +1774,175 @@
         "shadow": false,
         "topLevel": false
     },
-    ";": {
+    "bI": {
+        "opcode": "event_broadcast",
+        "next": null,
+        "parent": "w",
+        "inputs": {
+            "BROADCAST_INPUT": [
+                1,
+                [
+                    11,
+                    "Boot NTR Menu",
+                    "P1}IrIXpyb~y;i^Y6y*f"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "bR": {
+        "opcode": "event_whenbroadcastreceived",
+        "next": "h",
+        "parent": null,
+        "inputs": {},
+        "fields": {
+            "BROADCAST_OPTION": [
+                "Boot NTR Menu",
+                "P1}IrIXpyb~y;i^Y6y*f"
+            ]
+        },
+        "shadow": false,
+        "topLevel": true,
+        "x": 48,
+        "y": 2864
+    },
+    "h": {
+        "opcode": "control_if_else",
+        "next": null,
+        "parent": "bR",
+        "inputs": {
+            "CONDITION": [
+                2,
+                "ah"
+            ],
+            "SUBSTACK": [
+                2,
+                "x"
+            ],
+            "SUBSTACK2": [
+                2,
+                "ai"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "bS": {
+        "opcode": "lmsclonesplus_isClone",
+        "next": null,
+        "parent": "ah",
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "ai": {
+        "opcode": "control_stop",
+        "next": "A",
+        "parent": "h",
+        "inputs": {},
+        "fields": {
+            "STOP_OPTION": [
+                "other scripts in sprite",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false,
+        "mutation": {
+            "tagName": "mutation",
+            "children": [],
+            "hasnext": "true"
+        }
+    },
+    "A": {
+        "opcode": "control_repeat",
+        "next": "bT",
+        "parent": "ai",
+        "inputs": {
+            "TIMES": [
+                1,
+                [
+                    6,
+                    "10"
+                ]
+            ],
+            "SUBSTACK": [
+                2,
+                "bU"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "bU": {
+        "opcode": "looks_changeeffectby",
+        "next": null,
+        "parent": "A",
+        "inputs": {
+            "CHANGE": [
+                1,
+                [
+                    4,
+                    "15"
+                ]
+            ]
+        },
+        "fields": {
+            "EFFECT": [
+                "GHOST",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false
+    },
+    "bT": {
+        "opcode": "control_delete_this_clone",
+        "next": null,
+        "parent": "A",
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "ah": {
+        "opcode": "operator_not",
+        "next": null,
+        "parent": "h",
+        "inputs": {
+            "OPERAND": [
+                2,
+                "bS"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "`": {
+        "opcode": "sensing_resettimer",
+        "next": "aj",
+        "parent": "_",
+        "inputs": {},
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "aj": {
         "opcode": "procedures_call",
-        "next": "bf",
-        "parent": "s",
+        "next": "B",
+        "parent": "`",
         "inputs": {
             "arg0": [
                 1,
                 [
                     10,
-                    "Starting System Menu"
+                    "Running timer"
                 ]
             ]
         },
@@ -1243,183 +1957,31 @@
             "warp": "false"
         }
     },
-    "t": {
-        "opcode": "control_repeat",
-        "next": "bh",
-        "parent": "bg",
+    "B": {
+        "opcode": "control_wait_until",
+        "next": "ak",
+        "parent": "aj",
         "inputs": {
-            "TIMES": [
-                1,
-                [
-                    6,
-                    "10"
-                ]
-            ],
-            "SUBSTACK": [
+            "CONDITION": [
                 2,
-                "bi"
+                "al"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "bi": {
-        "opcode": "looks_changeeffectby",
-        "next": null,
-        "parent": "t",
-        "inputs": {
-            "CHANGE": [
-                1,
-                [
-                    4,
-                    "15"
-                ]
-            ]
-        },
-        "fields": {
-            "EFFECT": [
-                "GHOST",
-                null
-            ]
-        },
-        "shadow": false,
-        "topLevel": false
-    },
-    "bh": {
-        "opcode": "looks_hide",
-        "next": null,
-        "parent": "t",
-        "inputs": {},
-        "fields": {},
-        "shadow": false,
-        "topLevel": false
-    },
-    "bg": {
-        "opcode": "event_whenbroadcastreceived",
-        "next": "t",
-        "parent": null,
-        "inputs": {},
-        "fields": {
-            "BROADCAST_OPTION": [
-                "Tab Open",
-                "|};Z/L_BqMi!+{UZII+~"
-            ]
-        },
-        "shadow": false,
-        "topLevel": true,
-        "x": 48,
-        "y": 3152
-    },
-    "r": {
-        "opcode": "control_repeat",
-        "next": "=",
-        "parent": "d",
-        "inputs": {
-            "TIMES": [
-                1,
-                [
-                    6,
-                    "10"
-                ]
-            ],
-            "SUBSTACK": [
-                2,
-                "bj"
-            ]
-        },
-        "fields": {},
-        "shadow": false,
-        "topLevel": false
-    },
-    "bj": {
-        "opcode": "looks_changeeffectby",
-        "next": null,
-        "parent": "r",
-        "inputs": {
-            "CHANGE": [
-                1,
-                [
-                    4,
-                    "15"
-                ]
-            ]
-        },
-        "fields": {
-            "EFFECT": [
-                "GHOST",
-                null
-            ]
-        },
-        "shadow": false,
-        "topLevel": false
-    },
-    "=": {
-        "opcode": "looks_hide",
-        "next": "s",
-        "parent": "r",
-        "inputs": {},
-        "fields": {},
-        "shadow": false,
-        "topLevel": false
-    },
-    "s": {
-        "opcode": "looks_switchbackdropto",
-        "next": ";",
-        "parent": "=",
-        "inputs": {
-            "BACKDROP": [
-                1,
-                "bk"
-            ]
-        },
-        "fields": {},
-        "shadow": false,
-        "topLevel": false
-    },
-    "bk": {
-        "opcode": "looks_backdrops",
-        "next": null,
-        "parent": "s",
-        "inputs": {},
-        "fields": {
-            "BACKDROP": [
-                "LinesBG",
-                null
-            ]
-        },
-        "shadow": true,
-        "topLevel": false
-    },
-    ":": {
-        "opcode": "event_broadcastandwait",
-        "next": "bl",
-        "parent": "e",
-        "inputs": {
-            "BROADCAST_INPUT": [
-                1,
-                [
-                    11,
-                    "Tab Open",
-                    "|};Z/L_BqMi!+{UZII+~"
-                ]
-            ]
-        },
-        "fields": {},
-        "shadow": false,
-        "topLevel": false
-    },
-    "bl": {
+    "bV": {
         "opcode": "event_broadcast",
         "next": null,
-        "parent": ":",
+        "parent": "ak",
         "inputs": {
             "BROADCAST_INPUT": [
                 1,
                 [
                     11,
-                    "Start System Setup",
-                    "bIH:LoKGS3dqqX0tQHT:"
+                    "Boot NTR Menu",
+                    "P1}IrIXpyb~y;i^Y6y*f"
                 ]
             ]
         },
@@ -1427,20 +1989,79 @@
         "shadow": false,
         "topLevel": false
     },
-    "bf": {
-        "opcode": "event_broadcast",
-        "next": null,
-        "parent": ";",
+    "ak": {
+        "opcode": "procedures_call",
+        "next": "bV",
+        "parent": "B",
         "inputs": {
-            "BROADCAST_INPUT": [
+            "arg0": [
                 1,
                 [
-                    11,
-                    "Start System Menu",
-                    "GU+Z~z=8s*weH3:V9Qxc"
+                    10,
+                    "Timer ran out booting menu"
                 ]
             ]
         },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false,
+        "mutation": {
+            "tagName": "mutation",
+            "children": [],
+            "proccode": "\u200b\u200blog\u200b\u200b %s",
+            "argumentids": "[\"arg0\"]",
+            "warp": "false"
+        }
+    },
+    "{": {
+        "opcode": "control_stop",
+        "next": "ad",
+        "parent": "bz",
+        "inputs": {},
+        "fields": {
+            "STOP_OPTION": [
+                "other scripts in sprite",
+                null
+            ]
+        },
+        "shadow": false,
+        "topLevel": false,
+        "mutation": {
+            "tagName": "mutation",
+            "children": [],
+            "hasnext": "true"
+        }
+    },
+    "al": {
+        "opcode": "operator_gt",
+        "next": null,
+        "parent": "B",
+        "inputs": {
+            "OPERAND1": [
+                3,
+                "bW",
+                [
+                    10,
+                    ""
+                ]
+            ],
+            "OPERAND2": [
+                1,
+                [
+                    10,
+                    "5"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "bW": {
+        "opcode": "sensing_timer",
+        "next": null,
+        "parent": "al",
+        "inputs": {},
         "fields": {},
         "shadow": false,
         "topLevel": false

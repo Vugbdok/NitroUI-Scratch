@@ -1,19 +1,19 @@
 {
-    "bm": {
+    "bX": {
         "opcode": "control_start_as_clone",
-        "next": "?",
+        "next": "am",
         "parent": null,
         "inputs": {},
         "fields": {},
         "shadow": false,
         "topLevel": true,
-        "x": 590,
+        "x": 589,
         "y": 64
     },
-    "?": {
+    "am": {
         "opcode": "looks_gotofrontback",
-        "next": "h",
-        "parent": "bm",
+        "next": "i",
+        "parent": "bX",
         "inputs": {},
         "fields": {
             "FRONT_BACK": [
@@ -24,32 +24,32 @@
         "shadow": false,
         "topLevel": false
     },
-    "h": {
+    "i": {
         "opcode": "control_if",
-        "next": "i",
-        "parent": "?",
+        "next": "j",
+        "parent": "am",
         "inputs": {
             "CONDITION": [
                 2,
-                "@"
+                "an"
             ],
             "SUBSTACK": [
                 2,
-                "["
+                "ao"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "@": {
+    "an": {
         "opcode": "operator_equals",
         "next": null,
-        "parent": "h",
+        "parent": "i",
         "inputs": {
             "OPERAND1": [
                 3,
-                "bn",
+                "bY",
                 [
                     10,
                     ""
@@ -67,10 +67,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "bn": {
+    "bY": {
         "opcode": "looks_costumenumbername",
         "next": null,
-        "parent": "@",
+        "parent": "an",
         "inputs": {},
         "fields": {
             "NUMBER_NAME": [
@@ -81,10 +81,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "[": {
+    "ao": {
         "opcode": "motion_gotoxy",
-        "next": "u",
-        "parent": "h",
+        "next": "C",
+        "parent": "i",
         "inputs": {
             "X": [
                 1,
@@ -105,24 +105,24 @@
         "shadow": false,
         "topLevel": false
     },
-    "u": {
+    "C": {
         "opcode": "looks_switchcostumeto",
-        "next": "]",
-        "parent": "[",
+        "next": "ap",
+        "parent": "ao",
         "inputs": {
             "COSTUME": [
                 1,
-                "bo"
+                "bZ"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "bo": {
+    "bZ": {
         "opcode": "looks_costume",
         "next": null,
-        "parent": "u",
+        "parent": "C",
         "inputs": {},
         "fields": {
             "COSTUME": [
@@ -133,10 +133,10 @@
         "shadow": true,
         "topLevel": false
     },
-    "]": {
+    "ap": {
         "opcode": "motion_glidesecstoxy",
-        "next": "^",
-        "parent": "u",
+        "next": "aq",
+        "parent": "C",
         "inputs": {
             "SECS": [
                 1,
@@ -164,24 +164,24 @@
         "shadow": false,
         "topLevel": false
     },
-    "^": {
+    "aq": {
         "opcode": "control_forever",
         "next": null,
-        "parent": "]",
+        "parent": "ap",
         "inputs": {
             "SUBSTACK": [
                 2,
-                "bp"
+                "b!"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "bp": {
+    "b!": {
         "opcode": "looks_gotofrontback",
         "next": null,
-        "parent": "^",
+        "parent": "aq",
         "inputs": {},
         "fields": {
             "FRONT_BACK": [
@@ -192,32 +192,32 @@
         "shadow": false,
         "topLevel": false
     },
-    "i": {
+    "j": {
         "opcode": "control_if",
-        "next": "v",
-        "parent": "h",
+        "next": "D",
+        "parent": "i",
         "inputs": {
             "CONDITION": [
                 2,
-                "_"
+                "ar"
             ],
             "SUBSTACK": [
                 2,
-                "`"
+                "as"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "_": {
+    "ar": {
         "opcode": "operator_equals",
         "next": null,
-        "parent": "i",
+        "parent": "j",
         "inputs": {
             "OPERAND1": [
                 3,
-                "bq",
+                "b#",
                 [
                     10,
                     ""
@@ -235,10 +235,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "bq": {
+    "b#": {
         "opcode": "looks_costumenumbername",
         "next": null,
-        "parent": "_",
+        "parent": "ar",
         "inputs": {},
         "fields": {
             "NUMBER_NAME": [
@@ -249,10 +249,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "`": {
+    "as": {
         "opcode": "motion_gotoxy",
-        "next": "w",
-        "parent": "i",
+        "next": "E",
+        "parent": "j",
         "inputs": {
             "X": [
                 1,
@@ -273,24 +273,24 @@
         "shadow": false,
         "topLevel": false
     },
-    "w": {
+    "E": {
         "opcode": "looks_switchcostumeto",
-        "next": "{",
-        "parent": "`",
+        "next": "at",
+        "parent": "as",
         "inputs": {
             "COSTUME": [
                 1,
-                "br"
+                "b%"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "br": {
+    "b%": {
         "opcode": "looks_costume",
         "next": null,
-        "parent": "w",
+        "parent": "E",
         "inputs": {},
         "fields": {
             "COSTUME": [
@@ -301,10 +301,10 @@
         "shadow": true,
         "topLevel": false
     },
-    "{": {
+    "at": {
         "opcode": "looks_goforwardbackwardlayers",
-        "next": "bs",
-        "parent": "w",
+        "next": "b(",
+        "parent": "E",
         "inputs": {
             "NUM": [
                 1,
@@ -323,10 +323,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "bs": {
+    "b(": {
         "opcode": "motion_glidesecstoxy",
         "next": null,
-        "parent": "{",
+        "parent": "at",
         "inputs": {
             "SECS": [
                 1,
@@ -354,32 +354,32 @@
         "shadow": false,
         "topLevel": false
     },
-    "v": {
+    "D": {
         "opcode": "control_if",
         "next": null,
-        "parent": "i",
+        "parent": "j",
         "inputs": {
             "CONDITION": [
                 2,
-                "|"
+                "au"
             ],
             "SUBSTACK": [
                 2,
-                "}"
+                "av"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "|": {
+    "au": {
         "opcode": "operator_equals",
         "next": null,
-        "parent": "v",
+        "parent": "D",
         "inputs": {
             "OPERAND1": [
                 3,
-                "bt",
+                "b)",
                 [
                     10,
                     ""
@@ -397,10 +397,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "bt": {
+    "b)": {
         "opcode": "looks_costumenumbername",
         "next": null,
-        "parent": "|",
+        "parent": "au",
         "inputs": {},
         "fields": {
             "NUMBER_NAME": [
@@ -411,10 +411,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "}": {
+    "av": {
         "opcode": "looks_gotofrontback",
-        "next": "~",
-        "parent": "v",
+        "next": "aw",
+        "parent": "D",
         "inputs": {},
         "fields": {
             "FRONT_BACK": [
@@ -425,10 +425,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "~": {
+    "aw": {
         "opcode": "looks_seteffectto",
-        "next": "aa",
-        "parent": "}",
+        "next": "ax",
+        "parent": "av",
         "inputs": {
             "VALUE": [
                 1,
@@ -447,10 +447,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "aa": {
+    "ax": {
         "opcode": "control_repeat",
         "next": null,
-        "parent": "~",
+        "parent": "aw",
         "inputs": {
             "TIMES": [
                 1,
@@ -461,17 +461,17 @@
             ],
             "SUBSTACK": [
                 2,
-                "bu"
+                "b*"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "bu": {
+    "b*": {
         "opcode": "looks_changeeffectby",
         "next": null,
-        "parent": "aa",
+        "parent": "ax",
         "inputs": {
             "CHANGE": [
                 1,
@@ -490,9 +490,9 @@
         "shadow": false,
         "topLevel": false
     },
-    "bv": {
+    "b+": {
         "opcode": "event_whenbroadcastreceived",
-        "next": "ab",
+        "next": "ay",
         "parent": null,
         "inputs": {},
         "fields": {
@@ -503,22 +503,22 @@
         },
         "shadow": false,
         "topLevel": true,
-        "x": 590,
+        "x": 589,
         "y": 1192
     },
-    "ab": {
+    "ay": {
         "opcode": "looks_show",
-        "next": "ac",
-        "parent": "bv",
+        "next": "az",
+        "parent": "b+",
         "inputs": {},
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "ac": {
+    "az": {
         "opcode": "motion_gotoxy",
-        "next": "ad",
-        "parent": "ab",
+        "next": "aA",
+        "parent": "ay",
         "inputs": {
             "X": [
                 1,
@@ -539,10 +539,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "ad": {
+    "aA": {
         "opcode": "event_broadcast",
-        "next": "x",
-        "parent": "ac",
+        "next": "F",
+        "parent": "az",
         "inputs": {
             "BROADCAST_INPUT": [
                 1,
@@ -557,24 +557,24 @@
         "shadow": false,
         "topLevel": false
     },
-    "x": {
+    "F": {
         "opcode": "looks_switchcostumeto",
-        "next": "y",
-        "parent": "ad",
+        "next": "G",
+        "parent": "aA",
         "inputs": {
             "COSTUME": [
                 1,
-                "bw"
+                "b,"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "bw": {
+    "b,": {
         "opcode": "looks_costume",
         "next": null,
-        "parent": "x",
+        "parent": "F",
         "inputs": {},
         "fields": {
             "COSTUME": [
@@ -585,24 +585,24 @@
         "shadow": true,
         "topLevel": false
     },
-    "y": {
+    "G": {
         "opcode": "control_create_clone_of",
-        "next": "z",
-        "parent": "x",
+        "next": "H",
+        "parent": "F",
         "inputs": {
             "CLONE_OPTION": [
                 1,
-                "bx"
+                "b-"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "bx": {
+    "b-": {
         "opcode": "control_create_clone_of_menu",
         "next": null,
-        "parent": "y",
+        "parent": "G",
         "inputs": {},
         "fields": {
             "CLONE_OPTION": [
@@ -613,24 +613,24 @@
         "shadow": true,
         "topLevel": false
     },
-    "z": {
+    "H": {
         "opcode": "looks_switchcostumeto",
-        "next": "A",
-        "parent": "y",
+        "next": "I",
+        "parent": "G",
         "inputs": {
             "COSTUME": [
                 1,
-                "by"
+                "b."
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "by": {
+    "b.": {
         "opcode": "looks_costume",
         "next": null,
-        "parent": "z",
+        "parent": "H",
         "inputs": {},
         "fields": {
             "COSTUME": [
@@ -641,24 +641,24 @@
         "shadow": true,
         "topLevel": false
     },
-    "A": {
+    "I": {
         "opcode": "control_create_clone_of",
-        "next": "B",
-        "parent": "z",
+        "next": "J",
+        "parent": "H",
         "inputs": {
             "CLONE_OPTION": [
                 1,
-                "bz"
+                "b/"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "bz": {
+    "b/": {
         "opcode": "control_create_clone_of_menu",
         "next": null,
-        "parent": "A",
+        "parent": "I",
         "inputs": {},
         "fields": {
             "CLONE_OPTION": [
@@ -669,24 +669,24 @@
         "shadow": true,
         "topLevel": false
     },
-    "B": {
+    "J": {
         "opcode": "looks_switchcostumeto",
-        "next": "ae",
-        "parent": "A",
+        "next": "aB",
+        "parent": "I",
         "inputs": {
             "COSTUME": [
                 1,
-                "bA"
+                "b:"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "bA": {
+    "b:": {
         "opcode": "looks_costume",
         "next": null,
-        "parent": "B",
+        "parent": "J",
         "inputs": {},
         "fields": {
             "COSTUME": [
@@ -697,10 +697,10 @@
         "shadow": true,
         "topLevel": false
     },
-    "ae": {
+    "aB": {
         "opcode": "data_setvariableto",
-        "next": "af",
-        "parent": "B",
+        "next": "aC",
+        "parent": "J",
         "inputs": {
             "VALUE": [
                 1,
@@ -719,10 +719,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "af": {
+    "aC": {
         "opcode": "looks_seteffectto",
-        "next": "ag",
-        "parent": "ae",
+        "next": "aD",
+        "parent": "aB",
         "inputs": {
             "VALUE": [
                 1,
@@ -741,10 +741,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "ag": {
+    "aD": {
         "opcode": "control_repeat",
         "next": null,
-        "parent": "af",
+        "parent": "aC",
         "inputs": {
             "TIMES": [
                 1,
@@ -755,17 +755,17 @@
             ],
             "SUBSTACK": [
                 2,
-                "bB"
+                "b;"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "bB": {
+    "b;": {
         "opcode": "looks_changeeffectby",
         "next": null,
-        "parent": "ag",
+        "parent": "aD",
         "inputs": {
             "CHANGE": [
                 1,
@@ -784,9 +784,9 @@
         "shadow": false,
         "topLevel": false
     },
-    "bC": {
+    "b=": {
         "opcode": "event_whenflagclicked",
-        "next": "bD",
+        "next": "b?",
         "parent": null,
         "inputs": {},
         "fields": {},
@@ -795,18 +795,18 @@
         "x": 48,
         "y": 64
     },
-    "bD": {
+    "b?": {
         "opcode": "looks_hide",
         "next": null,
-        "parent": "bC",
+        "parent": "b=",
         "inputs": {},
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "bE": {
+    "b@": {
         "opcode": "event_whenbroadcastreceived",
-        "next": "j",
+        "next": "k",
         "parent": null,
         "inputs": {},
         "fields": {
@@ -820,36 +820,36 @@
         "x": 48,
         "y": 240
     },
-    "j": {
+    "k": {
         "opcode": "control_if_else",
         "next": null,
-        "parent": "bE",
+        "parent": "b@",
         "inputs": {
             "CONDITION": [
                 2,
-                "ah"
+                "aE"
             ],
             "SUBSTACK": [
                 2,
-                "bF"
+                "b["
             ],
             "SUBSTACK2": [
                 2,
-                "bG"
+                "b]"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "ah": {
+    "aE": {
         "opcode": "operator_equals",
         "next": null,
-        "parent": "j",
+        "parent": "k",
         "inputs": {
             "OPERAND1": [
                 3,
-                "bH",
+                "b^",
                 [
                     10,
                     ""
@@ -867,10 +867,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "bH": {
+    "b^": {
         "opcode": "looks_costumenumbername",
         "next": null,
-        "parent": "ah",
+        "parent": "aE",
         "inputs": {},
         "fields": {
             "NUMBER_NAME": [
@@ -881,10 +881,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "bF": {
+    "b[": {
         "opcode": "looks_gotofrontback",
         "next": null,
-        "parent": "j",
+        "parent": "k",
         "inputs": {},
         "fields": {
             "FRONT_BACK": [
@@ -895,10 +895,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "bG": {
+    "b]": {
         "opcode": "looks_gotofrontback",
         "next": null,
-        "parent": "j",
+        "parent": "k",
         "inputs": {},
         "fields": {
             "FRONT_BACK": [
@@ -909,9 +909,9 @@
         "shadow": false,
         "topLevel": false
     },
-    "bI": {
+    "b_": {
         "opcode": "event_whenbroadcastreceived",
-        "next": "k",
+        "next": "l",
         "parent": null,
         "inputs": {},
         "fields": {
@@ -925,32 +925,32 @@
         "x": 48,
         "y": 584
     },
-    "k": {
+    "l": {
         "opcode": "control_if",
-        "next": "C",
-        "parent": "bI",
+        "next": "K",
+        "parent": "b_",
         "inputs": {
             "CONDITION": [
                 2,
-                "ai"
+                "aF"
             ],
             "SUBSTACK": [
                 2,
-                "aj"
+                "aG"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "ai": {
+    "aF": {
         "opcode": "operator_equals",
         "next": null,
-        "parent": "k",
+        "parent": "l",
         "inputs": {
             "OPERAND1": [
                 3,
-                "bJ",
+                "b`",
                 [
                     10,
                     ""
@@ -968,10 +968,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "bJ": {
+    "b`": {
         "opcode": "looks_costumenumbername",
         "next": null,
-        "parent": "ai",
+        "parent": "aF",
         "inputs": {},
         "fields": {
             "NUMBER_NAME": [
@@ -982,10 +982,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "aj": {
+    "aG": {
         "opcode": "looks_gotofrontback",
-        "next": "D",
-        "parent": "k",
+        "next": "L",
+        "parent": "l",
         "inputs": {},
         "fields": {
             "FRONT_BACK": [
@@ -996,24 +996,24 @@
         "shadow": false,
         "topLevel": false
     },
-    "D": {
+    "L": {
         "opcode": "looks_switchcostumeto",
-        "next": "bK",
-        "parent": "aj",
+        "next": "b{",
+        "parent": "aG",
         "inputs": {
             "COSTUME": [
                 1,
-                "bL"
+                "b|"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "bL": {
+    "b|": {
         "opcode": "looks_costume",
         "next": null,
-        "parent": "D",
+        "parent": "L",
         "inputs": {},
         "fields": {
             "COSTUME": [
@@ -1024,10 +1024,10 @@
         "shadow": true,
         "topLevel": false
     },
-    "bK": {
+    "b{": {
         "opcode": "motion_glidesecstoxy",
         "next": null,
-        "parent": "D",
+        "parent": "L",
         "inputs": {
             "SECS": [
                 1,
@@ -1055,65 +1055,65 @@
         "shadow": false,
         "topLevel": false
     },
-    "C": {
+    "K": {
         "opcode": "control_if",
         "next": null,
-        "parent": "k",
+        "parent": "l",
         "inputs": {
             "CONDITION": [
                 2,
-                "ak"
+                "aH"
             ],
             "SUBSTACK": [
                 2,
-                "E"
+                "M"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "ak": {
+    "aH": {
         "opcode": "operator_not",
         "next": null,
-        "parent": "C",
+        "parent": "K",
         "inputs": {
             "OPERAND": [
                 2,
-                "bM"
+                "b}"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "bM": {
+    "b}": {
         "opcode": "lmsclonesplus_isClone",
         "next": null,
-        "parent": "ak",
+        "parent": "aH",
         "inputs": {},
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "E": {
+    "M": {
         "opcode": "looks_switchcostumeto",
-        "next": "F",
-        "parent": "C",
+        "next": "N",
+        "parent": "K",
         "inputs": {
             "COSTUME": [
                 1,
-                "bN"
+                "b~"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "bN": {
+    "b~": {
         "opcode": "looks_costume",
         "next": null,
-        "parent": "E",
+        "parent": "M",
         "inputs": {},
         "fields": {
             "COSTUME": [
@@ -1124,24 +1124,24 @@
         "shadow": true,
         "topLevel": false
     },
-    "F": {
+    "N": {
         "opcode": "control_create_clone_of",
-        "next": "G",
-        "parent": "E",
+        "next": "O",
+        "parent": "M",
         "inputs": {
             "CLONE_OPTION": [
                 1,
-                "bO"
+                "ca"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "bO": {
+    "ca": {
         "opcode": "control_create_clone_of_menu",
         "next": null,
-        "parent": "F",
+        "parent": "N",
         "inputs": {},
         "fields": {
             "CLONE_OPTION": [
@@ -1152,24 +1152,24 @@
         "shadow": true,
         "topLevel": false
     },
-    "G": {
+    "O": {
         "opcode": "looks_switchcostumeto",
-        "next": "bP",
-        "parent": "F",
+        "next": "cb",
+        "parent": "N",
         "inputs": {
             "COSTUME": [
                 1,
-                "bQ"
+                "cc"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "bQ": {
+    "cc": {
         "opcode": "looks_costume",
         "next": null,
-        "parent": "G",
+        "parent": "O",
         "inputs": {},
         "fields": {
             "COSTUME": [
@@ -1180,10 +1180,10 @@
         "shadow": true,
         "topLevel": false
     },
-    "bP": {
+    "cb": {
         "opcode": "looks_gotofrontback",
         "next": null,
-        "parent": "G",
+        "parent": "O",
         "inputs": {},
         "fields": {
             "FRONT_BACK": [

@@ -1,7 +1,7 @@
 {
-    "cn": {
+    "cY": {
         "opcode": "event_whenbroadcastreceived",
-        "next": "M",
+        "next": "U",
         "parent": null,
         "inputs": {},
         "fields": {
@@ -15,24 +15,24 @@
         "x": 270,
         "y": 211
     },
-    "M": {
+    "U": {
         "opcode": "lmsSoundExpanded_startLooping",
-        "next": "a%",
-        "parent": "cn",
+        "next": "bb",
+        "parent": "cY",
         "inputs": {
             "SOUND": [
                 1,
-                "co"
+                "cZ"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "co": {
+    "cZ": {
         "opcode": "sound_sounds_menu",
         "next": null,
-        "parent": "M",
+        "parent": "U",
         "inputs": {},
         "fields": {
             "SOUND_MENU": [
@@ -43,10 +43,10 @@
         "shadow": true,
         "topLevel": false
     },
-    "a%": {
+    "bb": {
         "opcode": "control_wait",
-        "next": "N",
-        "parent": "M",
+        "next": "V",
+        "parent": "U",
         "inputs": {
             "DURATION": [
                 1,
@@ -60,24 +60,24 @@
         "shadow": false,
         "topLevel": false
     },
-    "N": {
+    "V": {
         "opcode": "lmsSoundExpanded_stopLooping",
-        "next": "O",
-        "parent": "a%",
+        "next": "W",
+        "parent": "bb",
         "inputs": {
             "SOUND": [
                 1,
-                "cp"
+                "c!"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "cp": {
+    "c!": {
         "opcode": "sound_sounds_menu",
         "next": null,
-        "parent": "N",
+        "parent": "V",
         "inputs": {},
         "fields": {
             "SOUND_MENU": [
@@ -88,24 +88,24 @@
         "shadow": true,
         "topLevel": false
     },
-    "O": {
+    "W": {
         "opcode": "lmsSoundExpanded_stopSound",
-        "next": "a(",
-        "parent": "N",
+        "next": "bc",
+        "parent": "V",
         "inputs": {
             "SOUND": [
                 1,
-                "cq"
+                "c#"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "cq": {
+    "c#": {
         "opcode": "sound_sounds_menu",
         "next": null,
-        "parent": "O",
+        "parent": "W",
         "inputs": {},
         "fields": {
             "SOUND_MENU": [
@@ -116,24 +116,24 @@
         "shadow": true,
         "topLevel": false
     },
-    "a(": {
+    "bc": {
         "opcode": "sound_play",
         "next": null,
-        "parent": "O",
+        "parent": "W",
         "inputs": {
             "SOUND_MENU": [
                 1,
-                "cr"
+                "c%"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "cr": {
+    "c%": {
         "opcode": "sound_sounds_menu",
         "next": null,
-        "parent": "a(",
+        "parent": "bc",
         "inputs": {},
         "fields": {
             "SOUND_MENU": [

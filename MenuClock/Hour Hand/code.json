@@ -1,7 +1,7 @@
 {
-    "b`": {
+    "cG": {
         "opcode": "event_whenflagclicked",
-        "next": "b{",
+        "next": "cH",
         "parent": null,
         "inputs": {},
         "fields": {},
@@ -10,7 +10,7 @@
         "x": 795,
         "y": 315
     },
-    "cu": {
+    "c*": {
         "opcode": "motion_gotoxy",
         "next": null,
         "parent": null,
@@ -36,28 +36,28 @@
         "x": 1223,
         "y": 302
     },
-    "aL": {
+    "a.": {
         "opcode": "control_forever",
         "next": null,
-        "parent": "aM",
+        "parent": "a/",
         "inputs": {
             "SUBSTACK": [
                 2,
-                "aN"
+                "a:"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "aN": {
+    "a:": {
         "opcode": "motion_pointindirection",
         "next": null,
-        "parent": "aL",
+        "parent": "a.",
         "inputs": {
             "DIRECTION": [
                 3,
-                "aO",
+                "a;",
                 [
                     8,
                     "90"
@@ -68,14 +68,14 @@
         "shadow": false,
         "topLevel": false
     },
-    "aO": {
+    "a;": {
         "opcode": "operator_add",
         "next": null,
-        "parent": "aN",
+        "parent": "a:",
         "inputs": {
             "NUM1": [
                 3,
-                "aP",
+                "a=",
                 [
                     4,
                     ""
@@ -93,14 +93,14 @@
         "shadow": false,
         "topLevel": false
     },
-    "aP": {
+    "a=": {
         "opcode": "operator_multiply",
         "next": null,
-        "parent": "aO",
+        "parent": "a;",
         "inputs": {
             "NUM1": [
                 3,
-                "aQ",
+                "a?",
                 [
                     4,
                     ""
@@ -118,14 +118,14 @@
         "shadow": false,
         "topLevel": false
     },
-    "aQ": {
+    "a?": {
         "opcode": "operator_divide",
         "next": null,
-        "parent": "aP",
+        "parent": "a=",
         "inputs": {
             "NUM1": [
                 3,
-                "b|",
+                "cI",
                 [
                     4,
                     ""
@@ -143,10 +143,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "b|": {
+    "cI": {
         "opcode": "sensing_current",
         "next": null,
-        "parent": "aQ",
+        "parent": "a?",
         "inputs": {},
         "fields": {
             "CURRENTMENU": [
@@ -157,9 +157,9 @@
         "shadow": false,
         "topLevel": false
     },
-    "b}": {
+    "cJ": {
         "opcode": "event_whenbroadcastreceived",
-        "next": "aR",
+        "next": "a@",
         "parent": null,
         "inputs": {},
         "fields": {
@@ -173,28 +173,28 @@
         "x": 698,
         "y": 588
     },
-    "aM": {
+    "a/": {
         "opcode": "looks_show",
-        "next": "aL",
-        "parent": "aR",
+        "next": "a.",
+        "parent": "a@",
         "inputs": {},
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "b{": {
+    "cH": {
         "opcode": "looks_hide",
         "next": null,
-        "parent": "b`",
+        "parent": "cG",
         "inputs": {},
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "aR": {
+    "a@": {
         "opcode": "looks_gotofrontback",
-        "next": "aM",
-        "parent": "b}",
+        "next": "a/",
+        "parent": "cJ",
         "inputs": {},
         "fields": {
             "FRONT_BACK": [
@@ -204,9 +204,9 @@
         "shadow": false,
         "topLevel": false
     },
-    "b~": {
+    "cK": {
         "opcode": "event_whenbroadcastreceived",
-        "next": "ca",
+        "next": "cL",
         "parent": null,
         "inputs": {},
         "fields": {
@@ -220,10 +220,10 @@
         "x": 44,
         "y": 44
     },
-    "ca": {
+    "cL": {
         "opcode": "looks_hide",
         "next": null,
-        "parent": "b~",
+        "parent": "cK",
         "inputs": {},
         "fields": {},
         "shadow": false,

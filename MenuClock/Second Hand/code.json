@@ -1,7 +1,7 @@
 {
-    "b(": {
+    "cp": {
         "opcode": "event_whenflagclicked",
-        "next": "b)",
+        "next": "cq",
         "parent": null,
         "inputs": {},
         "fields": {},
@@ -10,18 +10,18 @@
         "x": 48,
         "y": 240
     },
-    "b)": {
+    "cq": {
         "opcode": "looks_hide",
         "next": null,
-        "parent": "b(",
+        "parent": "cp",
         "inputs": {},
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "b*": {
+    "cr": {
         "opcode": "event_whenbroadcastreceived",
-        "next": "av",
+        "next": "aT",
         "parent": null,
         "inputs": {},
         "fields": {
@@ -35,10 +35,10 @@
         "x": 48,
         "y": 856
     },
-    "av": {
+    "aT": {
         "opcode": "looks_gotofrontback",
-        "next": "aw",
-        "parent": "b*",
+        "next": "aU",
+        "parent": "cr",
         "inputs": {},
         "fields": {
             "FRONT_BACK": [
@@ -49,37 +49,37 @@
         "shadow": false,
         "topLevel": false
     },
-    "aw": {
+    "aU": {
         "opcode": "looks_show",
-        "next": "ax",
-        "parent": "av",
+        "next": "aV",
+        "parent": "aT",
         "inputs": {},
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "ax": {
+    "aV": {
         "opcode": "control_forever",
         "next": null,
-        "parent": "aw",
+        "parent": "aU",
         "inputs": {
             "SUBSTACK": [
                 2,
-                "ay"
+                "aW"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "ay": {
+    "aW": {
         "opcode": "motion_pointindirection",
         "next": null,
-        "parent": "ax",
+        "parent": "aV",
         "inputs": {
             "DIRECTION": [
                 3,
-                "az",
+                "aX",
                 [
                     8,
                     "90"
@@ -90,14 +90,14 @@
         "shadow": false,
         "topLevel": false
     },
-    "az": {
+    "aX": {
         "opcode": "operator_add",
         "next": null,
-        "parent": "ay",
+        "parent": "aW",
         "inputs": {
             "NUM1": [
                 3,
-                "aA",
+                "aY",
                 [
                     4,
                     ""
@@ -115,14 +115,14 @@
         "shadow": false,
         "topLevel": false
     },
-    "aA": {
+    "aY": {
         "opcode": "operator_multiply",
         "next": null,
-        "parent": "az",
+        "parent": "aX",
         "inputs": {
             "NUM1": [
                 3,
-                "aB",
+                "aZ",
                 [
                     4,
                     ""
@@ -140,14 +140,14 @@
         "shadow": false,
         "topLevel": false
     },
-    "aB": {
+    "aZ": {
         "opcode": "operator_divide",
         "next": null,
-        "parent": "aA",
+        "parent": "aY",
         "inputs": {
             "NUM1": [
                 3,
-                "b+",
+                "cs",
                 [
                     4,
                     ""
@@ -165,10 +165,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "b+": {
+    "cs": {
         "opcode": "sensing_current",
         "next": null,
-        "parent": "aB",
+        "parent": "aZ",
         "inputs": {},
         "fields": {
             "CURRENTMENU": [
@@ -179,9 +179,9 @@
         "shadow": false,
         "topLevel": false
     },
-    "b,": {
+    "ct": {
         "opcode": "event_whenbroadcastreceived",
-        "next": "b-",
+        "next": "cu",
         "parent": null,
         "inputs": {},
         "fields": {
@@ -195,19 +195,19 @@
         "x": 48,
         "y": 64
     },
-    "b-": {
+    "cu": {
         "opcode": "looks_hide",
         "next": null,
-        "parent": "b,",
+        "parent": "ct",
         "inputs": {},
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "b.": {
+    "cv": {
         "opcode": "sensing_current",
         "next": null,
-        "parent": "aC",
+        "parent": "a!",
         "inputs": {},
         "fields": {
             "CURRENTMENU": [
@@ -218,24 +218,24 @@
         "shadow": false,
         "topLevel": false
     },
-    "aD": {
+    "a#": {
         "opcode": "sound_play",
         "next": null,
-        "parent": "J",
+        "parent": "R",
         "inputs": {
             "SOUND_MENU": [
                 1,
-                "b/"
+                "cw"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "b/": {
+    "cw": {
         "opcode": "sound_sounds_menu",
         "next": null,
-        "parent": "aD",
+        "parent": "a#",
         "inputs": {},
         "fields": {
             "SOUND_MENU": [
@@ -246,9 +246,9 @@
         "shadow": true,
         "topLevel": false
     },
-    "b:": {
+    "cx": {
         "opcode": "event_whenbroadcastreceived",
-        "next": "b;",
+        "next": "cy",
         "parent": null,
         "inputs": {},
         "fields": {
@@ -262,10 +262,10 @@
         "x": 48,
         "y": 416
     },
-    "b;": {
+    "cy": {
         "opcode": "control_stop",
         "next": null,
-        "parent": "b:",
+        "parent": "cx",
         "inputs": {},
         "fields": {
             "STOP_OPTION": [
@@ -281,14 +281,14 @@
             "hasnext": "true"
         }
     },
-    "aC": {
+    "a!": {
         "opcode": "lmsMoreEvents_whenValueChanged",
-        "next": "J",
+        "next": "R",
         "parent": null,
         "inputs": {
             "INPUT": [
                 2,
-                "b."
+                "cv"
             ]
         },
         "fields": {},
@@ -297,28 +297,28 @@
         "x": 48,
         "y": 592
     },
-    "J": {
+    "R": {
         "opcode": "control_if",
         "next": null,
-        "parent": "aC",
+        "parent": "a!",
         "inputs": {
             "SUBSTACK": [
                 2,
-                "aD"
+                "a#"
             ],
             "CONDITION": [
                 2,
-                "b="
+                "cz"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "b=": {
+    "cz": {
         "opcode": "operator_equals",
         "next": null,
-        "parent": "J",
+        "parent": "R",
         "inputs": {
             "OPERAND1": [
                 3,

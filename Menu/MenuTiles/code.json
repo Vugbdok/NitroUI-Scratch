@@ -1,7 +1,7 @@
 {
-    "bR": {
+    "cd": {
         "opcode": "event_whenflagclicked",
-        "next": "al",
+        "next": "aI",
         "parent": null,
         "inputs": {},
         "fields": {},
@@ -10,10 +10,10 @@
         "x": 48,
         "y": 64
     },
-    "al": {
+    "aI": {
         "opcode": "looks_seteffectto",
-        "next": "bS",
-        "parent": "bR",
+        "next": "ce",
+        "parent": "cd",
         "inputs": {
             "VALUE": [
                 1,
@@ -32,10 +32,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "bS": {
+    "ce": {
         "opcode": "motion_gotoxy",
         "next": null,
-        "parent": "al",
+        "parent": "aI",
         "inputs": {
             "X": [
                 1,
@@ -56,9 +56,9 @@
         "shadow": false,
         "topLevel": false
     },
-    "bT": {
+    "cf": {
         "opcode": "event_whenbroadcastreceived",
-        "next": "am",
+        "next": "aJ",
         "parent": null,
         "inputs": {},
         "fields": {
@@ -72,10 +72,10 @@
         "x": 457,
         "y": 288
     },
-    "am": {
+    "aJ": {
         "opcode": "looks_seteffectto",
-        "next": "H",
-        "parent": "bT",
+        "next": "P",
+        "parent": "cf",
         "inputs": {
             "VALUE": [
                 1,
@@ -94,10 +94,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "H": {
+    "P": {
         "opcode": "control_repeat",
-        "next": "bU",
-        "parent": "am",
+        "next": "cg",
+        "parent": "aJ",
         "inputs": {
             "TIMES": [
                 1,
@@ -108,23 +108,23 @@
             ],
             "SUBSTACK": [
                 2,
-                "bV"
+                "ch"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "bV": {
+    "ch": {
         "opcode": "looks_changeeffectby",
         "next": null,
-        "parent": "H",
+        "parent": "P",
         "inputs": {
             "CHANGE": [
                 1,
                 [
                     4,
-                    "25"
+                    "15"
                 ]
             ]
         },
@@ -137,18 +137,18 @@
         "shadow": false,
         "topLevel": false
     },
-    "bU": {
+    "cg": {
         "opcode": "looks_hide",
         "next": null,
-        "parent": "H",
+        "parent": "P",
         "inputs": {},
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "bW": {
+    "ci": {
         "opcode": "event_whenbroadcastreceived",
-        "next": "an",
+        "next": "aK",
         "parent": null,
         "inputs": {},
         "fields": {
@@ -162,10 +162,10 @@
         "x": 48,
         "y": 464
     },
-    "an": {
+    "aK": {
         "opcode": "looks_gotofrontback",
-        "next": "ao",
-        "parent": "bW",
+        "next": "aL",
+        "parent": "ci",
         "inputs": {},
         "fields": {
             "FRONT_BACK": [
@@ -176,10 +176,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "ao": {
+    "aL": {
         "opcode": "motion_gotoxy",
-        "next": "ap",
-        "parent": "an",
+        "next": "aM",
+        "parent": "aK",
         "inputs": {
             "X": [
                 1,
@@ -200,19 +200,19 @@
         "shadow": false,
         "topLevel": false
     },
-    "ap": {
+    "aM": {
         "opcode": "looks_show",
-        "next": "aq",
-        "parent": "ao",
+        "next": "aN",
+        "parent": "aL",
         "inputs": {},
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "aq": {
+    "aN": {
         "opcode": "looks_seteffectto",
-        "next": "ar",
-        "parent": "ap",
+        "next": "aO",
+        "parent": "aM",
         "inputs": {
             "VALUE": [
                 1,
@@ -231,10 +231,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "ar": {
+    "aO": {
         "opcode": "control_repeat",
         "next": null,
-        "parent": "aq",
+        "parent": "aN",
         "inputs": {
             "TIMES": [
                 1,
@@ -245,17 +245,17 @@
             ],
             "SUBSTACK": [
                 2,
-                "bX"
+                "cj"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "bX": {
+    "cj": {
         "opcode": "looks_changeeffectby",
         "next": null,
-        "parent": "ar",
+        "parent": "aO",
         "inputs": {
             "CHANGE": [
                 1,
@@ -274,9 +274,9 @@
         "shadow": false,
         "topLevel": false
     },
-    "bY": {
+    "ck": {
         "opcode": "event_whenflagclicked",
-        "next": "bZ",
+        "next": "cl",
         "parent": null,
         "inputs": {},
         "fields": {},
@@ -285,16 +285,16 @@
         "x": 48,
         "y": 288
     },
-    "bZ": {
+    "cl": {
         "opcode": "looks_hide",
         "next": null,
-        "parent": "bY",
+        "parent": "ck",
         "inputs": {},
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "b!": {
+    "cm": {
         "opcode": "event_whenthisspriteclicked",
         "next": "e",
         "parent": null,
@@ -307,8 +307,8 @@
     },
     "e": {
         "opcode": "procedures_call",
-        "next": "as",
-        "parent": "b!",
+        "next": "aP",
+        "parent": "cm",
         "inputs": {
             "arg0": [
                 1,
@@ -329,10 +329,28 @@
             "warp": "false"
         }
     },
-    "at": {
+    "aP": {
+        "opcode": "event_broadcast",
+        "next": "aQ",
+        "parent": "e",
+        "inputs": {
+            "BROADCAST_INPUT": [
+                1,
+                [
+                    11,
+                    "Title Open",
+                    ".D*(};7K-@}OD*rFCQ=0"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "aQ": {
         "opcode": "looks_gotofrontback",
-        "next": "I",
-        "parent": "as",
+        "next": "Q",
+        "parent": "aP",
         "inputs": {},
         "fields": {
             "FRONT_BACK": [
@@ -343,24 +361,24 @@
         "shadow": false,
         "topLevel": false
     },
-    "I": {
+    "Q": {
         "opcode": "sound_play",
-        "next": "au",
-        "parent": "at",
+        "next": "aR",
+        "parent": "aQ",
         "inputs": {
             "SOUND_MENU": [
                 1,
-                "b#"
+                "cn"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "b#": {
+    "cn": {
         "opcode": "sound_sounds_menu",
         "next": null,
-        "parent": "I",
+        "parent": "Q",
         "inputs": {},
         "fields": {
             "SOUND_MENU": [
@@ -371,16 +389,16 @@
         "shadow": true,
         "topLevel": false
     },
-    "au": {
+    "aR": {
         "opcode": "motion_glidesecstoxy",
-        "next": "b%",
-        "parent": "I",
+        "next": "aS",
+        "parent": "Q",
         "inputs": {
             "SECS": [
                 1,
                 [
                     4,
-                    ".3"
+                    ".5"
                 ]
             ],
             "X": [
@@ -402,28 +420,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "as": {
-        "opcode": "event_broadcast",
-        "next": "at",
-        "parent": "e",
-        "inputs": {
-            "BROADCAST_INPUT": [
-                1,
-                [
-                    11,
-                    "Title Open",
-                    ".D*(};7K-@}OD*rFCQ=0"
-                ]
-            ]
-        },
-        "fields": {},
-        "shadow": false,
-        "topLevel": false
-    },
-    "b%": {
+    "co": {
         "opcode": "event_broadcast",
         "next": null,
-        "parent": "au",
+        "parent": "aS",
         "inputs": {
             "BROADCAST_INPUT": [
                 1,
@@ -431,6 +431,23 @@
                     11,
                     "Start DSDP",
                     "`}P9_h;EVUSull~|pLFG"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "aS": {
+        "opcode": "control_wait",
+        "next": "co",
+        "parent": "aR",
+        "inputs": {
+            "DURATION": [
+                1,
+                [
+                    5,
+                    "1"
                 ]
             ]
         },

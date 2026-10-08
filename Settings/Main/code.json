@@ -1,7 +1,7 @@
 {
-    "cb": {
+    "cM": {
         "opcode": "event_whenthisspriteclicked",
-        "next": "aS",
+        "next": "a[",
         "parent": null,
         "inputs": {},
         "fields": {},
@@ -10,10 +10,10 @@
         "x": 197,
         "y": 259
     },
-    "aS": {
+    "a[": {
         "opcode": "looks_gotofrontback",
-        "next": "aT",
-        "parent": "cb",
+        "next": "a]",
+        "parent": "cM",
         "inputs": {},
         "fields": {
             "FRONT_BACK": [
@@ -24,10 +24,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "aT": {
+    "a]": {
         "opcode": "motion_gotoxy",
-        "next": "cc",
-        "parent": "aS",
+        "next": "cN",
+        "parent": "a[",
         "inputs": {
             "X": [
                 1,
@@ -48,10 +48,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "cc": {
+    "cN": {
         "opcode": "motion_glidesecstoxy",
         "next": null,
-        "parent": "aT",
+        "parent": "a]",
         "inputs": {
             "SECS": [
                 1,
@@ -79,21 +79,21 @@
         "shadow": false,
         "topLevel": false
     },
-    "cd": {
+    "cO": {
         "opcode": "event_whenthisspriteclicked",
-        "next": "aU",
+        "next": "a^",
         "parent": null,
         "inputs": {},
         "fields": {},
         "shadow": false,
         "topLevel": true,
-        "x": 486,
+        "x": 485,
         "y": 287
     },
-    "aU": {
+    "a^": {
         "opcode": "looks_gotofrontback",
-        "next": "aV",
-        "parent": "cd",
+        "next": "a_",
+        "parent": "cO",
         "inputs": {},
         "fields": {
             "FRONT_BACK": [
@@ -104,10 +104,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "aV": {
+    "a_": {
         "opcode": "motion_gotoxy",
-        "next": "K",
-        "parent": "aU",
+        "next": "S",
+        "parent": "a^",
         "inputs": {
             "X": [
                 1,
@@ -128,24 +128,24 @@
         "shadow": false,
         "topLevel": false
     },
-    "K": {
+    "S": {
         "opcode": "sound_play",
-        "next": "aW",
-        "parent": "aV",
+        "next": "a`",
+        "parent": "a_",
         "inputs": {
             "SOUND_MENU": [
                 1,
-                "ce"
+                "cP"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "ce": {
+    "cP": {
         "opcode": "sound_sounds_menu",
         "next": null,
-        "parent": "K",
+        "parent": "S",
         "inputs": {},
         "fields": {
             "SOUND_MENU": [
@@ -156,10 +156,10 @@
         "shadow": true,
         "topLevel": false
     },
-    "aW": {
+    "a`": {
         "opcode": "looks_seteffectto",
-        "next": "L",
-        "parent": "K",
+        "next": "T",
+        "parent": "S",
         "inputs": {
             "VALUE": [
                 1,
@@ -178,10 +178,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "L": {
+    "T": {
         "opcode": "control_repeat",
-        "next": "aX",
-        "parent": "aW",
+        "next": "a{",
+        "parent": "a`",
         "inputs": {
             "TIMES": [
                 1,
@@ -192,17 +192,17 @@
             ],
             "SUBSTACK": [
                 2,
-                "cf"
+                "cQ"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "cf": {
+    "cQ": {
         "opcode": "looks_changeeffectby",
         "next": null,
-        "parent": "L",
+        "parent": "T",
         "inputs": {
             "CHANGE": [
                 1,
@@ -221,10 +221,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "aX": {
+    "a{": {
         "opcode": "event_broadcast",
-        "next": "aY",
-        "parent": "L",
+        "next": "a|",
+        "parent": "T",
         "inputs": {
             "BROADCAST_INPUT": [
                 1,
@@ -239,10 +239,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "aY": {
+    "a|": {
         "opcode": "control_wait",
-        "next": "aZ",
-        "parent": "aX",
+        "next": "a}",
+        "parent": "a{",
         "inputs": {
             "DURATION": [
                 1,
@@ -256,24 +256,24 @@
         "shadow": false,
         "topLevel": false
     },
-    "aZ": {
+    "a}": {
         "opcode": "sound_play",
         "next": null,
-        "parent": "aY",
+        "parent": "a|",
         "inputs": {
             "SOUND_MENU": [
                 1,
-                "cg"
+                "cR"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "cg": {
+    "cR": {
         "opcode": "sound_sounds_menu",
         "next": null,
-        "parent": "aZ",
+        "parent": "a}",
         "inputs": {},
         "fields": {
             "SOUND_MENU": [
@@ -284,9 +284,9 @@
         "shadow": true,
         "topLevel": false
     },
-    "ch": {
+    "cS": {
         "opcode": "event_whenflagclicked",
-        "next": "a!",
+        "next": "a~",
         "parent": null,
         "inputs": {},
         "fields": {},
@@ -295,10 +295,10 @@
         "x": 350,
         "y": -17
     },
-    "a!": {
+    "a~": {
         "opcode": "looks_seteffectto",
-        "next": "ci",
-        "parent": "ch",
+        "next": "cT",
+        "parent": "cS",
         "inputs": {
             "VALUE": [
                 1,
@@ -317,10 +317,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "ci": {
+    "cT": {
         "opcode": "motion_gotoxy",
         "next": null,
-        "parent": "a!",
+        "parent": "a~",
         "inputs": {
             "X": [
                 1,
@@ -341,9 +341,9 @@
         "shadow": false,
         "topLevel": false
     },
-    "cj": {
+    "cU": {
         "opcode": "event_whenbroadcastreceived",
-        "next": "a#",
+        "next": "ba",
         "parent": null,
         "inputs": {},
         "fields": {
@@ -357,10 +357,10 @@
         "x": 757,
         "y": 223
     },
-    "a#": {
+    "ba": {
         "opcode": "looks_gotofrontback",
-        "next": "ck",
-        "parent": "cj",
+        "next": "cV",
+        "parent": "cU",
         "inputs": {},
         "fields": {
             "FRONT_BACK": [
@@ -371,18 +371,18 @@
         "shadow": false,
         "topLevel": false
     },
-    "ck": {
+    "cV": {
         "opcode": "looks_show",
         "next": null,
-        "parent": "a#",
+        "parent": "ba",
         "inputs": {},
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "cl": {
+    "cW": {
         "opcode": "event_whenflagclicked",
-        "next": "cm",
+        "next": "cX",
         "parent": null,
         "inputs": {},
         "fields": {},
@@ -391,10 +391,10 @@
         "x": 44,
         "y": 44
     },
-    "cm": {
+    "cX": {
         "opcode": "looks_hide",
         "next": null,
-        "parent": "cl",
+        "parent": "cW",
         "inputs": {},
         "fields": {},
         "shadow": false,
