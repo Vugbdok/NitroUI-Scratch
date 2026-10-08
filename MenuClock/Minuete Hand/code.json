@@ -1,7 +1,7 @@
 {
-    "bQ": {
+    "b?": {
         "opcode": "event_whenflagclicked",
-        "next": "bR",
+        "next": "b@",
         "parent": null,
         "inputs": {},
         "fields": {},
@@ -10,7 +10,7 @@
         "x": 540,
         "y": 194
     },
-    "b|": {
+    "ct": {
         "opcode": "motion_gotoxy",
         "next": null,
         "parent": null,
@@ -36,28 +36,28 @@
         "x": 842,
         "y": 240
     },
-    "ao": {
+    "aE": {
         "opcode": "control_forever",
         "next": null,
-        "parent": "ap",
+        "parent": "aF",
         "inputs": {
             "SUBSTACK": [
                 2,
-                "aq"
+                "aG"
             ]
         },
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "aq": {
+    "aG": {
         "opcode": "motion_pointindirection",
         "next": null,
-        "parent": "ao",
+        "parent": "aE",
         "inputs": {
             "DIRECTION": [
                 3,
-                "ar",
+                "aH",
                 [
                     8,
                     "90"
@@ -68,14 +68,14 @@
         "shadow": false,
         "topLevel": false
     },
-    "ar": {
+    "aH": {
         "opcode": "operator_add",
         "next": null,
-        "parent": "aq",
+        "parent": "aG",
         "inputs": {
             "NUM1": [
                 3,
-                "as",
+                "aI",
                 [
                     4,
                     ""
@@ -93,14 +93,14 @@
         "shadow": false,
         "topLevel": false
     },
-    "as": {
+    "aI": {
         "opcode": "operator_multiply",
         "next": null,
-        "parent": "ar",
+        "parent": "aH",
         "inputs": {
             "NUM1": [
                 3,
-                "at",
+                "aJ",
                 [
                     4,
                     ""
@@ -118,14 +118,14 @@
         "shadow": false,
         "topLevel": false
     },
-    "at": {
+    "aJ": {
         "opcode": "operator_divide",
         "next": null,
-        "parent": "as",
+        "parent": "aI",
         "inputs": {
             "NUM1": [
                 3,
-                "bS",
+                "b[",
                 [
                     4,
                     ""
@@ -143,10 +143,10 @@
         "shadow": false,
         "topLevel": false
     },
-    "bS": {
+    "b[": {
         "opcode": "sensing_current",
         "next": null,
-        "parent": "at",
+        "parent": "aJ",
         "inputs": {},
         "fields": {
             "CURRENTMENU": [
@@ -157,15 +157,15 @@
         "shadow": false,
         "topLevel": false
     },
-    "bT": {
+    "b]": {
         "opcode": "event_whenbroadcastreceived",
-        "next": "au",
+        "next": "aK",
         "parent": null,
         "inputs": {},
         "fields": {
             "BROADCAST_OPTION": [
-                "System menu start",
-                "_C0]2Mci,D%5E4#-]|ZH"
+                "Show Clock",
+                "1-m9C=VMP_]iiZK#JPVh"
             ]
         },
         "shadow": false,
@@ -173,28 +173,28 @@
         "x": 740,
         "y": 465
     },
-    "bR": {
+    "b@": {
         "opcode": "looks_hide",
         "next": null,
-        "parent": "bQ",
+        "parent": "b?",
         "inputs": {},
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "ap": {
+    "aF": {
         "opcode": "looks_show",
-        "next": "ao",
-        "parent": "au",
+        "next": "aE",
+        "parent": "aK",
         "inputs": {},
         "fields": {},
         "shadow": false,
         "topLevel": false
     },
-    "au": {
+    "aK": {
         "opcode": "looks_gotofrontback",
-        "next": "ap",
-        "parent": "bT",
+        "next": "aF",
+        "parent": "b]",
         "inputs": {},
         "fields": {
             "FRONT_BACK": [
@@ -204,9 +204,9 @@
         "shadow": false,
         "topLevel": false
     },
-    "bU": {
+    "b^": {
         "opcode": "event_whenbroadcastreceived",
-        "next": "bV",
+        "next": "b_",
         "parent": null,
         "inputs": {},
         "fields": {
@@ -220,10 +220,10 @@
         "x": 44,
         "y": 44
     },
-    "bV": {
+    "b_": {
         "opcode": "looks_hide",
         "next": null,
-        "parent": "bU",
+        "parent": "b^",
         "inputs": {},
         "fields": {},
         "shadow": false,

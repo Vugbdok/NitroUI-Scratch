@@ -1,0 +1,147 @@
+{
+    "cn": {
+        "opcode": "event_whenbroadcastreceived",
+        "next": "M",
+        "parent": null,
+        "inputs": {},
+        "fields": {
+            "BROADCAST_OPTION": [
+                "Start DSDP",
+                "`}P9_h;EVUSull~|pLFG"
+            ]
+        },
+        "shadow": false,
+        "topLevel": true,
+        "x": 270,
+        "y": 211
+    },
+    "M": {
+        "opcode": "lmsSoundExpanded_startLooping",
+        "next": "a%",
+        "parent": "cn",
+        "inputs": {
+            "SOUND": [
+                1,
+                "co"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "co": {
+        "opcode": "sound_sounds_menu",
+        "next": null,
+        "parent": "M",
+        "inputs": {},
+        "fields": {
+            "SOUND_MENU": [
+                "downloadplay_searching",
+                null
+            ]
+        },
+        "shadow": true,
+        "topLevel": false
+    },
+    "a%": {
+        "opcode": "control_wait",
+        "next": "N",
+        "parent": "M",
+        "inputs": {
+            "DURATION": [
+                1,
+                [
+                    5,
+                    "5"
+                ]
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "N": {
+        "opcode": "lmsSoundExpanded_stopLooping",
+        "next": "O",
+        "parent": "a%",
+        "inputs": {
+            "SOUND": [
+                1,
+                "cp"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "cp": {
+        "opcode": "sound_sounds_menu",
+        "next": null,
+        "parent": "N",
+        "inputs": {},
+        "fields": {
+            "SOUND_MENU": [
+                "downloadplay_searching",
+                null
+            ]
+        },
+        "shadow": true,
+        "topLevel": false
+    },
+    "O": {
+        "opcode": "lmsSoundExpanded_stopSound",
+        "next": "a(",
+        "parent": "N",
+        "inputs": {
+            "SOUND": [
+                1,
+                "cq"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "cq": {
+        "opcode": "sound_sounds_menu",
+        "next": null,
+        "parent": "O",
+        "inputs": {},
+        "fields": {
+            "SOUND_MENU": [
+                "downloadplay_searching",
+                null
+            ]
+        },
+        "shadow": true,
+        "topLevel": false
+    },
+    "a(": {
+        "opcode": "sound_play",
+        "next": null,
+        "parent": "O",
+        "inputs": {
+            "SOUND_MENU": [
+                1,
+                "cr"
+            ]
+        },
+        "fields": {},
+        "shadow": false,
+        "topLevel": false
+    },
+    "cr": {
+        "opcode": "sound_sounds_menu",
+        "next": null,
+        "parent": "a(",
+        "inputs": {},
+        "fields": {
+            "SOUND_MENU": [
+                "failure",
+                null
+            ]
+        },
+        "shadow": true,
+        "topLevel": false
+    }
+}
